@@ -1,0 +1,104 @@
+/* Page Title */
+.page-title {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .page-title h1 {
+    font-size: 2.5rem;
+    color: #d71920;
+  }
+  
+  .page-title p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Training Section */
+  .training-section {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    height: 90vh;
+
+  }
+  
+  .training-section .section-content {
+    margin-bottom: 1rem;
+  }
+  
+  .training-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .training-section p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .section-button {
+    background-color: #d71920;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .section-button:hover {
+    background-color: #b6161b;
+    transform: scale(1.05);
+  }
+  
+  /* Form Section */
+  .form-section {
+    text-align: center;
+    margin: 3rem auto;
+    max-width: 600px;
+  }
+  
+  .form-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .submit-button {
+    background-color: #d71920;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #b6161b;
+    transform: scale(1.05);
+  }
+  

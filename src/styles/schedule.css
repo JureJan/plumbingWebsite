@@ -1,0 +1,128 @@
+.schedule {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.schedule h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule-table th {
+  background-color: #4CAF50; /* Header background */
+  color: white;
+  font-weight: bold;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light grey for even rows */
+}
+
+.schedule-table tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.activity-button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  border: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 20px; /* Rounded button */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.activity-button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.activity-button:active {
+  transform: translateY(0); /* Reset on click */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Pressed shadow */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.modal h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.modal p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+@media (max-width:768px) {
+  .schedule {
+   
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow-x: scroll;
+    max-width: 800px;
+  }
+
+}
+
+@media (max-width:436px) {}

@@ -1,0 +1,221 @@
+/* Navbar Styling */
+
+.navbar {
+  font-family: 'Roboto Serif', serif; /* Ensure navbar uses the font */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 74px;
+  max-height: 76px;
+  
+}
+
+/* Logo and Navigation Links - Center */
+.logoAndNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.navLinks a {
+  font-family: 'Roboto Serif', serif; /* Apply font to links */
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: red;
+}
+
+/* Right Section: Social Icons, Phone, and Working Hours */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.socialIcons {
+  margin-right: 158px;
+ /* display: flex;
+  gap: 15px;*/
+}
+
+.socialIcons img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.socialIcons img:hover {
+  transform: scale(1.2);
+}
+
+/* Phone Section */
+.phoneSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phoneIcon {
+  background-color: #28a745; /* Green circle for phone icon */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.phoneNumber {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Working Hours - Align to the Right Edge */
+.workingHours {
+  display: flex;
+ /* justify-content: center;*/
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 0.9rem;
+  margin-right: 47px;
+}
+
+.workingHours p {
+  margin: 0;
+  color: white;
+}
+
+
+/* Hamburger menu styling - initially hidden on larger screens */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 10000; /* Ensure it stays above other elements */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+;
+}
+
+/* Overlay for background click to close modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+  z-index: 1999; /* Put overlay below the navbar and hamburger menu */
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+      display: flex; /* Show hamburger on smaller screens */
+      z-index: 100000;
+  }
+
+  .navLinks {
+      display: none; /* Hide links by default on smaller screens */
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh; /* Fullscreen modal for mobile navigation */
+      background-color: #ffffff; /* Solid background for the modal */
+      flex-direction: column;
+      align-items: left;
+      gap: 2rem;
+      padding-top: 5rem;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(100%); /* Start off-screen */
+      z-index: 2101; /* Above overlay */
+  }
+
+  .navLinks.open {
+      display: flex; /* Show links when the menu is open */
+      transform: translateX(0); /* Slide in from the right */
+  }
+
+  .navLinks a {
+      font-size: 1.5rem;
+      color: #003366;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .navLinks a:hover {
+      color: #ffffff;
+      background-color: #ff6600; /* Highlight link background on hover */
+      transform: scale(1.1); /* Enlarge on hover for visual feedback */
+  }
+
+
+.socialIcons {
+  display: none;
+
+}
+
+.socialIcons img {
+  display: none;
+
+}
+
+.socialIcons img:hover {
+display: none;
+}
+.navbar {
+  font-family: 'Roboto Serif', serif; /* Ensure navbar uses the font */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 74px;
+  max-height: 76px;
+  
+}
+.workingHours {
+display: none;
+}
+}

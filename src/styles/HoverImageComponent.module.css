@@ -1,0 +1,68 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* Full section height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: relative;
+  width: 100%; /* Matches parent width */
+  height: 100%; /* Matches parent height */
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 5%; /* Push buttons to bottom of the image */
+  width: 90%; /* Adjust to fit within the content */
+  display: flex;
+  justify-content: space-between; /* Align buttons as in the photo */
+}
+
+.button {
+  flex: 1;
+  margin: 0 10px; /* Space between buttons */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  color: white; /* Keep text visible */
+  padding: 20px;
+ /* border-radius: 100px;*/
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* White background on hover */
+  color: black; /* Change text color on hover */
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* White line at the top */
+  background-color: white;
+}
+
+.button h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.button p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}

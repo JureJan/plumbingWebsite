@@ -1,0 +1,47 @@
+/* General Footer Styling */
+.footer {
+  font-family: 'Roboto Serif', serif; /* Apply font globally to the footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 26px 0px;
+  color: white;
+  border-top: 2px solid black;
+  
+}
+
+.footer a {
+  font-family: 'Roboto Serif', serif;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Footer Social Icons */
+.footer-social {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-social img {
+  width: 32px; /* Explicit size to match the navbar */
+  height: 32px; /* Explicit size to match the navbar */
+  transition: transform 0.3s ease;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.2);
+}
+
+/* Footer Contact Info */
+.footer-contact {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}

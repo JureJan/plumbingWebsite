@@ -1,0 +1,140 @@
+/* Global Centering Utility */
+.centered-section {
+    display: flex;               /* Enable flexbox */
+    justify-content: center;     /* Horizontally center */
+    align-items: center;         /* Vertically center */
+    flex-direction: column;      /* Stack content vertically */
+    height: 100vh;               /* Take full viewport height */
+    text-align: center;          /* Center text alignment */
+    padding: 20px;               /* Optional padding */
+    box-sizing: border-box;      /* Include padding in width/height calculations */
+  }
+  
+  /* Ensure images or elements scale correctly */
+  .responsive-image {
+    width: 100%;                 /* Full width of the container */
+    max-width: 1200px;           /* Optional: Limit the maximum width */
+    height: auto;                /* Maintain aspect ratio */
+    object-fit: cover;           /* Optional: Cover container area */
+  }
+  
+  /* For mobile responsiveness */
+  @media (max-width: 768px) {
+    .centered-section {
+      padding: 10px;
+    }
+  }
+  
+
+
+
+  "use client"; // Marking this as a client component
+
+import Navbar from "../app/components/navbar";
+import Footer from "../app/components/footer";
+import "../styles/vodene-vadbe.css"; // Path to the page's CSS
+import Image from "next/image";
+
+export default function VodeneVadbe() {
+  const programs = [
+    {
+      title: "Les Mills Grit CARDIO",
+      description: "Les Mills GRIT Cardio je 30-minutni visoko-intenzivni intervalni trening (HIIT).",
+      benefits: [
+        "Povečana srčno-žilna kapaciteta.",
+        "Maksimalna poraba kalorij.",
+        "Dvig anaerobnega praga.",
+        "Super trening za izboljšanje postave.",
+      ],
+      videoLink: "https://www.youtube.com/embed/JWaZk-lZ_iY",
+      image: "/images/maxxCardio.jpg",
+    },
+    {
+      title: "Program 2",
+      description: "Opis programa 2. Tukaj lahko dodate podrobnosti o programu.",
+      benefits: [
+        "Izboljšana gibljivost.",
+        "Večja moč in vzdržljivost.",
+        "Program prilagojen različnim starostnim skupinam.",
+      ],
+      videoLink: "https://www.youtube.com/embed/5AXG4cOKfXw",
+      image: "/images/maxxAthletic.jpg",
+    },
+    // Add 6 more programs here...
+    {
+      title: "Program 8 (Zaključno poglavje)",
+      description: "Zaključna misel za naše vadbe.",
+      benefits: [
+        "Doseg svojih ciljev z MaxxGym.",
+        "Strokovno vodenje.",
+        "Prilagodljiv urnik za vsakogar.",
+      ],
+      image: "/images/maxxPilates.jpg",
+    },
+  ];
+
+  const handleScrollToForm = () => {
+    const formSection = document.getElementById("form-section");
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <>
+      <Navbar />
+      <main>
+        <section className="programs-section">
+          {programs.map((program, index) => (
+            <div key={index} className="program-card">
+              {/* Image */}
+              <Image src={program.image} alt={program.title} width={800} height={400} />
+
+              {/* Text Section */}
+              <div className="text-content">
+                <div className="left-text">
+                  <h3>{program.title}</h3>
+                  <p>{program.description}</p>
+                </div>
+                <ul className="right-list">
+                  {program.benefits.map((benefit, idx) => (
+                    <li key={idx}>{benefit}</li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Video */}
+              {program.videoLink && (
+                <div className="video-container">
+                  <iframe
+                    src={program.videoLink}
+                    title={program.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              )}
+
+              {/* Button */}
+              <button className="section-button" onClick={handleScrollToForm}>
+                PRIJAVI SE NA BREZPLAČNI POSVET
+              </button>
+            </div>
+          ))}
+
+          {/* Last Section */}
+          <div className="last-section">
+            <h2>Prijavi se še danes</h2>
+            <p>
+              Dosežite svoje cilje z MaxxGym! Prijavite se na brezplačni posvet in začnite svojo pot
+              do boljšega zdravja.
+            </p>
+            <button className="section-button">PRIJAVI SE NA BREZPLAČNI POSVET</button>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
