@@ -4,9 +4,12 @@ import Link from 'next/link';
 import { useState } from 'react';
 import styles from '../../styles/navbar.module.css';
 import Image from 'next/image';
-
+import { usePathname, useRouter } from 'next/navigation';
+import { FormattedMessage, useIntl, IntlProvider } from "react-intl";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   // Toggle the menu open or closed
@@ -19,6 +22,16 @@ export default function Navbar() {
     setIsOpen(false);
   };
 
+  const handleLanguageChange = (lang) => {
+    const newPath = `/${lang}/${currentPage}`;
+    router.push(newPath);
+  };
+
+
+  // Extract current locale and page path
+  const segments = pathname.split('/');
+  const currentLocale = segments[1];
+  const currentPage = segments.slice(2).join('/');
   return (
     <>
       {isOpen && <div className={styles.overlay} onClick={closeMenu}></div>}
@@ -36,6 +49,21 @@ export default function Navbar() {
                 height={28.7}
               />
             </Link>
+            <div className={styles.languageButtons}>
+              
+            <div className={styles.languageSwitcher}>
+        <select
+          value={currentLocale}
+          onChange={(e) => handleLanguageChange(e.target.value)}
+        >
+          {/* <option value="en"><FormattedMessage id="homeCarouselTitle1" /></option>
+          <option value="sl"><FormattedMessage id="homeCarouselTitle1" /></option>
+          <option value="de"><FormattedMessage id="homeCarouselTitle1" /></option>
+          <option value="it"><FormattedMessage id="homeCarouselTitle1" /></option> */}
+        </select>
+
+      </div>
+    </div>
           </div>
        <div className={styles.hamburger} onClick={toggleMenu}>
           {isOpen ? (

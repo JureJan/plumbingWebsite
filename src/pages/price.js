@@ -4,6 +4,7 @@ import Navbar from "../app/components/navbar";
 import Footer from "../app/components/footer";
 import ImageCarousel from "../app/components/imageCarousel";
 import "../styles/price.css";
+import { useIntl } from "react-intl";
 
 export default function Price() {
   const titles = [
