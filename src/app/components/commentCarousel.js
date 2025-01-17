@@ -3,42 +3,45 @@
 import React, { useState } from "react";
 import styles from "../../styles/commentCarousel.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
 const CommentCarousel = () => {
+  const { t } = useTranslation("common");
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const comments = [
     {
-      title: "Še nisi prepričan?",
-      text: "Best fitness v Lj. Zelo profesionalno in dostopno osebje. Lastnik pomaga vsem v telovadnici ne glede kdo si!",
-      author: "Klemen Tušek",
+      title: t("comments.1.title"),
+      text: t("comments.1.text"),
+      author: t("comments.1.author"),
     },
     {
-      title: "Najboljša telovadnica!",
-      text: "Vse naprave so vedno na voljo, čist prostor in super vzdušje.",
-      author: "Ana Novak",
+      title: t("comments.2.title"),
+      text: t("comments.2.text"),
+      author: t("comments.2.author"),
     },
     {
-      title: "Super rezultati!",
-      text: "V samo 3 mesecih sem dosegel cilje, ki sem jih prej sanjal leta!",
-      author: "Marko Kovač",
+      title: t("comments.3.title"),
+      text: t("comments.3.text"),
+      author: t("comments.3.author"),
     },
     {
-      title: "Strokovno osebje!",
-      text: "Trenerji so zelo prijazni in vedno pripravljeni pomagati.",
-      author: "Eva Petek",
+      title: t("comments.4.title"),
+      text: t("comments.4.text"),
+      author: t("comments.4.author"),
     },
     {
-      title: "Priporočam vsem!",
-      text: "Najboljša investicija, ki sem jo naredil zase!",
-      author: "Miha Zupan",
+      title: t("comments.5.title"),
+      text: t("comments.5.text"),
+      author: t("comments.5.author"),
     },
     {
-      title: "Vedno motiviran!",
-      text: "Vadba v MaxxGym je postala moja rutina zaradi odličnega vzdušja.",
-      author: "Tina Jernej",
+      title: t("comments.6.title"),
+      text: t("comments.6.text"),
+      author: t("comments.6.author"),
     },
   ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % comments.length);

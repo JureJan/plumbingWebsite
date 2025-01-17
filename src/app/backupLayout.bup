@@ -9,8 +9,7 @@ import en from "../../.next/assets/lang/en.json";
 import sl from "../../.next/assets/lang/sl.json";
 import de from "../../.next/assets/lang/de.json";
 import it from "../../.next/assets/lang/it.json";
-import { IntlProvider } from 'react-intl';
-import ServerIntlProvider from '../components/ServerIntlProvider';
+import { IntlProvider, useIntl } from 'react-intl';
 
 
 const messages = {
@@ -19,7 +18,8 @@ const messages = {
   de,
   it,
 };
-//const intl = await useIntl(locale, 'home');
+
+
 const robotoSerif = Roboto_Serif({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -28,20 +28,29 @@ const robotoSerif = Roboto_Serif({
 
 const getLocaleFromPathname = (pathname) => {
   const segments = pathname.split('/');
+
   return segments[1] && ["en", "sl", "de", "it"].includes(segments[1]) ? segments[1] : "sl"; // Default to 'sl'
 };
+
+
+const message = defineMessage({
+  description: 'A message', // Description should be a string literal
+  defaultMessage: 'My name is {name}', // Message should be a string literal
+})
+
+
+
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   const locale = getLocaleFromPathname(pathname);
-  console.log("asdasdsad")
+  console.log("segments", segments);
+  
   return (
     <html lang={locale} className={robotoSerif.className}>
       <body>
-      <IntlProvider messages={messages} locale={locale}>
-          {children}
-          </IntlProvider>
-
+        {console.log("asdasdsad")}
+           {children}
       </body>
     </html>
   );

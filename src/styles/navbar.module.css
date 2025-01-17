@@ -35,6 +35,19 @@
   gap: 30px;
   list-style: none;
 }
+.language-select {
+  background-color: white; /* Belo ozadje */
+  color: black; /* Črn tekst */
+  font-size: 16px; /* Velikost pisave */
+  border: 1px solid #ccc; /* Obroba za boljšo vidljivost */
+  padding: 5px; /* Prostor okoli besedila */
+  border-radius: 4px; /* Zaobljeni robovi */
+}
+
+.language-select option {
+  background-color: white; /* Belo ozadje za možnosti */
+  color: black; /* Črn tekst za možnosti */
+}
 
 .navLinks a {
   font-family: 'Roboto Serif', serif; /* Apply font to links */

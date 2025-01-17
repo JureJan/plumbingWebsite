@@ -1,0 +1,128 @@
+{
+ 
+  "nav": {
+    "logo_alt": "Logotip MaxxGyma",
+    "nav": {
+      "home": "Domov",
+      "price": "Cenik",
+      "fitness": "Fitnes",
+      "guided_workouts": "Vodene Vadbe",
+      "personal_training": "Osebni Trening",
+      "contact": "Kontakt"
+    },
+    "language": {
+      "en": "Angleško",
+      "sl": "Slovensko",
+      "de": "Nemško",
+      "it": "Italjansko"
+    },
+    "working_hours": {
+      "weekdays": "PONEDELJEK - PETEK 6.00 - 22.30",
+      "weekends": "SOBOTA - NEDELJA IN PRAZNIKI 8.00 - 22.00"
+    },
+    "phone_number": "0590 41 900"
+  },
+
+  "home": {
+    "CarouselTitle1": "Personaliziran pristop, ki deluje",
+    "CarouselText1": "Najdi najboljšo personalizirano vadbo za svoje cilje.",
+    "CarouselTitle2": "Tvoja pot do uspeha",
+    "CarouselText2": "Dosezi svoje cilje z osebnim trenerstvom MaxxGym.",
+    "CarouselTitle3": "Strokovno vodenje",
+    "CarouselText3": "Vadba prilagojena tvojim potrebam in sposobnostim.",
+    "CarouselTitle4": "Začni svojo pot danes",
+    "CarouselText4": "Odkrij prednosti fitnesa z MaxxGym.",
+    "homeCarouselTitle1": "Dobrodošli v MaxxGym"
+  },
+  
+    "price": {
+      "CarouselTitle1": "Najboljše cene za vaše cilje",
+      "CarouselText1": "Poiščite najboljše ponudbe, prilagojene vašim potrebam.",
+      "CarouselTitle2": "Drugi naslov",
+      "CarouselText2": "Drugi opisni tekst ponudb.",
+      "CarouselTitle3": "Tretji naslov",
+      "CarouselText3": "Tretji tekst, ki opisuje ponudbe.",
+      "CarouselTitle4": "Četrti naslov",
+      "CarouselText4": "Četrti tekst za vrtiljak.",
+      "PageTitle": "MaxxGym",
+      "PageDescription": "Poiščite najboljše ponudbe, prilagojene vašim potrebam.",
+      "ImageAltText": "Opisni nadomestni tekst"
+    },
+
+    "price": {
+      "CarouselTitle1": "Najboljše cene za vaše cilje",
+      "CarouselText1": "Poiščite najboljše ponudbe, prilagojene vašim potrebam.",
+      "CarouselTitle2": "Drugi naslov",
+      "CarouselText2": "Drugi opisni tekst ponudb.",
+      "CarouselTitle3": "Tretji naslov",
+      "CarouselText3": "Tretji tekst, ki opisuje ponudbe.",
+      "CarouselTitle4": "Četrti naslov",
+      "CarouselText4": "Četrti tekst za vrtiljak."
+    },
+    "sections": {
+      "section1": {
+        "title": "Končno fitnes, ki ni nabito poln in nudi veliko možnosti za trening brez motenj in nepotrebnega čakanja",
+        "text": "Si sit prepolnih fitnes centrov katerih ne moreš nardit efektivnega treninga? Naveličan čakanja na naprave, ker spet nekdo na njej piše SMS? In iščeš prostor kje boš lahko brez motenj nardil trening? MAXXGYM je točno to kaj iščeš in daje ljudem kot si ti možnost okolja za odličen trening brez neprijetnih motenj."
+      },
+      "section2": {
+        "title": "Premikamo meje tvoje zmogljivosti",
+        "text": "Pri MaxxGym ni čakanja na naprave in nepotrebnega izgubljanja časa. Omogočamo ti bolj efektivne treninge za dosego tvojih ciljev."
+      },
+      "section3": {
+        "title": "Oprema, ki navdihuje",
+        "text": "Oprema najnovejše generacije, vrhunski trenerji in motivacijski programi te čakajo pri MaxxGym. Postani najboljša verzija sebe!"
+      }
+    },
+    "form": {
+      "title": "Rezerviraj svojo brezplačno vstopnico",
+      "description": "Izogni se običajnim napakam v fitnesu z našo pomočjo in nas 100% BREZPLAČNO preizkusi. Izpolni spodnji obrazec za svojo brezplačno vstopnico in nas čim prej obišči.",
+      "inputs": {
+        "name": "Ime in priimek*",
+        "email": "Email Naslov*",
+        "phone": "Telefonska številka*",
+        "address": "Stalni naslov*"
+      },
+      "button": "ZAHTEVAJ BREZPLAČNO VSTOPNICO",
+      "privacy": "Spoštujemo tvojo zasebnost in tvojih podatkov nikoli ne bomo delili s komer koli brez tvojega privolenja."
+    },
+
+    
+      "comments": {
+        "1": {
+          "title": "Še nisi prepričan?",
+          "text": "Best fitness v Lj. Zelo profesionalno in dostopno osebje. Lastnik pomaga vsem v telovadnici ne glede kdo si!",
+          "author": "Klemen Tušek"
+        },
+        "2": {
+          "title": "Najboljša telovadnica!",
+          "text": "Vse naprave so vedno na voljo, čist prostor in super vzdušje.",
+          "author": "Ana Novak"
+        },
+        "3": {
+          "title": "Super rezultati!",
+          "text": "V samo 3 mesecih sem dosegel cilje, ki sem jih prej sanjal leta!",
+          "author": "Marko Kovač"
+        },
+        "4": {
+          "title": "Strokovno osebje!",
+          "text": "Trenerji so zelo prijazni in vedno pripravljeni pomagati.",
+          "author": "Eva Petek"
+        },
+        "5": {
+          "title": "Priporočam vsem!",
+          "text": "Najboljša investicija, ki sem jo naredil zase!",
+          "author": "Miha Zupan"
+        },
+        "6": {
+          "title": "Vedno motiviran!",
+          "text": "Vadba v MaxxGym je postala moja rutina zaradi odličnega vzdušja.",
+          "author": "Tina Jernej"
+        }
+      }
+    
+    
+  
+  
+  
+  
+}

@@ -1,0 +1,130 @@
+{
+
+
+  "nav": {
+    "logo_alt": "Logo MaxxGym",
+    "language": {
+      "en": "Inglese",
+      "sl": "Sloveno",
+      "de": "Tedesco",
+      "it": "Italiano"
+    },
+    "nav":{
+      "logo_alt": "Logo MaxxGym",
+        "home": "Home",
+        "price": "Prezzi",
+        "fitness": "Fitness",
+        "guided_workouts": "Allenamenti Guidati",
+        "personal_training": "Allenamento Personale",
+        "contact": "Contatto"
+      },
+      "working_hours": {
+        "weekdays": "LUNEDÌ - VENERDÌ 6.00 - 22.30",
+        "weekends": "SABATO - DOMENICA E FESTIVI 8.00 - 22.00"
+      },
+      "phone_number": "0590 41 900"
+    },
+
+    "home": {
+      "CarouselTitle1": "Approccio personalizzato che funziona",
+      "CarouselText1": "Trova il miglior allenamento personalizzato per i tuoi obiettivi.",
+      "CarouselTitle2": "Il tuo percorso verso il successo",
+      "CarouselText2": "Raggiungi i tuoi obiettivi con l'allenamento personale di MaxxGym.",
+      "CarouselTitle3": "Guida professionale",
+      "CarouselText3": "Allenamenti su misura per le tue esigenze e capacità.",
+      "CarouselTitle4": "Inizia il tuo viaggio oggi",
+      "CarouselText4": "Scopri i benefici del fitness con MaxxGym."
+      
+    },
+    "price":{
+      "CarouselTitle1": "Approccio personalizzato che funziona",
+      "CarouselText1": "Trova il miglior allenamento personalizzato per i tuoi obiettivi.",
+      "CarouselTitle2": "Il tuo percorso verso il successo",
+      "CarouselText2": "Raggiungi i tuoi obiettivi con l'allenamento personale di MaxxGym.",
+      "CarouselTitle3": "Guida professionale",
+      "CarouselText3": "Allenamenti su misura per le tue esigenze e capacità.",
+      "CarouselTitle4": "Inizia il tuo viaggio oggi",
+      "CarouselText4": "Scopri i benefici del fitness con MaxxGym.",
+      "PageTitle": "MaxxGym",
+      "PageDescription": "Find the best deals tailored to your needs.",
+      "ImageAltText": "Descriptive Alt Text"
+  
+    },
+
+    
+      "fitness": {
+        "CarouselTitle1": "I migliori prezzi per i tuoi obiettivi",
+        "CarouselText1": "Trova le migliori offerte su misura per le tue esigenze.",
+        "CarouselTitle2": "Secondo Titolo",
+        "CarouselText2": "Secondo testo che descrive le offerte.",
+        "CarouselTitle3": "Terzo Titolo",
+        "CarouselText3": "Terzo testo che descrive i deal.",
+        "CarouselTitle4": "Quarto Titolo",
+        "CarouselText4": "Quarto testo per il carosello."
+      },
+      "sections": {
+        "section1": {
+          "title": "Finalmente una palestra che non è sovraffollata e offre grandi opzioni per allenarsi senza interruzioni",
+          "text": "Sei stanco delle palestre sovraffollate dove non puoi fare un allenamento efficace? Stufo di aspettare le attrezzature perché qualcuno sta mandando messaggi? Cerchi un posto dove allenarti senza interruzioni? MAXXGYM è esattamente quello che stai cercando. Offre un ambiente per un grande allenamento senza fastidiose distrazioni."
+        },
+        "section2": {
+          "title": "Superando i limiti delle tue capacità",
+          "text": "Al MaxxGym non c'è attesa per le attrezzature né perdita di tempo. Offriamo allenamenti più efficaci per aiutarti a raggiungere i tuoi obiettivi."
+        },
+        "section3": {
+          "title": "Attrezzatura che ispira",
+          "text": "Attrezzature all'avanguardia, istruttori di alto livello e programmi motivazionali ti aspettano al MaxxGym. Diventa la migliore versione di te stesso!"
+        }
+      },
+      "form": {
+        "title": "Prenota il tuo biglietto gratuito",
+        "description": "Evita gli errori comuni in palestra con il nostro aiuto e provaci al 100% GRATIS. Compila il modulo sottostante per ricevere il tuo biglietto gratuito e vieni a trovarci il prima possibile.",
+        "inputs": {
+          "name": "Nome e Cognome*",
+          "email": "Indirizzo Email*",
+          "phone": "Numero di Telefono*",
+          "address": "Indirizzo Permanente*"
+        },
+        "button": "RICHIEDI IL TUO BIGLIETTO GRATUITO",
+        "privacy": "Rispettiamo la tua privacy e non condivideremo mai le tue informazioni senza il tuo consenso."
+      },
+
+      
+        "comments": {
+          "1": {
+            "title": "Non sei ancora convinto?",
+            "text": "Il miglior fitness a Lubiana. Personale molto professionale e disponibile. Il proprietario aiuta tutti in palestra indipendentemente da chi sei!",
+            "author": "Klemen Tušek"
+          },
+          "2": {
+            "title": "La migliore palestra!",
+            "text": "Tutte le attrezzature sono sempre disponibili, spazio pulito e ottima atmosfera.",
+            "author": "Ana Novak"
+          },
+          "3": {
+            "title": "Risultati incredibili!",
+            "text": "In soli 3 mesi ho raggiunto obiettivi che sognavo da anni!",
+            "author": "Marko Kovač"
+          },
+          "4": {
+            "title": "Personale professionale!",
+            "text": "Gli allenatori sono molto amichevoli e sempre pronti ad aiutare.",
+            "author": "Eva Petek"
+          },
+          "5": {
+            "title": "Consiglio a tutti!",
+            "text": "Il miglior investimento che ho fatto per me stesso!",
+            "author": "Miha Zupan"
+          },
+          "6": {
+            "title": "Sempre motivato!",
+            "text": "Allenarsi al MaxxGym è diventata la mia routine grazie all'ottima atmosfera.",
+            "author": "Tina Jernej"
+          }
+        }
+            
+    
+    
+    
+  
+}

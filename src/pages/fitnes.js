@@ -1,43 +1,63 @@
 "use client"; // Marking this as a client component
+import React from "react";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Navbar from "../app/components/navbar";
 import Footer from "../app/components/footer";
 import "../styles/fitnes.css"; // Path to the page's CSS
 import ImageCarousel from "../app/components/imageCarousel";
-import CommentCarousel from "../app/components/commentCarousel"
+import CommentCarousel from "../app/components/commentCarousel";
 
 export default function Fitnes() {
-  const titles = [
-    { title: "Najboljše cene za tvoje cilje", text: "Najdi najboljše ponudbe prilagojene tvojim potrebam." },
-    { title: "Začnite že danes", text: "Dosezite svoje cilje z MaxxGym." },
-    { title: "Prilagodljiv urnik", text: "Vadbe za vse starostne skupine." },
-    { title: "Prilagodljiv urnik", text: "Vadbe za vse starostne skupine." },
+  const router = useRouter();
+  const { t } = useTranslation("common");
 
+  const changeLanguage = (lang) => {
+    const { pathname, query } = router;
+    router.push({ pathname, query }, undefined, { locale: lang });
+  };
+
+  const titles = [
+    {
+      title: t("fitness.CarouselTitle1", { defaultMessage: "The Best Prices for Your Goals" }),
+      text: t("fitness.CarouselText1", { defaultMessage: "Find the best deals tailored to your needs." }),
+    },
+    {
+      title: t("fitness.CarouselTitle2", { defaultMessage: "Default Title 2" }),
+      text: t("fitness.CarouselText2", { defaultMessage: "Default Text 2" }),
+    },
+    {
+      title: t("fitness.CarouselTitle3", { defaultMessage: "Default Title 3" }),
+      text: t("fitness.CarouselText3", { defaultMessage: "Default Text 3" }),
+    },
+    {
+      title: t("fitness.CarouselTitle4", { defaultMessage: "Default Title 4" }),
+      text: t("fitness.CarouselText4", { defaultMessage: "Default Text 4" }),
+    },
   ];
 
   const sections = [
     {
       id: "section1",
-      title: "Končno fitnes, ki ni nabito poln in nudi veliko možnosti za trening brez motenj in nepotrebnega čakanja",
-      text: "Si sit prepolnih fitnes centrov katerih ne moreš nardit efektivnega treninga? Naveličan čakanja na naprave, ker spet nekdo na njej piše SMS? In iščeš prostor kje boš lahko brez motenj nardil trening? MAXXGYM je točno to kaj iščeš in daje ljudem kot si ti možnost okolja za odličen trening brez neprijetnih motenj.",
+      title: t("sections.section1.title"),
+      text: t("sections.section1.text"),
       image: "/images/fitnes1.png",
     },
-     
     {
       id: "section2",
-      title: "Premikamo meje tvoje zmogljivosti",
-      text: "Pri MaxxGym ni čakanja na naprave in nepotrebnega izgubljanja časa. Omogočamo ti bolj efektivne treninge za dosego tvojih ciljev.",
+      title: t("sections.section2.title"),
+      text: t("sections.section2.text"),
       image: "/images/fitnes2.png",
     },
     {
       id: "section3",
-      title: "Oprema, ki navdihuje",
-      text: "Oprema najnovejše generacije, vrhunski trenerji in motivacijski programi te čakajo pri MaxxGym. Postani najboljša verzija sebe!",
+      title: t("sections.section3.title"),
+      text: t("sections.section3.text"),
       image: "/images/fitnes3.png",
     },
-    
   ];
-  
 
   const handleScrollToForm = () => {
     const formSection = document.getElementById("form-section");
@@ -50,18 +70,25 @@ export default function Fitnes() {
     <>
       <Navbar />
       <div className="carouselOverlayWrapper">
-      <ImageCarousel text={titles} handleScrollToForm={handleScrollToForm} />
-
+        <ImageCarousel text={titles} handleScrollToForm={handleScrollToForm} />
       </div>
       <main>
-        {/* Dynamic Sections */}
-        {sections.map((section, index) => (
+        {/* Language Switcher */}
+        <div className="language-buttons">
+          <button onClick={() => changeLanguage("en")}>English</button>
+          <button onClick={() => changeLanguage("de")}>Deutsch</button>
+          <button onClick={() => changeLanguage("it")}>Italiano</button>
+          <button onClick={() => changeLanguage("sl")}>Slovenščina</button>
+        </div>
+
+  {/* Dynamic Sections */}
+  {sections.map((section, index) => (
           <section key={section.id} id={section.id} className={`fitnes-section ${index % 2 === 0 ? "reverse" : ""}`}>
             <div className="fitnes-text">
               <h2>{section.title}</h2>
               <p>{section.text}</p>
               <button className="fitnes-button" onClick={handleScrollToForm}>
-                PRIJAVI SE NA BREZPLAČNI POSVET
+                {t("form.button_consultation")}
               </button>
             </div>
             <div className="fitnes-image">
@@ -69,33 +96,31 @@ export default function Fitnes() {
             </div>
           </section>
         ))}
-       <CommentCarousel />
+
+        <CommentCarousel t={t} />
+
         {/* Sign-in Form Section */}
         <section id="form-section" className="fitnes-signin">
-          <h2>Rezerviraj svojo brezplačno vstopnico</h2>
-          <p>
-            Izogni se običajnim napakam v fitnesu z našo pomočjo in nas 100% BREZPLAČNO
-            preizkusi. Izpolni spodnji obrazec za svojo brezplačno vstopnico in nas čim prej obišči.
-          </p>
+          <h2>{t("form.title")}</h2>
+          <p>{t("form.description")}</p>
           <form className="signin-form">
             <div className="form-group">
-              <input type="text" placeholder="Ime in priimek*" required />
+              <input type="text" placeholder={t("form.inputs.name")} required />
             </div>
             <div className="form-group">
-              <input type="email" placeholder="Email Naslov*" required />
+              <input type="email" placeholder={t("form.inputs.email")} required />
             </div>
             <div className="form-group">
-              <input type="tel" placeholder="Telefonska številka*" required />
+              <input type="tel" placeholder={t("form.inputs.phone")} required />
             </div>
             <div className="form-group">
-              <input type="text" placeholder="Stalni naslov*" required />
+              <input type="text" placeholder={t("form.inputs.address")} required />
             </div>
             <button type="submit" className="form-submit">
-              ZAHTEVAJ BREZPLAČNO VSTOPNICO
+              {t("form.button_submit")}
             </button>
             <p className="form-privacy">
-              <span>🔒</span> Spoštujemo tvojo zasebnost in tvojih podatkov nikoli ne bomo delili
-              s komer koli brez tvojega privolenja.
+              <span>🔒</span> {t("form.privacy")}
             </p>
           </form>
         </section>
@@ -104,3 +129,10 @@ export default function Fitnes() {
     </>
   );
 }
+
+// Correctly handle server-side props for localization
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? "en", ["common"])),
+  },
+});

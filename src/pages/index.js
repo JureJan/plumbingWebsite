@@ -1,100 +1,84 @@
-"use client";
+import React from "react";
+import { useRouter } from "next/router";
+import { useTranslation, Trans } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Link from "next/link";
 
-import React, { useState } from "react";
-import ImageCarousel from "../app/components/imageCarousel";
 import Navbar from "../app/components/navbar";
 import Footer from "../app/components/footer";
+import ImageCarousel from "../app/components/imageCarousel";
 import Schedule from "../app/components/schedule";
 import HoverImageComponent from "../app/components/hoverImageComponent";
 import BmiCalculator from "../app/components/bmicalculator";
-import { FormattedMessage, useIntl, IntlProvider } from 'react-intl';
-import { usePathname } from 'next/navigation';
-import en from "../../.next/assets/lang/en.json";
-import sl from "../../.next/assets/lang/sl.json";
-import de from "../../.next/assets/lang/de.json";
-import it from "../../.next/assets/lang/it.json";
 
+const Home = () => {
+  const router = useRouter();
+  const { t } = useTranslation("common");
 
-
-
-export default function Home() {
-  const getLocaleFromPathname = (pathname) => {
-    const segments = pathname.split('/');
-    return segments[1] && ["en", "sl", "de", "it"].includes(segments[1]) ? segments[1] : "sl"; // Default to 'sl'
+  const changeLanguage = (lang) => {
+    const { pathname, query } = router;
+    router.push({ pathname, query }, undefined, { locale: lang });
   };
-    const pathname = usePathname();
-    const locale = getLocaleFromPathname(pathname);
 
-    const messages = {
-      en,
-      sl,
-      de,
-      it,
-    };
   const titles = [
-    { 
-      title: "homeCarouselTitle1", 
-      text: "homeCarouselText1" 
+    {
+      title: t("home.CarouselTitle1", { defaultMessage: "Personalized Approach That Works" }),
+      text: t("home.CarouselTitle1", { defaultMessage: "Find the best personalized training for your goals." }),
     },
-    { 
-      title: "homeCarouselTitle2", 
-      text: "homeCarouselText2" 
+    {
+      title: t("home.CarouselTitle2", { defaultMessage: "Default Title 2" }),
+      text: t("home.CarouselText2", { defaultMessage: "Default Text 2" }),
     },
-    { 
-      title: "homeCarouselTitle3", 
-      text: "homeCarouselText3" 
+    {
+      title: t("home.CarouselTitle3", { defaultMessage: "Default Title 3" }),
+      text: t("home.CarouselText3", { defaultMessage: "Default Text 3" }),
     },
-    { 
-      title: "homeCarouselTitle4", 
-      text: "homeCarouselText4" 
+    {
+      title: t("home.CarouselTitle4", { defaultMessage: "Default Title 4" }),
+      text: t("home.CarouselText4", { defaultMessage: "Default Text 4" }),
     },
   ];
 
-  // const navigateToFitness = () => {
-  //   router.push("/fitnes");
-  // };
+  //const changeTo = router.locale === "en" ? "de" : "en";
 
-  //const intl = useIntl();
-
-  // const changeLanguage = (lang) => {
-  //   const currentPath = window.location.pathname.split('/').slice(2).join('/'); // Remove current locale from URL
-  //   router.push(`/${lang}/${currentPath}`);
-  //   setLocale(lang);
-  // };
   return (
+
     <>
-          <IntlProvider messages={messages} locale={locale}>
-              <Navbar />
-    <main>
-      <div className="language-buttons">
-        <button onClick={() => changeLanguage('en')}>English</button>
-        <button onClick={() => changeLanguage('de')}>Deutsch</button>
-        <button onClick={() => changeLanguage('it')}>Italiano</button>
-        <button onClick={() => changeLanguage('sl')}>Slovenščina</button>
-      </div>
+      <Navbar />
+      <main>
+        {/* Language Switcher */}
+        <div className="language-buttons">
+          <button onClick={() => changeLanguage("en")}>English</button>
+          <button onClick={() => changeLanguage("de")}>Deutsch</button>
+          <button onClick={() => changeLanguage("it")}>Italiano</button>
+          <button onClick={() => changeLanguage("sl")}>Slovenščina</button>
+        </div>
 
-      {/* <ImageCarousel 
-        text={titles.map(({ title, text }) => ({
-          title: intl.formatMessage({ id: title }),
-          text: intl.formatMessage({ id: text }),
-        }))} 
-        handleButtonClick={navigateToFitness} 
-      />
+        {/* Image Carousel */}
+        <ImageCarousel text={titles} />
 
-      <div className="carouselOverlay">
-        <h1>{intl.formatMessage({ id: 'homeCarouselTitle1' })}</h1>
-        <p>{intl.formatMessage({ id: 'homeCarouselText1' })}</p>
-      </div> */}
+        {/* Additional Content */}
+        <div className="carouselOverlay">
+          <h1>{t("home.homeCarouselTitle1", { defaultMessage: "Personalized Approach That Works" })}</h1>
+          <p>{t("home.CarouselText1", { defaultMessage: "Default Text 1" })}</p>
+        </div>
+
+        <Schedule />
+        <h2>{t("home.CarouselTitle3", { defaultMessage: "Default Title 3" })}</h2>
+        <HoverImageComponent />
+        <BmiCalculator />
 
 
-    
-      <Schedule />
-      {/* <h1>{intl.formatMessage({ id: 'homeCarouselTitle1' })}</h1> */}
-      <HoverImageComponent />
-      <BmiCalculator />
-    </main>
-    <Footer />
-    </IntlProvider>
+      </main>
+      <Footer />
     </>
   );
-}
+};
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? "en", ["common"])),
+  },
+});
+
+export default Home;

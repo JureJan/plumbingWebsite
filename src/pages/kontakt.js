@@ -5,19 +5,21 @@ import Footer from "../app/components/footer";
 import "../styles/kontakt.css";
 import ImageCarousel from "../app/components/imageCarousel";
 
+
 export default function Kontakt() {
   const titles = [
     {title:"Najboljše kontakte za tvoje cilje", text:"Najdi najboljše ponudbe prilagojene tvojim potrebam."}, 
     {title:"test", text: "trest2"},
     {title:"tfdest", text: "tredfst2"},
     {title:"jdfjdf", text:"sdfsd"}];
-
+    //const intl = useIntl();
   return (
     <>
       <Navbar />
       <div className="carouselOverlayWrapper">
         <ImageCarousel text={titles} />
       </div>
+
       <main className="contact-page">
         {/* Contact Header Section */}
         <section className="contact-header">

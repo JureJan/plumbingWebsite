@@ -2,13 +2,13 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import styles from '../../styles/navbar.module.css';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
-import { FormattedMessage, useIntl, IntlProvider } from "react-intl";
+import styles from '../../styles/navbar.module.css';
 
-export default function Navbar() {
-  const pathname = usePathname();
+export default function Navbar({ onLanguageChange }) {
+  const { t } = useTranslation('common'); // Use translations from 'common.json'
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,50 +22,31 @@ export default function Navbar() {
     setIsOpen(false);
   };
 
-  const handleLanguageChange = (lang) => {
-    const newPath = `/${lang}/${currentPage}`;
-    router.push(newPath);
+  // Change language and route
+  const changeLanguage = (lang) => {
+    const { pathname, query } = router;
+    router.push({ pathname, query }, undefined, { locale: lang });
   };
 
-
-  // Extract current locale and page path
-  const segments = pathname.split('/');
-  const currentLocale = segments[1];
-  const currentPage = segments.slice(2).join('/');
   return (
     <>
       {isOpen && <div className={styles.overlay} onClick={closeMenu}></div>}
 
       <nav className={`${styles.navbar} ${isOpen ? styles.navbarOpen : ''}`}>
-        
-        {/* Logo and Navigation Links in Center */}
-        <div className={styles.logoAndNav}>
-          <div className={styles.logo}>
-            <Link href="/" onClick={closeMenu}>
-              <Image
-                src="/images/maxxgymlogo.png"
-                alt="MaxxGym Logo"
-                width={140}
-                height={28.7}
-              />
-            </Link>
-            <div className={styles.languageButtons}>
-              
-            <div className={styles.languageSwitcher}>
-        <select
-          value={currentLocale}
-          onChange={(e) => handleLanguageChange(e.target.value)}
-        >
-          {/* <option value="en"><FormattedMessage id="homeCarouselTitle1" /></option>
-          <option value="sl"><FormattedMessage id="homeCarouselTitle1" /></option>
-          <option value="de"><FormattedMessage id="homeCarouselTitle1" /></option>
-          <option value="it"><FormattedMessage id="homeCarouselTitle1" /></option> */}
-        </select>
+        {/* Logo */}
+        <div className={styles.logo}>
+          <Link href="/" onClick={closeMenu}>
+            <Image
+              src="/images/maxxgymlogo.png"
+              alt={t('nav.logo_alt')}
+              width={140}
+              height={28.7}
+            />
+          </Link>
+        </div>
 
-      </div>
-    </div>
-          </div>
-       <div className={styles.hamburger} onClick={toggleMenu}>
+        {/* Hamburger Menu */}
+        <div className={styles.hamburger} onClick={toggleMenu}>
           {isOpen ? (
             <div className={styles.closeButton}>&#10005;</div>
           ) : (
@@ -75,63 +56,78 @@ export default function Navbar() {
               <div className={styles.bar}></div>
             </>
           )}
-       </div>
-
-       <ul className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
-          <li onClick={closeMenu}><Link href="/">Domov</Link></li>
-          <li onClick={closeMenu}><Link href="/price">Cenik</Link></li>
-          <li onClick={closeMenu}><Link href="/fitnes">Fitnes</Link></li>
-          <li onClick={closeMenu}><Link href="/vodene-vadbe">Vodene Vadbe</Link></li>
-          <li onClick={closeMenu}><Link href="/osebni-trening">Osebni trening</Link></li>
-          <li onClick={closeMenu}><Link href="/kontakt">Kontakt</Link></li>
-          </ul>
-
         </div>
 
-        {/* Social Icons, Phone, and Working Hours */}
-        <div className={styles.rightSection}>
-          <div className={styles.socialIcons}>
-            <a
-              href="https://www.facebook.com/maxxgym"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/images/facebookLogo.png"
-                alt="Facebook"
-                width={32}
-                height={32}
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/maxxgym.ljubljana/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/images/instagramLogo.png"
-                alt="Instagram"
-                width={32}
-                height={32}
-              />
-            </a>
-          </div>
+        {/* Navigation Links */}
+        <ul className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
+          <li onClick={closeMenu}>
+            <Link href="/">{t('nav.home')}</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link href="/price">{t('nav.price')}</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link href="/fitnes">{t('nav.fitness')}</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link href="/vodene-vadbe">{t('nav.guided_workouts')}</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link href="/osebni-trening">{t('nav.personal_training')}</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link href="/kontakt">{t('nav.contact')}</Link>
+          </li>
+        </ul>
 
+        {/* Language Switcher */}
+        <div className={styles.languageSwitcher}>
+          <button onClick={() => changeLanguage('en')}>{t('nav.language.en')}</button>
+          <button onClick={() => changeLanguage('sl')}>{t('nav.language.sl')}</button>
+          <button onClick={() => changeLanguage('de')}>{t('nav.language.de')}</button>
+          <button onClick={() => changeLanguage('it')}>{t('nav.language.it')}</button>
+        </div>
 
-          {/* Working Hours */}
-          <div className={styles.workingHours}>
-            <b>PONEDELJEK - PETEK 6.00 - 22.30</b>
-            <b>SOBOTA - NEDELJA IN PRAZNIKI 8.00 - 22.00</b>
-         {/* Phone Section */}
-          <div className={styles.phoneSection}>
-            <div className={styles.phoneIcon}>
+        {/* Social Icons */}
+        <div className={styles.socialIcons}>
+          <a
+            href="https://www.facebook.com/maxxgym"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/images/facebookLogo.png"
+              alt="Facebook"
+              width={32}
+              height={32}
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/maxxgym.ljubljana/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/images/instagramLogo.png"
+              alt="Instagram"
+              width={32}
+              height={32}
+            />
+          </a>
+        </div>
+
+        {/* Working Hours */}
+        <div className={styles.workingHours}>
+          <b>{t('nav.working_hours.weekdays')}</b>
+          <b>{t('nav.working_hours.weekends')}</b>
+        </div>
+
+        {/* Phone Section */}
+        <div className={styles.phoneSection}>
+          <div className={styles.phoneIcon}>
             <Image src="/images/greenPhone.png" alt="Phone" width={36} height={36} />
-            </div>
-            <span className={styles.phoneNumber}>0590 41 900</span>
           </div>
-          </div>
-          
-
+          <span className={styles.phoneNumber}>{t('nav.phone_number')}</span>
         </div>
       </nav>
     </>

@@ -1,0 +1,128 @@
+{
+ 
+  "nav":{
+    "logo_alt": "MaxxGym-Logo",
+    "language": {
+      "en": "Inglese",
+      "sl": "Sloveno",
+      "de": "Tedesco",
+      "it": "Italiano"
+    },
+    "nav": {
+      "home": "Startseite",
+      "price": "Preise",
+      "fitness": "Fitness",
+      "guided_workouts": "Geführte Workouts",
+      "personal_training": "Personal Training",
+      "contact": "Kontakt"
+    },
+    "working_hours": {
+      "weekdays": "MONTAG - FREITAG 6.00 - 22.30",
+      "weekends": "SAMSTAG - SONNTAG UND FEIERTAGE 8.00 - 22.00"
+    },
+    "phone_number": "0590 41 900"
+  },
+
+  "home": {
+    "CarouselTitle1": "Personalisierter Ansatz, der funktioniert",
+    "CarouselText1": "Finde das beste personalisierte Training für deine Ziele.",
+    "CarouselTitle2": "Dein Weg zum Erfolg",
+    "CarouselText2": "Erreiche deine Ziele mit MaxxGym Personal Training.",
+    "CarouselTitle3": "Professionelle Anleitung",
+    "CarouselText3": "Training, das auf deine Bedürfnisse und Fähigkeiten abgestimmt ist.",
+    "CarouselTitle4": "Starte deine Reise heute",
+    "CarouselText4": "Entdecke die Vorteile von Fitness mit MaxxGym.",
+    "homeCarouselTitle1": "Willkommen bei MaxxGym"
+  },
+  
+    "price": {
+      "CarouselTitle1": "Die besten Preise für Ihre Ziele",
+      "CarouselText1": "Finden Sie die besten Angebote, die auf Ihre Bedürfnisse zugeschnitten sind.",
+      "CarouselTitle2": "Zweiter Titel",
+      "CarouselText2": "Zweiter Text, der Angebote beschreibt.",
+      "CarouselTitle3": "Dritter Titel",
+      "CarouselText3": "Dritter Text, der Deals beschreibt.",
+      "CarouselTitle4": "Vierter Titel",
+      "CarouselText4": "Vierter Text für das Karussell.",
+      "PageTitle": "MaxxGym",
+      "PageDescription": "Finden Sie die besten Angebote, die auf Ihre Bedürfnisse zugeschnitten sind.",
+      "ImageAltText": "Beschreibender Alt-Text"
+    },
+
+    "fitness": {
+      "CarouselTitle1": "Die besten Preise für Ihre Ziele",
+      "CarouselText1": "Finden Sie die besten Angebote, die auf Ihre Bedürfnisse zugeschnitten sind.",
+      "CarouselTitle2": "Zweiter Titel",
+      "CarouselText2": "Zweiter Text, der Angebote beschreibt.",
+      "CarouselTitle3": "Dritter Titel",
+      "CarouselText3": "Dritter Text, der Deals beschreibt.",
+      "CarouselTitle4": "Vierter Titel",
+      "CarouselText4": "Vierter Text für das Karussell."
+    },
+    "sections": {
+      "section1": {
+        "title": "Endlich ein Fitnessstudio, das nicht überfüllt ist und großartige Möglichkeiten für ungestörtes Training bietet",
+        "text": "Bist du es leid, in überfüllten Fitnessstudios nicht effektiv trainieren zu können? Genervt vom Warten auf Geräte, weil jemand SMS schreibt? Suchst du einen Ort, an dem du ohne Unterbrechungen trainieren kannst? MAXXGYM ist genau das, was du suchst. Es bietet eine Umgebung für großartige Workouts ohne unangenehme Ablenkungen."
+      },
+      "section2": {
+        "title": "Die Grenzen deiner Fähigkeiten verschieben",
+        "text": "Im MaxxGym gibt es kein Warten auf Geräte oder Zeitverschwendung. Wir ermöglichen effektivere Workouts, um deine Ziele zu erreichen."
+      },
+      "section3": {
+        "title": "Ausstattung, die inspiriert",
+        "text": "Modernste Geräte, erstklassige Trainer und Motivationsprogramme erwarten dich im MaxxGym. Werde die beste Version von dir selbst!"
+      }
+    },
+    "form": {
+      "title": "Reservieren Sie Ihr kostenloses Ticket",
+      "description": "Vermeiden Sie häufige Fitnessfehler mit unserer Hilfe und testen Sie uns 100% KOSTENLOS. Füllen Sie das Formular unten aus, um Ihr kostenloses Ticket zu erhalten und uns so schnell wie möglich zu besuchen.",
+      "inputs": {
+        "name": "Vollständiger Name*",
+        "email": "E-Mail-Adresse*",
+        "phone": "Telefonnummer*",
+        "address": "Ständige Adresse*"
+      },
+      "button": "IHREN KOSTENLOSEN TICKET ANFORDERN",
+      "privacy": "Wir respektieren Ihre Privatsphäre und werden Ihre Daten niemals ohne Ihre Zustimmung weitergeben."
+    },
+
+    
+      "comments": {
+        "1": {
+          "title": "Immer noch nicht überzeugt?",
+          "text": "Bestes Fitnessstudio in Ljubljana. Sehr professionelles und zugängliches Personal. Der Besitzer hilft jedem im Fitnessstudio, egal wer du bist!",
+          "author": "Klemen Tušek"
+        },
+        "2": {
+          "title": "Das beste Fitnessstudio!",
+          "text": "Alle Geräte sind immer verfügbar, sauberer Raum und tolle Atmosphäre.",
+          "author": "Ana Novak"
+        },
+        "3": {
+          "title": "Erstaunliche Ergebnisse!",
+          "text": "In nur 3 Monaten habe ich Ziele erreicht, von denen ich jahrelang geträumt habe!",
+          "author": "Marko Kovač"
+        },
+        "4": {
+          "title": "Professionelles Personal!",
+          "text": "Die Trainer sind sehr freundlich und immer bereit zu helfen.",
+          "author": "Eva Petek"
+        },
+        "5": {
+          "title": "Sehr zu empfehlen!",
+          "text": "Die beste Investition, die ich für mich gemacht habe!",
+          "author": "Miha Zupan"
+        },
+        "6": {
+          "title": "Immer motiviert!",
+          "text": "Das Training im MaxxGym ist dank der hervorragenden Atmosphäre zu meiner Routine geworden.",
+          "author": "Tina Jernej"
+        }
+      }
+    
+    
+  
+  
+  
+  
+}

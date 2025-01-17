@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "logo_alt": "MaxxGym Logo",
+    "nav": {
+      "home": "Home",
+      "price": "Price",
+      "fitness": "Fitness",
+      "guided_workouts": "Guided Workouts",
+      "personal_training": "Personal Training",
+      "contact": "Contact"
+    },
+    "working_hours": {
+      "weekdays": "MONDAY - FRIDAY 6.00 - 22.30",
+      "weekends": "SATURDAY - SUNDAY AND HOLIDAYS 8.00 - 22.00"
+    },
+    "phone_number": "0590 41 900"
+  },
+  
+  "home": {
+    "CarouselTitle1": "Personalized Approach That Works",
+    "CarouselText1": "Find the best personalized training for your goals.",
+    "CarouselTitle2": "Your Path to Success",
+    "CarouselText2": "Achieve your goals with MaxxGym Personal Training.",
+    "CarouselTitle3": "Professional Guidance",
+    "CarouselText3": "Training tailored to your needs and abilities.",
+    "CarouselTitle4": "Start Your Journey Today",
+    "CarouselText4": "Discover the benefits of fitness with MaxxGym."
+  },
+
+  "price": {
+    "CarouselTitle1": "Personalized Approach That Works",
+    "CarouselText1": "Find the best personalized training for your goals.",
+    "CarouselTitle2": "Your Path to Success",
+    "CarouselText2": "Achieve your goals with MaxxGym Personal Training.",
+    "CarouselTitle3": "Professional Guidance",
+    "CarouselText3": "Training tailored to your needs and abilities.",
+    "CarouselTitle4": "Start Your Journey Today",
+    "CarouselText4": "Discover the benefits of fitness with MaxxGym."
+  },
+
+  "fitness": {
+    "CarouselTitle1": "The Best Prices for Your Goals",
+    "CarouselText1": "Find the best deals tailored to your needs.",
+    "CarouselTitle2": "Second Title",
+    "CarouselText2": "Second text describing offers.",
+    "CarouselTitle3": "Third Title",
+    "CarouselText3": "Third text describing deals.",
+    "CarouselTitle4": "Fourth Title",
+    "CarouselText4": "Fourth text for carousel."
+  },
+  "sections": {
+    "section1": {
+      "title": "Finally, a fitness center that isn't overcrowded and offers great options for uninterrupted training",
+      "text": "Are you tired of overcrowded fitness centers where you can't have an effective workout? Fed up with waiting for equipment because someone is texting? Looking for a place where you can work out without interruptions? MAXXGYM is exactly what you are looking for. It offers an environment for a great workout without unpleasant distractions."
+    },
+    "section2": {
+      "title": "Pushing the limits of your abilities",
+      "text": "At MaxxGym, there’s no waiting for equipment or wasting time. We enable more effective training to help you achieve your goals."
+    },
+    "section3": {
+      "title": "Equipment that inspires",
+      "text": "State-of-the-art equipment, top-notch trainers, and motivational programs await you at MaxxGym. Become the best version of yourself!"
+    }
+  },
+  "form": {
+    "title": "Reserve Your Free Ticket",
+    "description": "Avoid common fitness mistakes with our help and try us 100% FREE. Fill out the form below to get your free ticket and visit us as soon as possible.",
+    "inputs": {
+      "name": "Full Name*",
+      "email": "Email Address*",
+      "phone": "Phone Number*",
+      "address": "Permanent Address*"
+    },
+    "button": "REQUEST YOUR FREE TICKET",
+    "privacy": "We respect your privacy and will never share your information with anyone without your consent."
+  },
+
+  
+    "comments": {
+      "1": {
+        "title": "Still not convinced?",
+        "text": "Best fitness in Ljubljana. Very professional and approachable staff. The owner helps everyone in the gym no matter who you are!",
+        "author": "Klemen Tušek"
+      },
+      "2": {
+        "title": "The best gym!",
+        "text": "All equipment is always available, clean space, and great atmosphere.",
+        "author": "Ana Novak"
+      },
+      "3": {
+        "title": "Amazing results!",
+        "text": "In just 3 months, I achieved goals I had dreamed of for years!",
+        "author": "Marko Kovač"
+      },
+      "4": {
+        "title": "Professional staff!",
+        "text": "The trainers are very friendly and always ready to help.",
+        "author": "Eva Petek"
+      },
+      "5": {
+        "title": "Highly recommend!",
+        "text": "The best investment I’ve made for myself!",
+        "author": "Miha Zupan"
+      },
+      "6": {
+        "title": "Always motivated!",
+        "text": "Training at MaxxGym has become my routine because of the excellent atmosphere.",
+        "author": "Tina Jernej"
+      }
+    }
+  
+  
+
+
+  
+}
