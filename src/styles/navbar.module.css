@@ -60,6 +60,27 @@
   color: red;
 }
 
+.languageSwitcher {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 10px 0;
+}
+
+.languageLabel {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.languageDropdown {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
 
 
 /* Right Section: Social Icons, Phone, and Working Hours */

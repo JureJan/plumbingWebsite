@@ -6,7 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import Navbar from "../app/components/navbar";
 import Footer from "../app/components/footer";
-import "../styles/fitnes.css"; // Path to the page's CSS
+import "../styles/fitness.css"; // Path to the page's CSS
 import ImageCarousel from "../app/components/imageCarousel";
 import CommentCarousel from "../app/components/commentCarousel";
 
@@ -73,13 +73,7 @@ export default function Fitnes() {
         <ImageCarousel text={titles} handleScrollToForm={handleScrollToForm} />
       </div>
       <main>
-        {/* Language Switcher */}
-        <div className="language-buttons">
-          <button onClick={() => changeLanguage("en")}>English</button>
-          <button onClick={() => changeLanguage("de")}>Deutsch</button>
-          <button onClick={() => changeLanguage("it")}>Italiano</button>
-          <button onClick={() => changeLanguage("sl")}>Slovenščina</button>
-        </div>
+
 
   {/* Dynamic Sections */}
   {sections.map((section, index) => (

@@ -22,10 +22,11 @@ export default function Navbar({ onLanguageChange }) {
     setIsOpen(false);
   };
 
-  // Change language and route
   const changeLanguage = (lang) => {
-    const { pathname, query } = router;
-    router.push({ pathname, query }, undefined, { locale: lang });
+    if (router.locale !== lang) {
+      const { pathname, query, asPath } = router;
+      router.push({ pathname, query }, asPath, { locale: lang });
+    }
   };
 
   return (
@@ -38,7 +39,7 @@ export default function Navbar({ onLanguageChange }) {
           <Link href="/" onClick={closeMenu}>
             <Image
               src="/images/maxxgymlogo.png"
-              alt={t('nav.logo_alt')}
+              alt='maxxGym logo'
               width={140}
               height={28.7}
             />
@@ -67,26 +68,32 @@ export default function Navbar({ onLanguageChange }) {
             <Link href="/price">{t('nav.price')}</Link>
           </li>
           <li onClick={closeMenu}>
-            <Link href="/fitnes">{t('nav.fitness')}</Link>
+            <Link href="/fitness">{t('nav.fitness')}</Link>
           </li>
           <li onClick={closeMenu}>
-            <Link href="/vodene-vadbe">{t('nav.guided_workouts')}</Link>
+            <Link href="/guidedExercises">{t('nav.guidedWorkouts')}</Link>
           </li>
           <li onClick={closeMenu}>
-            <Link href="/osebni-trening">{t('nav.personal_training')}</Link>
+            <Link href="/personalTraining">{t('nav.personalTraining')}</Link>
           </li>
           <li onClick={closeMenu}>
-            <Link href="/kontakt">{t('nav.contact')}</Link>
+            <Link href="/contact">{t('nav.contact')}</Link>
           </li>
         </ul>
 
-        {/* Language Switcher */}
-        <div className={styles.languageSwitcher}>
-          <button onClick={() => changeLanguage('en')}>{t('nav.language.en')}</button>
-          <button onClick={() => changeLanguage('sl')}>{t('nav.language.sl')}</button>
-          <button onClick={() => changeLanguage('de')}>{t('nav.language.de')}</button>
-          <button onClick={() => changeLanguage('it')}>{t('nav.language.it')}</button>
-        </div>
+     <div className="language-switcher">
+      {/* <label htmlFor="language-select">{t("nav.languageLabel")}</label> */}
+      <select
+        id="language-select"
+        value={router.locale} // Automatically show the current locale
+        onChange={(e) => changeLanguage(e.target.value)}
+      >
+        <option value="en">{t("nav.language.en")}</option>
+        <option value="sl">{t("nav.language.sl")}</option>
+        <option value="de">{t("nav.language.de")}</option>
+        <option value="it">{t("nav.language.it")}</option>
+      </select>
+    </div>
 
         {/* Social Icons */}
         <div className={styles.socialIcons}>
@@ -118,8 +125,8 @@ export default function Navbar({ onLanguageChange }) {
 
         {/* Working Hours */}
         <div className={styles.workingHours}>
-          <b>{t('nav.working_hours.weekdays')}</b>
-          <b>{t('nav.working_hours.weekends')}</b>
+          <b>{t('nav.workingHours.weekdays')}</b>
+          <b>{t('nav.workingHours.weekends')}</b>
         </div>
 
         {/* Phone Section */}
@@ -127,7 +134,7 @@ export default function Navbar({ onLanguageChange }) {
           <div className={styles.phoneIcon}>
             <Image src="/images/greenPhone.png" alt="Phone" width={36} height={36} />
           </div>
-          <span className={styles.phoneNumber}>{t('nav.phone_number')}</span>
+          <span className={styles.phoneNumber}>{t('nav.phoneNumber')}</span>
         </div>
       </nav>
     </>

@@ -10,6 +10,7 @@ import ImageCarousel from "../app/components/imageCarousel";
 import Schedule from "../app/components/schedule";
 import HoverImageComponent from "../app/components/hoverImageComponent";
 import BmiCalculator from "../app/components/bmicalculator";
+import CommentCarousel from "@/app/components/commentCarousel";
 
 const Home = () => {
   const router = useRouter();
@@ -67,6 +68,7 @@ const Home = () => {
         <h2>{t("home.CarouselTitle3", { defaultMessage: "Default Title 3" })}</h2>
         <HoverImageComponent />
         <BmiCalculator />
+        <CommentCarousel />
 
 
       </main>

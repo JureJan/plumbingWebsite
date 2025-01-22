@@ -1,27 +1,26 @@
 {
- 
   "nav": {
-    "logo_alt": "Logotip MaxxGyma",
-    "nav": {
       "home": "Domov",
       "price": "Cenik",
       "fitness": "Fitnes",
-      "guided_workouts": "Vodene Vadbe",
-      "personal_training": "Osebni Trening",
-      "contact": "Kontakt"
-    },
-    "language": {
-      "en": "Angleško",
-      "sl": "Slovensko",
-      "de": "Nemško",
-      "it": "Italjansko"
-    },
-    "working_hours": {
-      "weekdays": "PONEDELJEK - PETEK 6.00 - 22.30",
-      "weekends": "SOBOTA - NEDELJA IN PRAZNIKI 8.00 - 22.00"
-    },
-    "phone_number": "0590 41 900"
+      "guidedWorkouts": "Vodene Vadbe",
+      "personalTraining": "Osebni Trening",
+      "contact": "Kontakt",
+      "languageLabel": "Lang",
+      "language": {
+        "en": "Angleško",
+        "sl": "Slovensko",
+        "de": "Nemško",
+        "it": "Italjansko"
+      },
+      "workingHours": {
+        "weekdays": "PONEDELJEK - PETEK 6.00 - 22.30",
+        "weekends": "SOBOTA - NEDELJA IN PRAZNIKI 8.00 - 22.00"
+      },
+      "phoneNumber": "0590 41 900"
+    
   },
+  
 
   "home": {
     "CarouselTitle1": "Personaliziran pristop, ki deluje",
@@ -45,11 +44,11 @@
       "CarouselTitle4": "Četrti naslov",
       "CarouselText4": "Četrti tekst za vrtiljak.",
       "PageTitle": "MaxxGym",
-      "PageDescription": "Poiščite najboljše ponudbe, prilagojene vašim potrebam.",
-      "ImageAltText": "Opisni nadomestni tekst"
+      "PageDescription": "Poiščite najboljše ponudbe, prilagojene vašim potrebam."
     },
 
-    "price": {
+    
+    "fitness": {
       "CarouselTitle1": "Najboljše cene za vaše cilje",
       "CarouselText1": "Poiščite najboljše ponudbe, prilagojene vašim potrebam.",
       "CarouselTitle2": "Drugi naslov",
@@ -57,8 +56,11 @@
       "CarouselTitle3": "Tretji naslov",
       "CarouselText3": "Tretji tekst, ki opisuje ponudbe.",
       "CarouselTitle4": "Četrti naslov",
-      "CarouselText4": "Četrti tekst za vrtiljak."
+      "CarouselText4": "Četrti tekst za vrtiljak.",
+      "PageTitle": "MaxxGym",
+      "PageDescription": "Poiščite najboljše ponudbe, prilagojene vašim potrebam."
     },
+
     "sections": {
       "section1": {
         "title": "Končno fitnes, ki ni nabito poln in nudi veliko možnosti za trening brez motenj in nepotrebnega čakanja",
@@ -118,11 +120,151 @@
           "text": "Vadba v MaxxGym je postala moja rutina zaradi odličnega vzdušja.",
           "author": "Tina Jernej"
         }
-      }
-    
-    
-  
-  
-  
-  
+      },
+
+      
+      
+        "personal": {
+          "trainingCarouselTitle1": "Personaliziran pristop, ki deluje",
+          "trainingCarouselText1": "Najdi najbolj prilagojeno vadbo za svoje cilje.",
+          "trainingCarouselTitle2": "Tvoja pot do uspeha",
+          "trainingCarouselText2": "Dosezi svoje cilje z osebnim treningom MaxxGyma.",
+          "trainingCarouselTitle3": "Strokovno vodenje",
+          "trainingCarouselText3": "Vadbe prilagojene tvojim potrebam in zmožnostim.",
+          "trainingCarouselTitle4": "Začni svojo pot danes",
+          "trainingCarouselText4": "Odkrij prednosti fitnesa z MaxxGymom.",
+          "trainingMainSectionTitle": "Dosezi svoj najboljši jaz",
+          "trainingMainSectionParagraph1": "Osebni trening MaxxGyma je zasnovan tako, da ustreza tvojim potrebam.",
+          "trainingMaxxgymIntro": "Izkusi razliko Maxx.",
+          "trainingExperienceIntro": "Naše strokovno znanje vključuje:",
+          "trainingExperiencePoint1": "Prilagojeni načrti vadbe.",
+          "trainingExperiencePoint2": "Individualno vodenje.",
+          "trainingExperiencePoint3": "Stalna podpora.",
+          "trainingConclusion": "Pridruži se nam danes in občuti razliko.",
+          "trainingRightBoxTitle": "Zakaj MaxxGym?",
+          "trainingRightBoxText": "Nudimo najboljšo opremo in trenerje, ki te bodo vodili.",
+          "trainingImageAltText": "Slika osebnega treninga.",
+          "trainingSoloSectionTitle": "Treniraj z najboljšimi",
+          "trainingSoloPoint1": "Najmodernejša oprema.",
+          "trainingSoloPoint2": "Certificirani osebni trenerji.",
+          "trainingSoloPoint3": "Podporno okolje.",
+          "trainingSoloPoint4": "Prilagodljiv urnik.",
+          "trainingSoloPoint5": "Dostopni načrti.",
+          "trainingFreeConsultationButton": "Pridobi brezplačno posvetovanje",
+          "trainingFormSectionTitle": "Prijavi se na brezplačno posvetovanje",
+          "trainingFormNamePlaceholder": "Ime in priimek",
+          "trainingFormEmailPlaceholder": "E-poštni naslov",
+          "trainingFormPhonePlaceholder": "Telefonska številka",
+          "trainingFormMessagePlaceholder": "Tvoje sporočilo",
+          "trainingFormSubmitButton": "Pošlji",
+          "trainingHeroImageAlt": "Herojska slika, ki prikazuje prilagojene treninge",
+          "trainingHeroTitle": "Dosežite svoje cilje s prilagojenim treningom",
+          "trainingHeroText": "Prilagojeni načrti za vaše telo in cilje.",
+          "trainingSignUpButton": "Prijavi se na brezplačni posvet",
+          "trainingInfoTitle1": "Zakaj izbrati nas?",
+          "trainingInfoPoint1": "Prilagojeni načrti vadbe",
+          "trainingInfoPoint2": "Certificirani trenerji",
+          "trainingInfoPoint3": "Sodobna oprema in objekti",
+          "trainingInfoImageAlt1": "Trener, ki pomaga stranki",
+          "trainingInfoTitle2": "Dosezite več z nami",
+          "trainingInfoText2": "Odklenite svoj potencial s strokovnim vodenjem.",
+          "trainingInfoImageAlt2": "Slika vadbene seje",
+          "trainingBulletTitle": "Naše ključne lastnosti",
+          "trainingBulletPoint1Title": "Certificirani trenerji",
+          "trainingBulletPoint1Text": "Naši trenerji so izkušeni in certificirani za zagotavljanje najboljše podpore.",
+          "trainingBulletBackgroundAlt": "Ozadje s fitnes opremo",
+          "trainingFormSuccessMessage": "Vaše sporočilo je bilo uspešno poslano!",
+          "trainingFormErrorMessage": "Pri pošiljanju sporočila je prišlo do napake. Poskusite znova."
+        },
+
+        "guided": {
+          "exercisesCarouselTitle1": "Najboljše cene za tvoje cilje",
+          "exercisesCarouselText1": "Najdi najboljše ponudbe prilagojene tvojim potrebam.",
+          "exercisesCarouselTitle2": "Začnite že danes",
+          "exercisesCarouselText2": "Dosezite svoje cilje z MaxxGym.",
+          "exercisesCarouselTitle3": "Prilagodljiv urnik",
+          "exercisesCarouselText3": "Vadbe za vse starostne skupine.",
+          "sectionTitle": "NAŠE VODENE VADBE",
+          "formTitle": "PRIJAVI SE NA BREZPLAČNI POSVET",
+          "formNamePlaceholder": "Ime in Priimek*",
+          "formEmailPlaceholder": "Email Naslov*",
+          "formPhonePlaceholder": "Telefonska Številka*",
+          "formMessagePlaceholder": "Povej nam nekaj o sebi*",
+          "formSubmitButton": "PRIJAVI SE",
+          "formButton": "Prijavi se na brezplačni posvet",
+          "cardioTitle": "Les Mills Grit CARDIO",
+          "exercisesFormSuccessMessage": "bravo",
+          "exercisesFormFormErrorMessage": "no bravo",
+          "cardioDescription": "Les Mills GRIT Cardio je 30-minutni visoko-intenzivni intervalni trening (HIIT).",
+          "cardioBenefits": [
+            "Povečana srčno-žilna kapaciteta.",
+            "Maksimalna poraba kalorij.",
+            "Dvig anaerobnega praga.",
+            "Super trening za izboljšanje postave."
+          ],
+          "bodyPumpTitle": "Les Mills Grit BODYPUMP",
+          "bodyPumpDescription": "Program za povečanje moči in oblikovanje mišične mase z utežmi.",
+          "bodyPumpBenefits": [
+            "Povečanje mišične mase.",
+            "Boljša kondicija.",
+            "Tehnike dviganja uteži."
+          ],
+
+          "bodyStepTitle": "Les Mills Grit BODYSTEP",
+"bodyStepDescription": "Aerobni trening s stopnicami za izboljšanje koordinacije in kondicije.",
+"bodyStepBenefits": [
+  "Izboljšana koordinacija.",
+  "Boljša aerobna kondicija.",
+  "Zabaven način vadbe."
+],
+"bodyAttackTitle": "Les Mills Grit BODYATTACK",
+"bodyAttackDescription": "Intenziven kardio trening z elementi gibanja in eksplozivnih vaj.",
+"bodyAttackBenefits": [
+  "Povečana eksplozivnost.",
+  "Izboljšana koordinacija.",
+  "Intenziven kardio trening."
+],
+"bootCampTitle": "Les Mills Grit BOOTCAMP",
+"bootCampDescription": "Skupinski trening za celostno izboljšanje moči in kondicije.",
+"bootCampBenefits": [
+  "Celostno izboljšanje kondicije.",
+  "Zabavna skupinska vadba.",
+  "Izboljšana vzdržljivost."
+],
+"pilatesTitle": "Pilates",
+"pilatesDescription": "Pilates je vadba za izboljšanje drže, fleksibilnosti in moči jedra.",
+"pilatesBenefits": [
+  "Boljša drža.",
+  "Izboljšana fleksibilnost.",
+  "Krepitev jedra."
+]
+
+     
+ },
+
+ "contact": {
+  "carouselTitle1": "Najboljši kontakti za tvoje cilje",
+  "carouselText1": "Najdi najboljše ponudbe prilagojene tvojim potrebam.",
+  "carouselTitle2": "Vedno tukaj za vas",
+  "carouselText2": "Kontaktirajte nas kadarkoli.",
+  "carouselTitle3": "Lokacija, ki vas navdihuje",
+  "carouselText3": "Obiščite nas na Dunajski cesti.",
+  "carouselTitle4": "Dosegljivi preko telefona in emaila",
+  "carouselText4": "Hiter odziv na vaša vprašanja.",
+  "headerTitle": "Kontakt",
+  "address": "MAXXGYM Ljubljana, Dunajska cesta 270, 1000 Ljubljana",
+  "phone": "Telefon",
+  "email": "Email",
+  "newsletterTitle": "Prijavi se na MAXXGYM novice",
+  "formNamePlaceholder": "Ime in Priimek*",
+  "formEmailPlaceholder": "Email Naslov*",
+  "formSubmitButton": "Prijava",
+  "mapTitle": "Kje nas najdete?",
+  "formSuccessMessage": "Vaše sporočilo je bilo uspešno poslano!",
+  "formErrorMessage": "Pri pošiljanju sporočila je prišlo do napake. Poskusite znova."
 }
+         
+ }
+      
+    
+  

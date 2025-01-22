@@ -1,19 +1,23 @@
 {
   "nav": {
-    "logo_alt": "MaxxGym Logo",
-    "nav": {
-      "home": "Home",
-      "price": "Price",
-      "fitness": "Fitness",
-      "guided_workouts": "Guided Workouts",
-      "personal_training": "Personal Training",
-      "contact": "Contact"
+    "home": "Home",
+    "price": "Price",
+    "fitness": "Fitness",
+    "guidedWorkouts": "Guided Workouts",
+    "personalTraining": "Personal Training",
+    "contact": "Contact",
+    "languageLabel": "Lang",
+    "language": {
+      "en": "English",
+      "sl": "Slovenian",
+      "de": "German",
+      "it": "Italian"
     },
-    "working_hours": {
+    "workingHours": {
       "weekdays": "MONDAY - FRIDAY 6.00 - 22.30",
       "weekends": "SATURDAY - SUNDAY AND HOLIDAYS 8.00 - 22.00"
     },
-    "phone_number": "0590 41 900"
+    "phoneNumber": "0590 41 900"
   },
   
   "home": {
@@ -25,6 +29,7 @@
     "CarouselText3": "Training tailored to your needs and abilities.",
     "CarouselTitle4": "Start Your Journey Today",
     "CarouselText4": "Discover the benefits of fitness with MaxxGym."
+
   },
 
   "price": {
@@ -35,7 +40,10 @@
     "CarouselTitle3": "Professional Guidance",
     "CarouselText3": "Training tailored to your needs and abilities.",
     "CarouselTitle4": "Start Your Journey Today",
-    "CarouselText4": "Discover the benefits of fitness with MaxxGym."
+    "CarouselText4": "Discover the benefits of fitness with MaxxGym.",
+    "PageTitle": "MaxxGym",
+    "PageDescription": "Finden Sie die besten Angebote, die auf Ihre Bedürfnisse zugeschnitten sind."
+
   },
 
   "fitness": {
@@ -55,7 +63,7 @@
     },
     "section2": {
       "title": "Pushing the limits of your abilities",
-      "text": "At MaxxGym, there’s no waiting for equipment or wasting time. We enable more effective training to help you achieve your goals."
+      "text": "At MaxxGym, there is no waiting for equipment or wasting time. We enable more effective training to help you achieve your goals."
     },
     "section3": {
       "title": "Equipment that inspires",
@@ -99,7 +107,7 @@
       },
       "5": {
         "title": "Highly recommend!",
-        "text": "The best investment I’ve made for myself!",
+        "text": "The best investment I have made for myself!",
         "author": "Miha Zupan"
       },
       "6": {
@@ -107,10 +115,153 @@
         "text": "Training at MaxxGym has become my routine because of the excellent atmosphere.",
         "author": "Tina Jernej"
       }
-    }
-  
-  
+    },
 
+    
+    
+      "personal": {
+        "trainingCarouselTitle1": "Personalized Approach That Works",
+        "trainingCarouselText1": "Find the best personalized training for your goals.",
+        "trainingCarouselTitle2": "Your Journey to Success",
+        "trainingCarouselText2": "Achieve your goals with MaxxGym's personal training.",
+        "trainingCarouselTitle3": "Professional Guidance",
+        "trainingCarouselText3": "Tailored workouts to meet your needs and capabilities.",
+        "trainingCarouselTitle4": "Start Your Journey Today",
+        "trainingCarouselText4": "Discover the benefits of fitness with MaxxGym.",
+        "trainingMainSectionTitle": "Achieve Your Best Self",
+        "trainingMainSectionParagraph1": "MaxxGym's personal training is designed to meet your needs.",
+        "trainingMaxxgymIntro": "Experience the Maxx difference.",
+        "trainingExperienceIntro": "Our expertise includes:",
+        "trainingExperiencePoint1": "Customized training plans.",
+        "trainingExperiencePoint2": "One-on-one coaching.",
+        "trainingExperiencePoint3": "Ongoing support.",
+        "trainingConclusion": "Join us today and see the difference.",
+        "trainingRightBoxTitle": "Why MaxxGym?",
+        "trainingRightBoxText": "We provide the best equipment and trainers to guide you.",
+        "trainingImageAltText": "Image of personal training session.",
+        "trainingSoloSectionTitle": "Train With the Best",
+        "trainingSoloPoint1": "State-of-the-art facilities.",
+        "trainingSoloPoint2": "Certified personal trainers.",
+        "trainingSoloPoint3": "Supportive environment.",
+        "trainingSoloPoint4": "Flexible scheduling.",
+        "trainingSoloPoint5": "Affordable plans.",
+        "trainingFreeConsultationButton": "Get Free Consultation",
+        "trainingFormSectionTitle": "Sign Up for Free Consultation",
+        "trainingFormNamePlaceholder": "Full Name",
+        "trainingFormEmailPlaceholder": "Email Address",
+        "trainingFormPhonePlaceholder": "Phone Number",
+        "trainingFormMessagePlaceholder": "Your Message",
+        "trainingFormSubmitButton": "Submit",
+        "trainingHeroImageAlt": "Hero image showcasing personalized training",
+        "trainingHeroTitle": "Achieve Your Fitness Goals with Personalized Training",
+        "trainingHeroText": "Tailored plans for your body and goals.",
+        "trainingSignUpButton": "Sign Up for a Free Consultation",
+        "trainingInfoTitle1": "Why Choose Us?",
+        "trainingInfoPoint1": "Personalized workout plans",
+        "trainingInfoPoint2": "Certified trainers",
+        "trainingInfoPoint3": "Modern equipment and facilities",
+        "trainingInfoImageAlt1": "Trainer assisting a client",
+        "trainingInfoTitle2": "Achieve More with Us",
+        "trainingInfoText2": "Unlock your potential with expert guidance.",
+        "trainingInfoImageAlt2": "Training session image",
+        "trainingBulletTitle": "Our Key Features",
+        "trainingBulletPoint1Title": "Certified Trainers",
+        "trainingBulletPoint1Text": "Our trainers are experienced and certified to provide the best support.",
+        "trainingBulletBackgroundAlt": "Background image with gym equipment",
+        "trainingFormSuccessMessage": "Your message was sent successfully!",
+        "trainingFormErrorMessage": "An error occurred while sending your message. Please try again."
+        
+      },
 
-  
-}
+      "guided": {
+        "exercisesCarouselTitle1": "The best prices for your goals",
+        "exercisesCarouselText1": "Find the best offers tailored to your needs.",
+        "exercisesCarouselTitle2": "Start today",
+        "exercisesCarouselText2": "Achieve your goals with MaxxGym.",
+        "exercisesCarouselTitle3": "Flexible schedule",
+        "exercisesCarouselText3": "Workouts for all age groups.",
+        "exercisesCarouselTitle4": "Flexible schedule",
+        "exercisesCarouselText4": "Workouts for all age groups.",
+
+        "sectionTitle": "OUR GUIDED WORKOUTS",
+        "formTitle": "SIGN UP FOR A FREE CONSULTATION",
+        "formNamePlaceholder": "Full Name*",
+        "formEmailPlaceholder": "Email Address*",
+        "formPhonePlaceholder": "Phone Number*",
+        "formMessagePlaceholder": "Tell us something about yourself*",
+        "formSubmitButton": "SIGN UP",
+        "formButton": "Sign up for a free consultation",
+        "cardioTitle": "Les Mills Grit CARDIO",
+        "exercisesFormSuccessMessage": "bravo",
+        "exercisesFormFormErrorMessage": "no bravo",
+        "cardioDescription": "Les Mills GRIT Cardio is a 30-minute high-intensity interval training (HIIT) workout.",
+        "cardioBenefits": [
+          "Increased cardiovascular capacity.",
+          "Maximum calorie burn.",
+          "Raise your anaerobic threshold.",
+          "Great training for improving your physique."
+        ],
+        "bodyPumpTitle": "Les Mills Grit BODYPUMP",
+        "bodyPumpDescription": "Program for building strength and muscle mass with weights.",
+        "bodyPumpBenefits": [
+          "Increased muscle mass.",
+          "Better fitness.",
+          "Weightlifting techniques."
+        ],
+
+        "bodyStepTitle": "Les Mills Grit BODYSTEP",
+        "bodyStepDescription": "Aerobic training with steps to improve coordination and fitness.",
+        "bodyStepBenefits": [
+          "Improved coordination.",
+          "Better aerobic fitness.",
+          "Fun way to exercise."
+        ],
+        "bodyAttackTitle": "Les Mills Grit BODYATTACK",
+        "bodyAttackDescription": "Intense cardio training with movement and explosive exercises.",
+        "bodyAttackBenefits": [
+          "Increased explosiveness.",
+          "Improved coordination.",
+          "Intense cardio workout."
+        ],
+        "bootCampTitle": "Les Mills Grit BOOTCAMP",
+        "bootCampDescription": "Group training for comprehensive strength and fitness improvement.",
+        "bootCampBenefits": [
+          "Comprehensive fitness improvement.",
+          "Fun group workout.",
+          "Improved endurance."
+        ],
+        "pilatesTitle": "Pilates",
+        "pilatesDescription": "Pilates is an exercise to improve posture, flexibility, and core strength.",
+        "pilatesBenefits": [
+          "Better posture.",
+          "Improved flexibility.",
+          "Strengthened core."
+        ]
+      },
+
+      "contact": {
+        "carouselTitle1": "Best contacts for your goals",
+        "carouselText1": "Find the best offers tailored to your needs.",
+        "carouselTitle2": "Reliable Assistance",
+        "carouselText2": "Always here to support you.",
+        "carouselTitle3": "Easy Communication",
+        "carouselText3": "Get in touch with us anytime.",
+        "carouselTitle4": "Visit Us",
+        "carouselText4": "Our location is waiting for you.",
+        "headerTitle": "Contact",
+        "address": "MAXXGYM Ljubljana, Dunajska cesta 270, 1000 Ljubljana",
+        "phone": "Phone",
+        "email": "Email",
+        "newsletterTitle": "Sign up for MAXXGYM news",
+        "formNamePlaceholder": "Full Name*",
+        "formEmailPlaceholder": "Email Address*",
+        "formSubmitButton": "Submit",
+        "formSuccessMessage": "Your subscription has been successfully submitted!",
+        "formErrorMessage": "There was an error submitting your subscription. Please try again.",
+        "mapTitle": "Where to find us?"
+        
+      }
+    
+    
+    
+      }

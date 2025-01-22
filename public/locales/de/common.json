@@ -1,26 +1,24 @@
 {
  
   "nav":{
-    "logo_alt": "MaxxGym-Logo",
+    "home": "Startseite",
+    "price": "Preise",
+    "fitness": "Fitness",
+    "guidedWorkouts": "Geführte Workouts",
+    "personalTraining": "Personal Training",
+    "contact": "Kontakt",
+    "languageLabel": "Lang",
     "language": {
-      "en": "Inglese",
-      "sl": "Sloveno",
-      "de": "Tedesco",
-      "it": "Italiano"
+      "en": "Englisch",
+      "sl": "Slowenisch",
+      "de": "Deutsch",
+      "it": "Italienisch"
     },
-    "nav": {
-      "home": "Startseite",
-      "price": "Preise",
-      "fitness": "Fitness",
-      "guided_workouts": "Geführte Workouts",
-      "personal_training": "Personal Training",
-      "contact": "Kontakt"
-    },
-    "working_hours": {
+    "workingHours": {
       "weekdays": "MONTAG - FREITAG 6.00 - 22.30",
       "weekends": "SAMSTAG - SONNTAG UND FEIERTAGE 8.00 - 22.00"
     },
-    "phone_number": "0590 41 900"
+    "phoneNumber": "0590 41 900"
   },
 
   "home": {
@@ -45,8 +43,7 @@
       "CarouselTitle4": "Vierter Titel",
       "CarouselText4": "Vierter Text für das Karussell.",
       "PageTitle": "MaxxGym",
-      "PageDescription": "Finden Sie die besten Angebote, die auf Ihre Bedürfnisse zugeschnitten sind.",
-      "ImageAltText": "Beschreibender Alt-Text"
+      "PageDescription": "Finden Sie die besten Angebote, die auf Ihre Bedürfnisse zugeschnitten sind."
     },
 
     "fitness": {
@@ -118,11 +115,155 @@
           "text": "Das Training im MaxxGym ist dank der hervorragenden Atmosphäre zu meiner Routine geworden.",
           "author": "Tina Jernej"
         }
-      }
-    
-    
-  
-  
-  
-  
+      },
+
+      "personal": {
+        "trainingCarouselTitle1": "Personalisierter Ansatz, der funktioniert",
+        "trainingCarouselText1": "Finden Sie das beste personalisierte Training für Ihre Ziele.",
+        "trainingCarouselTitle2": "Ihr Weg zum Erfolg",
+        "trainingCarouselText2": "Erreichen Sie Ihre Ziele mit dem persönlichen Training von MaxxGym.",
+        "trainingCarouselTitle3": "Professionelle Anleitung",
+        "trainingCarouselText3": "Maßgeschneiderte Workouts, die Ihren Bedürfnissen und Fähigkeiten entsprechen.",
+        "trainingCarouselTitle4": "Beginnen Sie Ihre Reise noch heute",
+        "trainingCarouselText4": "Entdecken Sie die Vorteile von Fitness mit MaxxGym.",
+        "trainingMainSectionTitle": "Erreichen Sie Ihr Bestes Selbst",
+        "trainingMainSectionParagraph1": "Das persönliche Training von MaxxGym ist auf Ihre Bedürfnisse zugeschnitten.",
+        "trainingMaxxgymIntro": "Erleben Sie den Unterschied mit Maxx.",
+        "trainingExperienceIntro": "Unsere Fachkenntnisse umfassen:",
+        "trainingExperiencePoint1": "Individuelle Trainingspläne.",
+        "trainingExperiencePoint2": "Eins-zu-eins-Coaching.",
+        "trainingExperiencePoint3": "Laufende Unterstützung.",
+        "trainingConclusion": "Treten Sie noch heute bei und erleben Sie den Unterschied.",
+        "trainingRightBoxTitle": "Warum MaxxGym?",
+        "trainingRightBoxText": "Wir bieten die beste Ausstattung und Trainer, um Sie zu unterstützen.",
+        "trainingImageAltText": "Bild einer persönlichen Trainingseinheit.",
+        "trainingSoloSectionTitle": "Trainieren Sie mit den Besten",
+        "trainingSoloPoint1": "Modernste Einrichtungen.",
+        "trainingSoloPoint2": "Zertifizierte Personal Trainer.",
+        "trainingSoloPoint3": "Unterstützende Umgebung.",
+        "trainingSoloPoint4": "Flexible Terminplanung.",
+        "trainingSoloPoint5": "Erschwingliche Pläne.",
+        "trainingFreeConsultationButton": "Kostenlose Beratung erhalten",
+        "trainingFormSectionTitle": "Melden Sie sich für eine kostenlose Beratung an",
+        "trainingFormNamePlaceholder": "Vollständiger Name",
+        "trainingFormEmailPlaceholder": "E-Mail-Adresse",
+        "trainingFormPhonePlaceholder": "Telefonnummer",
+        "trainingFormMessagePlaceholder": "Ihre Nachricht",
+        "trainingFormSubmitButton": "Absenden",
+        "trainingHeroImageAlt": "Hero-Bild, das personalisierte Workouts zeigt",
+        "trainingHeroTitle": "Erreichen Sie Ihre Fitnessziele mit personalisiertem Training",
+        "trainingHeroText": "Individuelle Pläne für Ihren Körper und Ihre Ziele.",
+        "trainingSignUpButton": "Jetzt für eine kostenlose Beratung anmelden",
+        "trainingInfoTitle1": "Warum uns wählen?",
+        "trainingInfoPoint1": "Personalisierte Trainingspläne",
+        "trainingInfoPoint2": "Zertifizierte Trainer",
+        "trainingInfoPoint3": "Moderne Ausrüstung und Einrichtungen",
+        "trainingInfoImageAlt1": "Trainer hilft einem Kunden",
+        "trainingInfoTitle2": "Erreichen Sie mehr mit uns",
+        "trainingInfoText2": "Entfalten Sie Ihr Potenzial mit professioneller Unterstützung.",
+        "trainingInfoImageAlt2": "Bild einer Trainingseinheit",
+        "trainingBulletTitle": "Unsere wichtigsten Merkmale",
+        "trainingBulletPoint1Title": "Zertifizierte Trainer",
+        "trainingBulletPoint1Text": "Unsere Trainer sind erfahren und zertifiziert, um Ihnen die beste Unterstützung zu bieten.",
+        "trainingBulletBackgroundAlt": "Hintergrund mit Fitnessgeräten",
+        "trainingFormSuccessMessage": "Ihre Nachricht wurde erfolgreich gesendet!",
+        "trainingFormErrorMessage": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+      },
+
+      "guided": {
+        "exercisesCarouselTitle1": "Die besten Preise für Ihre Ziele",
+        "exercisesCarouselText1": "Finden Sie die besten Angebote, die auf Ihre Bedürfnisse zugeschnitten sind.",
+        "exercisesCarouselTitle2": "Beginnen Sie noch heute",
+        "exercisesCarouselText2": "Erreichen Sie Ihre Ziele mit MaxxGym.",
+        "exercisesCarouselTitle3": "Flexibler Zeitplan",
+        "exercisesCarouselText3": "Workouts für alle Altersgruppen.",
+        "sectionTitle": "UNSERE GEFÜHRTEN WORKOUTS",
+        "formTitle": "MELDEN SIE SICH FÜR EIN KOSTENLOSES GESPRÄCH AN",
+        "formNamePlaceholder": "Vor- und Nachname*",
+        "formEmailPlaceholder": "E-Mail-Adresse*",
+        "formPhonePlaceholder": "Telefonnummer*",
+        "formMessagePlaceholder": "Erzählen Sie uns etwas über sich*",
+        "formSubmitButton": "ANMELDEN",
+        "formButton": "Melden Sie sich für ein kostenloses Gespräch an",
+        "cardioTitle": "Les Mills Grit CARDIO",
+        "exercisesFormSuccessMessage": "bravo",
+        "exercisesFormFormErrorMessage": "no bravo",
+        "cardioDescription": "Les Mills GRIT Cardio ist ein 30-minütiges hochintensives Intervalltraining (HIIT).",
+        "cardioBenefits": [
+          "Erhöhte kardiovaskuläre Kapazität.",
+          "Maximaler Kalorienverbrauch.",
+          "Steigerung der anaeroben Schwelle.",
+          "Tolles Training für eine bessere Figur."
+        ],
+        "bodyPumpTitle": "Les Mills Grit BODYPUMP",
+        "bodyPumpDescription": "Programm zur Steigerung von Kraft und Muskelmasse mit Gewichten.",
+        "bodyPumpBenefits": [
+          "Erhöhung der Muskelmasse.",
+          "Bessere Kondition.",
+          "Techniken des Gewichthebens."
+        ],
+
+      "bodyStepTitle": "Les Mills Grit BODYSTEP",
+"bodyStepDescription": "Aerobes Training mit Steps zur Verbesserung der Koordination und Fitness.",
+"bodyStepBenefits": [
+  "Verbesserte Koordination.",
+  "Bessere aerobe Fitness.",
+  "Spaßige Art zu trainieren."
+],
+"bodyAttackTitle": "Les Mills Grit BODYATTACK",
+"bodyAttackDescription": "Intensives Kardiotraining mit Bewegungen und explosiven Übungen.",
+"bodyAttackBenefits": [
+  "Erhöhte Explosivität.",
+  "Verbesserte Koordination.",
+  "Intensives Kardiotraining."
+],
+"bootCampTitle": "Les Mills Grit BOOTCAMP",
+"bootCampDescription": "Gruppentraining zur umfassenden Verbesserung von Kraft und Fitness.",
+"bootCampBenefits": [
+  "Umfassende Fitnessverbesserung.",
+  "Spaßiges Gruppentraining.",
+  "Verbesserte Ausdauer."
+],
+"pilatesTitle": "Pilates",
+"pilatesDescription": "Pilates ist ein Training zur Verbesserung der Haltung, Flexibilität und Kernkraft.",
+"pilatesBenefits": [
+  "Bessere Haltung.",
+  "Verbesserte Flexibilität.",
+  "Stärkung der Körpermitte."
+]
+
+},
+
+"contact": {
+  "carouselTitle1": "Beste Kontakte für Ihre Ziele",
+    "carouselText1": "Finden Sie die besten Angebote, die auf Ihre Bedürfnisse zugeschnitten sind.",
+    "carouselTitle2": "Immer für Sie da",
+    "carouselText2": "Kontaktieren Sie uns jederzeit.",
+    "carouselTitle3": "Ein Standort, der inspiriert",
+    "carouselText3": "Besuchen Sie uns in der Dunajska Straße.",
+    "carouselTitle4": "Erreichbar per Telefon und E-Mail",
+    "carouselText4": "Schnelle Antworten auf Ihre Anfragen.",
+    "headerTitle": "Kontakt",
+    "address": "MAXXGYM Ljubljana, Dunajska cesta 270, 1000 Ljubljana",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "newsletterTitle": "Melden Sie sich für MAXXGYM-News an",
+    "formNamePlaceholder": "Vollständiger Name*",
+    "formEmailPlaceholder": "E-Mail-Adresse*",
+    "formSubmitButton": "Anmelden",
+    "formSuccessMessage": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "formErrorMessage": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "mapTitle": "Wo finden Sie uns?"
+
+  }
+
+
 }
+      
+    
+    
+  
+  
+  
+  
+

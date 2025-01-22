@@ -5,11 +5,14 @@ const { i18n } = pkg;
 const nextConfig = {
   i18n,
   reactStrictMode: true,
-    images: {
-      domains: ["upload.wikimedia.org"], // Dodano gostiteljsko ime za slike
-    },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+      },
+    ],
+  },
+};
 
-  };
-  
-  export default nextConfig;
-  
+export default nextConfig;

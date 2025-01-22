@@ -5,13 +5,17 @@ import { useEffect, useRef, useState } from "react";
 import "keen-slider/keen-slider.min.css";
 import styles from "../../styles/imagecarousel.module.css";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-const ImageCarousel = ({ text, handleButtonClick }) => {
+const ImageCarousel = ({ text, handleScrollToForm }) => {
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     duration: 800,
     slides: { perView: 1 },
     mode: "free-snap",
+    drag: true, // Enable dragging for desktop
+    rubberband: true, // Ensure smoother dragging experience
+    touch: true, // Enable touch gestures for mobile
     slideChanged: (slider) => setCurrentIndex(slider.track.details.rel),
   });
 
@@ -27,6 +31,22 @@ const ImageCarousel = ({ text, handleButtonClick }) => {
     return () => clearInterval(autoplay);
   }, [instanceRef]);
 
+  const router = useRouter();
+  const { pathname } = router;
+
+  const handleButtonClick = () => {
+    const pagesWithForm = ["/guidedExercises", "/personalTraining", "/contact", "/fitness"];
+    if (pagesWithForm.includes(pathname)) {
+      if (typeof handleScrollToForm === "function") {
+        handleScrollToForm();
+      } else {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+      }
+    } else {
+      router.push("/fitness");
+    }
+  };
+
   const images = [
     "/images/hero2.png",
     "/images/hero6.jpg",
@@ -36,6 +56,7 @@ const ImageCarousel = ({ text, handleButtonClick }) => {
 
   return (
     <div className={styles.carouselWrapper}>
+      {/* Keen Slider */}
       <div ref={sliderRef} className={`keen-slider ${styles.carouselContainer}`}>
         {images.map((src, index) => (
           <div key={index} className={`keen-slider__slide ${styles.slide}`}>
@@ -60,7 +81,7 @@ const ImageCarousel = ({ text, handleButtonClick }) => {
         </button>
       </div>
 
-      {/* Left Arrow */}
+      {/* Navigation Arrows */}
       <button
         ref={prevRef}
         className={`${styles.arrow} ${styles.arrowLeft}`}
@@ -68,8 +89,6 @@ const ImageCarousel = ({ text, handleButtonClick }) => {
       >
         <span className={styles.arrowIcon}>←</span>
       </button>
-
-      {/* Right Arrow */}
       <button
         ref={nextRef}
         className={`${styles.arrow} ${styles.arrowRight}`}

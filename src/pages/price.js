@@ -55,7 +55,7 @@ const Price = () => {
 
         {/* Upper container */}
         <section className="upper-container">
-          <img src="/images/price1.png" alt={t("price.ImageAltText", { defaultMessage: "Descriptive Alt Text" })} className="responsive-image" />
+          <img src="/images/price1.png" alt="ImageAltText" className="responsive-image" />
           <h1>{t("price.PageTitle", { defaultMessage: "MaxxGym" })}</h1>
           <p>{t("price.PageDescription", { defaultMessage: "Find the best deals tailored to your needs." })}</p>
         </section>

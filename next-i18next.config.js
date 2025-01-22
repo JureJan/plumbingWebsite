@@ -1,10 +1,8 @@
 module.exports = {
   i18n: {
-    "locales": ["en", "sl", "de", "it"],
-  "defaultLocale": "en",
-  "pages": {
-    "*": ["common"]
-  }
+    locales: ['en', 'sl', 'de', 'it'],
+    defaultLocale: 'en',
+    localePath: "./public/locales",
   },
-  debug: true, // Debug mode for i18next
+  debug: true,
 };
