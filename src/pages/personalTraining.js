@@ -1,89 +1,94 @@
-'use client';
+"use client";
 
-import Navbar from '../app/components/navbar';
-import Footer from '../app/components/footer';
-import ImageCarousel from '../app/components/imageCarousel';
-import CommentCarousel from '../app/components/commentCarousel';
-import '../styles/personalTraining.css';
-import Image from 'next/image';
-import { useRef, useEffect } from 'react';
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useRouter } from 'next/router';
-import emailjs from '@emailjs/browser';
+import Navbar from "../app/components/navbar";
+import Footer from "../app/components/footer";
+import ImageCarousel from "../app/components/imageCarousel";
+import CommentCarousel from "../app/components/commentCarousel";
+import "../styles/personalTraining.css";
+import Image from "next/image";
+import { useRef, useEffect } from "react";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useRouter } from "next/router";
+import emailjs from "@emailjs/browser";
 
 export default function PersonalTraining() {
-  const formRef = useRef(null);
+  const formRef = useRef(null); // This will reference the <form> element
   const router = useRouter();
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
 
+  // Initialize EmailJS
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      emailjs.init('4seHCGovjmExB5X_K'); // Replace with your actual EmailJS public key
+    if (typeof window !== "undefined") {
+      emailjs.init("4seHCGovjmExB5X_K"); // Replace with your actual EmailJS public key
     }
   }, []);
 
-  const changeLanguage = (lang) => {
-    if (router.locale !== lang) {
-      const { pathname, query } = router;
-      router.push({ pathname, query }, undefined, { locale: lang });
-    }
-  };
-  
-
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
     const templateParams = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      message: formData.get('message'),
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone") || "N/A", // Optional phone
+      message: formData.get("message"),
     };
 
-    emailjs
-      .send('service_oi2poff', 'template_0z4khdp', templateParams)
-      .then(() => {
-        alert(
-          t(
-            'personal.trainingFormSuccessMessage',
-            'Your message was sent successfully!'
-          )
-        );
-      })
-      .catch(() => {
-        alert(
-          t(
-            'personal.trainingFormErrorMessage',
-            'An error occurred while sending your message. Please try again.'
-          )
-        );
-      });
+    // Validate required fields
+    if (!templateParams.name || !templateParams.email || !templateParams.message) {
+      alert(t("form.validationError", "Please fill out all required fields."));
+      return;
+    }
+
+    try {
+      const response = await emailjs.send(
+        "service_h9tgu0l", // Your EmailJS service ID
+        "template_uuzq0uy", // Your EmailJS template ID
+        templateParams,
+        "4seHCGovjmExB5X_K" // Your EmailJS user ID (public key)
+      );
+
+      if (response.status === 200) {
+        alert(t("form.successMessage", "Your message was sent successfully!"));
+        // Manually reset form fields
+        if (formRef.current) {
+          formRef.current.elements.name.value = "";
+          formRef.current.elements.email.value = "";
+          formRef.current.elements.phone.value = "";
+          formRef.current.elements.message.value = "";
+        }
+      } else {
+        alert(t("form.errorMessage", "An error occurred while sending your message."));
+      }
+    } catch (error) {
+      console.error("EmailJS Error:", error); // Log the error for debugging
+      alert(t("form.errorMessage", "An error occurred while sending your message."));
+    }
   };
 
   const titles = [
     {
-      title: t('personal.trainingCarouselTitle1'),
-      text: t('personal.trainingCarouselText1'),
+      title: t("personal.trainingCarouselTitle1"),
+      text: t("personal.trainingCarouselText1"),
     },
     {
-      title: t('personal.trainingCarouselTitle2'),
-      text: t('personal.trainingCarouselText2'),
+      title: t("personal.trainingCarouselTitle2"),
+      text: t("personal.trainingCarouselText2"),
     },
     {
-      title: t('personal.trainingCarouselTitle3'),
-      text: t('personal.trainingCarouselText3'),
+      title: t("personal.trainingCarouselTitle3"),
+      text: t("personal.trainingCarouselText3"),
     },
     {
-      title: t('personal.trainingCarouselTitle4'),
-      text: t('personal.trainingCarouselText4'),
+      title: t("personal.trainingCarouselTitle4"),
+      text: t("personal.trainingCarouselText4"),
     },
   ];
 
   const handleScrollToForm = () => {
     if (formRef.current) {
-      formRef.current.scrollIntoView({ behavior: 'smooth' });
+      formRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -100,7 +105,7 @@ export default function PersonalTraining() {
             src="/images/trening2.png"
             alt={t("personal.trainingHeroImageAlt")}
             fill
-            style={{ objectFit: "cover" }} // Replace objectFit with this
+            style={{ objectFit: "cover" }}
             className="hero-image"
           />
           <div className="hero-overlay">
@@ -157,7 +162,7 @@ export default function PersonalTraining() {
             src="/images/fitnes1.png"
             alt={t("personal.trainingBulletBackgroundAlt")}
             fill
-            style={{ objectFit: "cover" }} // Replace objectFit with this
+            style={{ objectFit: "cover" }}
             className="background-image"
           />
           <div className="bullet-overlay">
@@ -167,7 +172,6 @@ export default function PersonalTraining() {
                 <h3>{t("personal.trainingBulletPoint1Title")}</h3>
                 <p>{t("personal.trainingBulletPoint1Text")}</p>
               </li>
-              {/* Add more points as needed */}
             </ul>
             <button className="cta-button" onClick={handleScrollToForm}>
               {t("personal.trainingSignUpButton")}
@@ -178,10 +182,10 @@ export default function PersonalTraining() {
         {/* Section 5 */}
         <CommentCarousel />
 
-        {/* Section 6 */}
-        <section ref={formRef} id="form-section" className="form-section">
+  {/* Section 6 - Form Section */}
+  <section id="form-section" className="form-section">
           <h2>{t("personal.trainingFormSectionTitle")}</h2>
-          <form onSubmit={handleFormSubmit}>
+          <form ref={formRef} onSubmit={handleFormSubmit}>
             <div className="form-group">
               <input
                 type="text"
@@ -199,6 +203,13 @@ export default function PersonalTraining() {
               />
             </div>
             <div className="form-group">
+              <input
+                type="tel"
+                name="phone"
+                placeholder={t("personal.trainingFormPhonePlaceholder")}
+              />
+            </div>
+            <div className="form-group">
               <textarea
                 name="message"
                 placeholder={t("personal.trainingFormMessagePlaceholder")}
@@ -210,8 +221,7 @@ export default function PersonalTraining() {
               {t("personal.trainingFormSubmitButton")}
             </button>
           </form>
-        </section>
-        </main>
+        </section>      </main>
       <Footer />
     </>
   );
@@ -220,6 +230,6 @@ export default function PersonalTraining() {
 // Server-side translations
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'en', ['common'])),
+    ...(await serverSideTranslations(locale ?? "en", ["common"])),
   },
 });

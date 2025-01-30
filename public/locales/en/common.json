@@ -8,10 +8,10 @@
     "contact": "Contact",
     "languageLabel": "Lang",
     "language": {
-      "en": "English",
-      "sl": "Slovenian",
-      "de": "German",
-      "it": "Italian"
+      "en": "En",
+      "sl": "Sl",
+      "de": "De",
+      "it": "It"
     },
     "workingHours": {
       "weekdays": "MONDAY - FRIDAY 6.00 - 22.30",
@@ -19,18 +19,47 @@
     },
     "phoneNumber": "0590 41 900"
   },
+
+  "image":{
+    "carouselButton":"Join us"
+  },
   
   "home": {
-    "CarouselTitle1": "Personalized Approach That Works",
-    "CarouselText1": "Find the best personalized training for your goals.",
+    "CarouselTitle1": "A Personalized Approach That Works",
+    "CarouselText1": "Find the best personalized workout for your goals.",
     "CarouselTitle2": "Your Path to Success",
-    "CarouselText2": "Achieve your goals with MaxxGym Personal Training.",
+    "CarouselText2": "Achieve your goals with MaxxGym personal training.",
     "CarouselTitle3": "Professional Guidance",
     "CarouselText3": "Training tailored to your needs and abilities.",
     "CarouselTitle4": "Start Your Journey Today",
     "CarouselText4": "Discover the benefits of fitness with MaxxGym."
-
   },
+  "bmi": {
+    "title": "BMI Calculator",
+    "name": "Name",
+    "surname": "Surname",
+    "gender": "Gender",
+    "selectGender": "Select Gender",
+    "male": "Male",
+    "female": "Female",
+    "age": "Age (years)",
+    "weight": "Weight (kg)",
+    "height": "Height (cm)",
+    "activityLevel": "Activity Level",
+    "selectActivityLevel": "Select Activity Level",
+    "inactive": "Inactive",
+    "lightlyActive": "Lightly Active",
+    "moderatelyActive": "Moderately Active",
+    "veryActive": "Very Active",
+    "extremelyActive": "Extremely Active",
+    "goal": "Goal",
+    "selectGoal": "Select Goal",
+    "maintain": "Maintain Weight",
+    "lose": "Lose Weight",
+    "gain": "Gain Weight",
+    "email": "Email",
+    "submitButton": "Calculate & Send BMI"
+},
 
   "price": {
     "CarouselTitle1": "Personalized Approach That Works",
@@ -54,22 +83,50 @@
     "CarouselTitle3": "Third Title",
     "CarouselText3": "Third text describing deals.",
     "CarouselTitle4": "Fourth Title",
-    "CarouselText4": "Fourth text for carousel."
+    "CarouselText4": "Fourth text for carousel.",
+    "line1": "State-of-the-art equipment for all fitness levels.",
+    "line2": "Expert trainers to guide you every step of the way.",
+    "line3": "Flexible workout schedules that fit your life.",
+    "line4": "A supportive community to keep you motivated.",
+    "line5": "Programs tailored to your specific goals.",
+    "line6": "Experience the difference at MaxxGym."
   },
   "sections": {
     "section1": {
-      "title": "Finally, a fitness center that isn't overcrowded and offers great options for uninterrupted training",
-      "text": "Are you tired of overcrowded fitness centers where you can't have an effective workout? Fed up with waiting for equipment because someone is texting? Looking for a place where you can work out without interruptions? MAXXGYM is exactly what you are looking for. It offers an environment for a great workout without unpleasant distractions."
-    },
+      "title": "A fitness center where you can train without the crowd, delays, or distractions.",
+      "text": "Tired of overcrowded gyms where effective training feels impossible?Frustrated with waiting for equipment while someone types out a text? Searching for a space where you can train without interruptions? Look no further—MAXXGYM is exactly what you need. We offer a focused environment designed for people like you, enabling effective workouts free from distractions.",
+      "text2": "For over 20 years, we’ve helped thousands of clients achieve incredible results with a different approach—creating a welcoming atmosphere, offering diverse equipment, and fostering great company. No awkward stares, no texting on machines, just top-quality training. We’ve built this space over two decades for our clients and their success."   
+     },
     "section2": {
-      "title": "Pushing the limits of your abilities",
-      "text": "At MaxxGym, there is no waiting for equipment or wasting time. We enable more effective training to help you achieve your goals."
+      "title": "The environment you train in has a massive impact on your results.",
+      "text": "Unfortunately, over 72% of gym-goers don’t complete their planned workouts due to time constraints—mostly caused by waiting for busy equipment. But it doesn’t have to be this way!",
+      "text2": "We’ve created the perfect alternative by moving to a new, larger location equipped with a wide variety of machines and tools at MAXXGYM. Our unique approach attracts a different kind of audience, ensuring no unnecessary waiting for equipment and making your workouts more time-efficient.Book your free visit today and see the difference for yourself!"
     },
     "section3": {
-      "title": "Equipment that inspires",
-      "text": "State-of-the-art equipment, top-notch trainers, and motivational programs await you at MaxxGym. Become the best version of yourself!"
+      "title": "Over 30 years of fitness expertise reflected in our professionalism and your success.",
+      "text": "Why waste time experimenting with unproven training methods and questionable diet strategies?",
+      "text2": "The MAXXGYM team is here to support you in an exclusive group, answering your questions about exercises, gym usage, and the basics of health-friendly nutrition. This guidance saves you time and enhances your fitness knowledge, providing a shortcut to achieving your fitness goals more efficiently."
     }
+
   },
+"down": {
+  "heroTitle": "Over 30 years of fitness expertise, reflected in our professionalism and unwavering support for your journey.",
+  "heroText": "Why waste time experimenting with unproven training methods and questionable dietary strategies?",
+  "heroText2": "The MAXXGYM team is here to help you achieve faster results through a dedicated support group. We’ll answer your questions about exercises, gym usage, and the basics of health-friendly nutrition. This will save you valuable time and deepen your understanding of fitness training. It's your shortcut to reaching your fitness goals with ease.",
+  "heroImageAlt": "Fitness Hero Image"
+},
+
+"leftPhoto": {
+  "heroTitle": "Save yourself the hassle of searching for your beginner workout plan and try the MAXX Training START-UP program.",
+  "heroText": "Why waste time searching for the best workout plan, figuring out the correct exercise techniques, or learning how to use equipment properly? Save that time and focus on what matters most to you while we take care of your beginner training program.",
+  "heroText2": "Clients visiting MAXXGYM for the first time receive a special gift from us:",
+  "heroImageAlt": "Left Aligned Fitness Image",
+  "bulletText1":"A FREE introductory personal training session.",
+  "bulletText2":"A FREE introductory training program.",
+  "bulletText3":"and a FREE protein shake after your introductory training session, on us.",
+  "heroText3":"All to ensure your fitness journey starts at its MAXXimum."
+},
+
   "form": {
     "title": "Reserve Your Free Ticket",
     "description": "Avoid common fitness mistakes with our help and try us 100% FREE. Fill out the form below to get your free ticket and visit us as soon as possible.",
@@ -77,8 +134,12 @@
       "name": "Full Name*",
       "email": "Email Address*",
       "phone": "Phone Number*",
-      "address": "Permanent Address*"
+      "address": "Permanent Address*",
+        "message": "Tell us something about your goals"
     },
+    "validationError":"Please fill out all required fields.",
+    "successMessage":"Your message was sent successfully!",
+    "errorMessage":"An error occurred while sending your message.",
     "button": "REQUEST YOUR FREE TICKET",
     "privacy": "We respect your privacy and will never share your information with anyone without your consent."
   },
@@ -192,8 +253,8 @@
         "formSubmitButton": "SIGN UP",
         "formButton": "Sign up for a free consultation",
         "cardioTitle": "Les Mills Grit CARDIO",
-        "exercisesFormSuccessMessage": "bravo",
-        "exercisesFormFormErrorMessage": "no bravo",
+        "exercisesFormSuccessMessage": "Your message was sent successfully!",
+        "exercisesFormErrorMessage": "An error occurred while sending your message. Please try again.",
         "cardioDescription": "Les Mills GRIT Cardio is a 30-minute high-intensity interval training (HIIT) workout.",
         "cardioBenefits": [
           "Increased cardiovascular capacity.",

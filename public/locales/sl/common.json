@@ -8,10 +8,10 @@
       "contact": "Kontakt",
       "languageLabel": "Lang",
       "language": {
-        "en": "Angleško",
-        "sl": "Slovensko",
-        "de": "Nemško",
-        "it": "Italjansko"
+        "en": "En",
+        "sl": "Sl",
+        "de": "De",
+        "it": "It"
       },
       "workingHours": {
         "weekdays": "PONEDELJEK - PETEK 6.00 - 22.30",
@@ -20,6 +20,11 @@
       "phoneNumber": "0590 41 900"
     
   },
+
+  "image":{
+    "carouselButton":"PRIDRUŽI SE NAM"
+  },
+
   
 
   "home": {
@@ -30,9 +35,34 @@
     "CarouselTitle3": "Strokovno vodenje",
     "CarouselText3": "Vadba prilagojena tvojim potrebam in sposobnostim.",
     "CarouselTitle4": "Začni svojo pot danes",
-    "CarouselText4": "Odkrij prednosti fitnesa z MaxxGym.",
-    "homeCarouselTitle1": "Dobrodošli v MaxxGym"
+    "CarouselText4": "Odkrij prednosti fitnesa z MaxxGym."
   },
+ "bmi": {
+    "title": "Kalkulator BMI",
+    "name": "Ime",
+    "surname": "Priimek",
+    "gender": "Spol",
+    "selectGender": "Izberi spol",
+    "male": "Moški",
+    "female": "Ženska",
+    "age": "Starost (leta)",
+    "weight": "Teža (kg)",
+    "height": "Višina (cm)",
+    "activityLevel": "Stopnja aktivnosti",
+    "selectActivityLevel": "Izberi stopnjo aktivnosti",
+    "inactive": "Neaktiven",
+    "lightlyActive": "Rahlo aktiven",
+    "moderatelyActive": "Zmerno aktiven",
+    "veryActive": "Zelo aktiven",
+    "extremelyActive": "Izjemno aktiven",
+    "goal": "Cilj",
+    "selectGoal": "Izberi cilj",
+    "maintain": "Ohranjanje teže",
+    "lose": "Zmanjšanje teže",
+    "gain": "Povečanje teže",
+    "email": "E-pošta",
+    "submitButton": "Izračunaj & Pošlji BMI"
+   },
   
     "price": {
       "CarouselTitle1": "Najboljše cene za vaše cilje",
@@ -57,24 +87,47 @@
       "CarouselText3": "Tretji tekst, ki opisuje ponudbe.",
       "CarouselTitle4": "Četrti naslov",
       "CarouselText4": "Četrti tekst za vrtiljak.",
-      "PageTitle": "MaxxGym",
-      "PageDescription": "Poiščite najboljše ponudbe, prilagojene vašim potrebam."
+      "line1": "Najsodobnejša oprema za vse ravni telesne pripravljenosti.",
+      "line2": "Strokovni trenerji, ki vas vodijo na vsakem koraku.",
+      "line3": "Prilagodljivi urniki vadbe, ki ustrezajo vašemu življenju.",
+      "line4": "Podporna skupnost, ki vas motivira.",
+      "line5": "Programi prilagojeni vašim specifičnim ciljem.",
+      "line6": "Doživite razliko pri MaxxGym."
     },
 
     "sections": {
       "section1": {
         "title": "Končno fitnes, ki ni nabito poln in nudi veliko možnosti za trening brez motenj in nepotrebnega čakanja",
-        "text": "Si sit prepolnih fitnes centrov katerih ne moreš nardit efektivnega treninga? Naveličan čakanja na naprave, ker spet nekdo na njej piše SMS? In iščeš prostor kje boš lahko brez motenj nardil trening? MAXXGYM je točno to kaj iščeš in daje ljudem kot si ti možnost okolja za odličen trening brez neprijetnih motenj."
+        "text": "Si sit prepolnih fitnes centrov katerih ne moreš nardit efektivnega treninga? Naveličan čakanja na naprave, ker spet nekdo na njej piše SMS? In iščeš prostor kje boš lahko brez motenj nardil trening? MAXXGYM je točno to kaj iščeš in daje ljudem kot si ti možnost okolja za odličen trening brez neprijetnih motenj.",
+        "text2": "Že več kot 20 let pomagamo tisočim strankam doseči neverjetne rezultate s drugačnim pristopom – ustvarjanjem prijaznega vzdušja, ponujanjem raznolike opreme in spodbujanjem odlične družbe. Brez nerodnih pogledov, brez pisanja sporočil na napravah, le vrhunski trening. Ta prostor smo gradili dve desetletji za naše stranke in njihov uspeh."
       },
+      
       "section2": {
         "title": "Premikamo meje tvoje zmogljivosti",
-        "text": "Pri MaxxGym ni čakanja na naprave in nepotrebnega izgubljanja časa. Omogočamo ti bolj efektivne treninge za dosego tvojih ciljev."
+        "text": "Pri MaxxGym ni čakanja na naprave in nepotrebnega izgubljanja časa. Omogočamo ti bolj efektivne treninge za dosego tvojih ciljev.",
+        "text2": "Ustvarili smo popolno alternativo s preselitvijo na novo, večje lokacijo, opremljeno z raznovrstnimi napravami in orodji v MAXXGYM-u. Naš edinstven pristop privablja drugačno vrsto obiskovalcev, kar zagotavlja, da ni nepotrebnega čakanja na naprave in omogoča bolj časovno učinkovit trening. Rezervirajte svoj brezplačen obisk že danes in se prepričajte o razliki!"
       },
       "section3": {
         "title": "Oprema, ki navdihuje",
-        "text": "Oprema najnovejše generacije, vrhunski trenerji in motivacijski programi te čakajo pri MaxxGym. Postani najboljša verzija sebe!"
+        "text": "Oprema najnovejše generacije, vrhunski trenerji in motivacijski programi te čakajo pri MaxxGym. Postani najboljša verzija sebe!",
+         "text2": "Ekipa MAXXGYM je tukaj, da vas podpira v ekskluzivni skupini, kjer odgovarjamo na vaša vprašanja o vajah, uporabi fitnesa in osnovah zdravju prijazne prehrane. Ta podpora vam prihrani čas in izboljša vaše znanje o fitnesu, kar vam omogoča hitrejšo in učinkovitejšo dosego vaših ciljev."
       }
     },
+    "down": {
+  "heroTitle": "Več kot 30 let izkušenj v fitnesu, ki se kažejo v naši strokovnosti in podpori na tvoji poti.",
+  "heroText": "Poišči pravi fitnes program, prilagojen tebi.",
+  "heroImageAlt": "Fitnes Hero Slika"
+},
+"leftPhoto": {
+  "heroTitle": "Prihranite si trud pri iskanju začetnega programa vadbe in preizkusite MAXX Training START-UP program.",
+  "heroText": "Zakaj bi izgubljali čas z iskanjem najboljšega vadbenega načrta, učenjem pravilne tehnike vaj ali pravilne uporabe naprav? Prihranite ta čas in se osredotočite na tisto, kar vam je najbolj pomembno, medtem ko mi poskrbimo za vaš začetni program treninga.",
+  "heroText2": "Stranke, ki prvič obiščejo MAXXGYM, od nas prejmejo posebno darilo:",
+  "heroImageAlt": "Levo poravnana fitnes slika",
+  "bulletText1": "BREZPLAČEN uvodni osebni trening.",
+  "bulletText2": "BREZPLAČEN uvodni trening program.",
+  "bulletText3": "in BREZPLAČEN beljakovinski napitek po uvodnem treningu, na naš račun.",
+  "heroText3": "Vse, da bo vaš začetek fitnes poti MAXXimalen."
+},
     "form": {
       "title": "Rezerviraj svojo brezplačno vstopnico",
       "description": "Izogni se običajnim napakam v fitnesu z našo pomočjo in nas 100% BREZPLAČNO preizkusi. Izpolni spodnji obrazec za svojo brezplačno vstopnico in nas čim prej obišči.",
@@ -82,7 +135,11 @@
         "name": "Ime in priimek*",
         "email": "Email Naslov*",
         "phone": "Telefonska številka*",
-        "address": "Stalni naslov*"
+        "address": "Stalni naslov*",
+        "message": "Povejte nam nekaj o vaših ciljih",
+        "validationError": "Prosimo, izpolnite vsa zahtevana polja.",
+        "successMessage": "Vaše sporočilo je bilo uspešno poslano!",
+        "errorMessage": "Pri pošiljanju sporočila je prišlo do napake."
       },
       "button": "ZAHTEVAJ BREZPLAČNO VSTOPNICO",
       "privacy": "Spoštujemo tvojo zasebnost in tvojih podatkov nikoli ne bomo delili s komer koli brez tvojega privolenja."
@@ -193,9 +250,9 @@
           "formSubmitButton": "PRIJAVI SE",
           "formButton": "Prijavi se na brezplačni posvet",
           "cardioTitle": "Les Mills Grit CARDIO",
-          "exercisesFormSuccessMessage": "bravo",
-          "exercisesFormFormErrorMessage": "no bravo",
-          "cardioDescription": "Les Mills GRIT Cardio je 30-minutni visoko-intenzivni intervalni trening (HIIT).",
+          "exercisesFormSuccessMessage": "Vaše sporočilo je bilo uspešno poslano!",
+          "exercisesFormErrorMessage": "Pri pošiljanju sporočila je prišlo do napake. Poskusite znova.",         
+           "cardioDescription": "Les Mills GRIT Cardio je 30-minutni visoko-intenzivni intervalni trening (HIIT).",
           "cardioBenefits": [
             "Povečana srčno-žilna kapaciteta.",
             "Maksimalna poraba kalorij.",

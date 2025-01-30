@@ -10,48 +10,76 @@ import Footer from "../app/components/footer";
 import Schedule from "../app/components/schedule"; // Import the Schedule component
 import ImageCarousel from "../app/components/imageCarousel";
 import Image from "next/image";
-import "../styles/vodene-vadbe.css"; // Path to the page's CSS
+import "../styles/guidedExercises.css"; // Path to the page's CSS
 
 export default function GuidedExercises() {
-  const formRef = useRef(null);
+  const formRef = useRef(null); // This will reference the <form> element
   const router = useRouter();
   const { t } = useTranslation("common");
 
+  // Initialize EmailJS
   useEffect(() => {
     if (typeof window !== "undefined") {
       emailjs.init("4seHCGovjmExB5X_K"); // Replace with your actual EmailJS public key
     }
   }, []);
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
     const templateParams = {
       name: formData.get("name"),
       email: formData.get("email"),
-      phone: formData.get("phone"),
+      phone: formData.get("phone") || "N/A", // Optional phone
       message: formData.get("message"),
     };
 
-    emailjs
-      .send("service_oi2poff", "template_0z4khdp", templateParams)
-      .then(() => {
+    // Validate required fields
+    if (!templateParams.name || !templateParams.email || !templateParams.message) {
+      alert(t("guided.exercisesFormErrorMessage", "Please fill out all required fields."));
+      return;
+    }
+
+    try {
+      const response = await emailjs.send(
+        "service_h9tgu0l", // Your EmailJS service ID
+        "template_uuzq0uy", // Your EmailJS template ID
+        templateParams,
+        "4seHCGovjmExB5X_K" // Your EmailJS user ID (public key)
+      );
+
+      if (response.status === 200) {
         alert(
           t(
             "guided.exercisesFormSuccessMessage",
             "Your message was sent successfully!"
           )
         );
-      })
-      .catch(() => {
+        // Manually reset form fields
+        if (formRef.current) {
+          formRef.current.elements.name.value = "";
+          formRef.current.elements.email.value = "";
+          formRef.current.elements.phone.value = "";
+          formRef.current.elements.message.value = "";
+        }
+      } else {
         alert(
           t(
             "guided.exercisesFormErrorMessage",
             "An error occurred while sending your message. Please try again."
           )
         );
-      });
+      }
+    } catch (error) {
+      console.error("EmailJS Error:", error); // Log detailed error
+      alert(
+        t(
+          "guided.exercisesFormErrorMessage",
+          "An error occurred while sending your message. Please try again."
+        )
+      );
+    }
   };
 
   const handleScroll = (id) => {
@@ -188,7 +216,6 @@ export default function GuidedExercises() {
                   <h3>{program.title}</h3>
                   <p>{program.description}</p>
                 </div>
- 
               </div>
               {program.videoLink && (
                 <div className="video-container">
@@ -211,7 +238,7 @@ export default function GuidedExercises() {
         {/* Sign-up Form Section */}
         <section id="form-section" className="form-section">
           <h2>{t("guided.formTitle")}</h2>
-          <form onSubmit={handleFormSubmit}>
+          <form ref={formRef} onSubmit={handleFormSubmit}>
             <div className="form-group">
               <input
                 type="text"
@@ -233,7 +260,6 @@ export default function GuidedExercises() {
                 type="tel"
                 name="phone"
                 placeholder={t("guided.formPhonePlaceholder")}
-                required
               />
             </div>
             <div className="form-group">

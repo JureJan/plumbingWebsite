@@ -9,10 +9,10 @@
     "contact": "Kontakt",
     "languageLabel": "Lang",
     "language": {
-      "en": "Englisch",
-      "sl": "Slowenisch",
-      "de": "Deutsch",
-      "it": "Italienisch"
+      "en": "En",
+      "sl": "Sl",
+      "de": "De",
+      "it": "It"
     },
     "workingHours": {
       "weekdays": "MONTAG - FREITAG 6.00 - 22.30",
@@ -21,17 +21,48 @@
     "phoneNumber": "0590 41 900"
   },
 
+  "image":{
+    "carouselButton":"Schließe dich uns an"
+  },
+
+
   "home": {
-    "CarouselTitle1": "Personalisierter Ansatz, der funktioniert",
+    "CarouselTitle1": "Ein personalisierter Ansatz, der funktioniert",
     "CarouselText1": "Finde das beste personalisierte Training für deine Ziele.",
     "CarouselTitle2": "Dein Weg zum Erfolg",
     "CarouselText2": "Erreiche deine Ziele mit MaxxGym Personal Training.",
     "CarouselTitle3": "Professionelle Anleitung",
-    "CarouselText3": "Training, das auf deine Bedürfnisse und Fähigkeiten abgestimmt ist.",
-    "CarouselTitle4": "Starte deine Reise heute",
+    "CarouselText3": "Training, das auf deine Bedürfnisse und Fähigkeiten zugeschnitten ist.",
+    "CarouselTitle4": "Starte deine Reise noch heute",
     "CarouselText4": "Entdecke die Vorteile von Fitness mit MaxxGym.",
-    "homeCarouselTitle1": "Willkommen bei MaxxGym"
+     "homeCarouselTitle1": "Willkommen bei MaxxGym"
   },
+  "bmi": {
+    "title": "BMI Rechner",
+    "name": "Name",
+    "surname": "Nachname",
+    "gender": "Geschlecht",
+    "selectGender": "Geschlecht auswählen",
+    "male": "Männlich",
+    "female": "Weiblich",
+    "age": "Alter (Jahre)",
+    "weight": "Gewicht (kg)",
+    "height": "Größe (cm)",
+    "activityLevel": "Aktivitätslevel",
+    "selectActivityLevel": "Aktivitätslevel auswählen",
+    "inactive": "Inaktiv",
+    "lightlyActive": "Leicht aktiv",
+    "moderatelyActive": "Mäßig aktiv",
+    "veryActive": "Sehr aktiv",
+    "extremelyActive": "Extrem aktiv",
+    "goal": "Ziel",
+    "selectGoal": "Ziel auswählen",
+    "maintain": "Gewicht halten",
+    "lose": "Gewicht verlieren",
+    "gain": "Gewicht zunehmen",
+    "email": "E-Mail",
+    "submitButton": "BMI berechnen & senden"
+},
   
     "price": {
       "CarouselTitle1": "Die besten Preise für Ihre Ziele",
@@ -54,22 +85,51 @@
       "CarouselTitle3": "Dritter Titel",
       "CarouselText3": "Dritter Text, der Deals beschreibt.",
       "CarouselTitle4": "Vierter Titel",
-      "CarouselText4": "Vierter Text für das Karussell."
+      "CarouselText4": "Vierter Text für das Karussell.",
+      "line1": "Modernste Ausstattung für alle Fitnesslevel.",
+      "line2": "Experten-Trainer, die Sie bei jedem Schritt begleiten.",
+      "line3": "Flexible Trainingspläne, die zu Ihrem Leben passen.",
+      "line4": "Eine unterstützende Gemeinschaft, die Sie motiviert.",
+      "line5": "Programme, die auf Ihre spezifischen Ziele abgestimmt sind.",
+      "line6": "Erleben Sie den Unterschied bei MaxxGym.",
+      "heroImageAlt": "Fitness-Heldenbild",
+      "heroTitle": "Erreichen Sie Ihre Fitnessziele",
+      "heroText": "Finden Sie das richtige Fitnessprogramm, das zu Ihnen passt.",
+      "heroButton": "Jetzt beitreten"
     },
     "sections": {
       "section1": {
         "title": "Endlich ein Fitnessstudio, das nicht überfüllt ist und großartige Möglichkeiten für ungestörtes Training bietet",
-        "text": "Bist du es leid, in überfüllten Fitnessstudios nicht effektiv trainieren zu können? Genervt vom Warten auf Geräte, weil jemand SMS schreibt? Suchst du einen Ort, an dem du ohne Unterbrechungen trainieren kannst? MAXXGYM ist genau das, was du suchst. Es bietet eine Umgebung für großartige Workouts ohne unangenehme Ablenkungen."
-      },
+        "text": "Bist du es leid, in überfüllten Fitnessstudios nicht effektiv trainieren zu können? Genervt vom Warten auf Geräte, weil jemand SMS schreibt? Suchst du einen Ort, an dem du ohne Unterbrechungen trainieren kannst? MAXXGYM ist genau das, was du suchst. Es bietet eine Umgebung für großartige Workouts ohne unangenehme Ablenkungen.",
+        "text2": "Seit über 20 Jahren helfen wir Tausenden von Kunden, unglaubliche Ergebnisse zu erzielen, mit einem anderen Ansatz – einer einladenden Atmosphäre, einer vielfältigen Ausstattung und einer großartigen Gemeinschaft. Keine unangenehmen Blicke, kein Simsen an den Geräten, nur erstklassiges Training. Wir haben diesen Raum über zwei Jahrzehnte für unsere Kunden und ihren Erfolg aufgebaut."
+        },
       "section2": {
         "title": "Die Grenzen deiner Fähigkeiten verschieben",
-        "text": "Im MaxxGym gibt es kein Warten auf Geräte oder Zeitverschwendung. Wir ermöglichen effektivere Workouts, um deine Ziele zu erreichen."
+        "text": "Im MaxxGym gibt es kein Warten auf Geräte oder Zeitverschwendung. Wir ermöglichen effektivere Workouts, um deine Ziele zu erreichen.",
+        "text2": "Wir haben die perfekte Alternative geschaffen, indem wir an einen neuen, größeren Standort mit einer Vielzahl von Maschinen und Geräten im MAXXGYM umgezogen sind. Unser einzigartiger Ansatz zieht ein anderes Publikum an, was unnötige Wartezeiten an Geräten verhindert und Ihr Training effizienter macht. Buchen Sie noch heute Ihren kostenlosen Besuch und überzeugen Sie sich selbst von dem Unterschied!"
       },
       "section3": {
         "title": "Ausstattung, die inspiriert",
-        "text": "Modernste Geräte, erstklassige Trainer und Motivationsprogramme erwarten dich im MaxxGym. Werde die beste Version von dir selbst!"
+        "text": "Modernste Geräte, erstklassige Trainer und Motivationsprogramme erwarten dich im MaxxGym. Werde die beste Version von dir selbst!",
+        "text2": "Das MAXXGYM-Team unterstützt Sie in einer exklusiven Gruppe und beantwortet Ihre Fragen zu Übungen, der Nutzung des Fitnessstudios und den Grundlagen einer gesundheitsfreundlichen Ernährung. Diese Unterstützung spart Ihnen Zeit und erweitert Ihr Fitnesswissen, sodass Sie Ihre Fitnessziele effizienter erreichen können."
       }
+      
     },
+    "down": {
+  "heroTitle": "Über 30 Jahre Fitness-Erfahrung, die sich in unserer Professionalität und unermüdlichen Unterstützung auf deinem Weg widerspiegelt.",
+  "heroText": "Finde das richtige Fitnessprogramm, das auf dich zugeschnitten ist.", 
+  "heroImageAlt": "Fitness Hero Image"
+},
+"leftPhoto": {
+  "heroTitle": "Sparen Sie sich die Mühe, nach Ihrem Anfängertrainingsplan zu suchen, und probieren Sie das MAXX Training START-UP-Programm aus.",
+  "heroText": "Warum Zeit mit der Suche nach dem besten Trainingsplan, dem Erlernen der richtigen Übungstechniken oder dem korrekten Umgang mit Geräten verschwenden? Sparen Sie diese Zeit und konzentrieren Sie sich auf das, was Ihnen am wichtigsten ist, während wir uns um Ihr Anfängertrainingsprogramm kümmern.",
+  "heroText2": "Kunden, die MAXXGYM zum ersten Mal besuchen, erhalten ein besonderes Geschenk von uns:",
+  "heroImageAlt": "Links ausgerichtetes Fitnessbild",
+  "bulletText1": "Eine KOSTENLOSE Einführungseinheit mit einem Personal Trainer.",
+  "bulletText2": "Ein KOSTENLOSES Einführungs-Trainingsprogramm.",
+  "bulletText3": "und einen KOSTENLOSEN Proteinshake nach Ihrer Einführungseinheit, auf uns.",
+  "heroText3": "Alles, damit Ihr Fitnessweg auf MAXXimalem Niveau beginnt."
+},
     "form": {
       "title": "Reservieren Sie Ihr kostenloses Ticket",
       "description": "Vermeiden Sie häufige Fitnessfehler mit unserer Hilfe und testen Sie uns 100% KOSTENLOS. Füllen Sie das Formular unten aus, um Ihr kostenloses Ticket zu erhalten und uns so schnell wie möglich zu besuchen.",
@@ -77,7 +137,11 @@
         "name": "Vollständiger Name*",
         "email": "E-Mail-Adresse*",
         "phone": "Telefonnummer*",
-        "address": "Ständige Adresse*"
+        "address": "Ständige Adresse*",
+          "message": "Erzählen Sie uns etwas über Ihre Ziele",
+        "validationError": "Bitte füllen Sie alle erforderlichen Felder aus.",
+        "successMessage": "Ihre Nachricht wurde erfolgreich gesendet!",
+        "errorMessage": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten."
       },
       "button": "IHREN KOSTENLOSEN TICKET ANFORDERN",
       "privacy": "Wir respektieren Ihre Privatsphäre und werden Ihre Daten niemals ohne Ihre Zustimmung weitergeben."
@@ -116,8 +180,8 @@
           "author": "Tina Jernej"
         }
       },
-
-      "personal": {
+      
+  "personal": {
         "trainingCarouselTitle1": "Personalisierter Ansatz, der funktioniert",
         "trainingCarouselText1": "Finden Sie das beste personalisierte Training für Ihre Ziele.",
         "trainingCarouselTitle2": "Ihr Weg zum Erfolg",
@@ -170,7 +234,7 @@
         "trainingFormErrorMessage": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
       },
 
-      "guided": {
+ "guided": {
         "exercisesCarouselTitle1": "Die besten Preise für Ihre Ziele",
         "exercisesCarouselText1": "Finden Sie die besten Angebote, die auf Ihre Bedürfnisse zugeschnitten sind.",
         "exercisesCarouselTitle2": "Beginnen Sie noch heute",
@@ -186,8 +250,8 @@
         "formSubmitButton": "ANMELDEN",
         "formButton": "Melden Sie sich für ein kostenloses Gespräch an",
         "cardioTitle": "Les Mills Grit CARDIO",
-        "exercisesFormSuccessMessage": "bravo",
-        "exercisesFormFormErrorMessage": "no bravo",
+        "exercisesFormSuccessMessage": "Ihre Nachricht wurde erfolgreich gesendet!",
+        "exercisesFormErrorMessage": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
         "cardioDescription": "Les Mills GRIT Cardio ist ein 30-minütiges hochintensives Intervalltraining (HIIT).",
         "cardioBenefits": [
           "Erhöhte kardiovaskuläre Kapazität.",

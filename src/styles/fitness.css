@@ -1,4 +1,4 @@
-.fitnes-section {
+.fitness-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,51 +8,207 @@
   height: 100vh;
 }
 
-.fitnes-section.reverse {
+.fitness-section.reverse {
   flex-direction: row-reverse;
 }
 
-.fitnes-text {
+.fitness-text {
   flex: 1;
   padding: 1rem;
 }
 
-.fitnes-text h2 {
+.fitness-text h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.fitnes-text p {
+.fitness-text p {
   font-size: 1rem;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
 
-.fitnes-button {
-  background-color: red;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  
-}
 
-.fitnes-button:hover {
-  background-color: darkred;
-}
-
-.fitnes-image {
+.fitness-image {
   flex: 1;
   text-align: center;
+
 }
+
 
 .fitnes-image img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.cta-button {
+  background-color: #d71920;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a51418;
+}
+
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.text-lines {
+ list-style-type: none;  /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Align text to the left */
+}
+
+.text-lines li {
+  margin-bottom: 1rem; /* Add space between list items */
+  font-size: 1.2rem; /* Adjust font size */
+  line-height: 1.5; /* Adjust line height for better readability */
+  color: #333; /* Text color */
+  font-weight: 400; /* Normal font weight */
+}
+
+.text-lines li:hover {
+  color: #d71920; /* Change color on hover */
+  font-weight: 600; /* Bold font on hover */
+ /* transition: color 0.3s ease, font-weight 0.3s ease;  Smooth hover effect */
+}
+
+/*downSection */
+.down-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  padding: 0 2rem; /* Add padding for spacing */
+}
+
+.down-text {
+  flex: 1; /* Take up 50% of the width */
+  text-align: left; /* Align text to the left */
+  padding: 1rem; /* Add padding for spacing */
+}
+
+.down-text h1 {
+  font-size: 2rem; /* Adjust heading size */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.down-text p {
+  font-size: 1.2rem; /* Adjust paragraph size */
+  margin-bottom: 1.5rem; /* Add spacing below the text */
+}
+
+.cta-button {
+  background-color: #d71920;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #b6161b;
+}
+
+.down-image {
+  flex: 1; /* Take up 50% of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroDown-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container */
+  max-width: 100%; /* Optional: limit image width */
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.left-photo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem;
+  background-color: rgb(240, 240, 240);
+}
+
+.left-photo-section .left-photo-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%; /* Restrict image width */
+}
+
+.heroLeft-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.left-photo-section .left-photo-text {
+  flex: 1;
+  text-align: left;
+  padding: 1rem;
+}
+
+.left-photo-section .left-photo-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.left-photo-section .left-photo-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Form Section */
@@ -63,37 +219,134 @@
   margin-top: 2rem;
   max-width: 560px;
   min-width: 286px;
-  margin-left: 500px;
+  margin: 2rem auto; /* Center the form on the screen */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+/* Form Title */
+.fitnes-signin h2 {
+  font-size: 1.8rem;
+  color: #333; /* Strong contrast for the title */
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Form Description */
+.fitnes-signin p {
+  font-size: 1rem;
+  color: #555; /* Secondary color for description */
+  margin-bottom: 1.5rem;
+}
+
+/* Form Container */
 .signin-form {
   margin-top: 1.5rem;
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
+/* Input Fields */
 input, textarea {
   width: 100%;
-  padding: 10px;
+  padding: 12px 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Input Focus */
+input:focus, textarea:focus {
+  border-color: #d71920;
+  box-shadow: 0 0 6px rgba(215, 25, 32, 0.3);
+  outline: none;
+}
+
+/* Submit Button */
 .form-submit {
-  background-color: red;
+  background-color: #d71920;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px; /* Fully rounded button */
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Button Hover */
 .form-submit:hover {
-  background-color: darkred;
+  background-color: #a51418;
+  transform: translateY(-2px); /* Slight lift */
+}
+
+/* Button Active */
+.form-submit:active {
+  transform: translateY(0);
+}
+
+/* Privacy Notice */
+.form-privacy {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.form-privacy span {
+  color: #d71920;
+  margin-right: 5px;
+}
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .fitness-section, .fitness-section.reverse, .down-section, .left-photo-section {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .fitness-image {
+    height: 96%;
+    width: 80%;
+  }
+
+  .fitness-text, .fitness-image, .down-text, .down-image, .left-photo-image, .left-photo-text {
+    flex: none;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .fitness-text h2, .down-text h1, .left-photo-text h1, .fitnes-signin h2 {
+    font-size: 1.5rem;
+  }
+
+  .fitness-text p, .down-text p, .left-photo-text p, .fitnes-signin p {
+    font-size: 0.9rem;
+  }
+
+  .hero-section {
+    height: 50vh;
+  }
+
+  .fitnes-signin {
+    padding: 1rem;
+  }
+
+  input, textarea {
+    padding: 10px;
+  }
+
+  .form-submit {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .form-privacy {
+    font-size: 0.8rem;
+  }
 }

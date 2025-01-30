@@ -1,5 +1,6 @@
 "use client";
-
+"use client"; // Marking this as a client component
+import { useTranslation } from "next-i18next";
 import { useKeenSlider } from "keen-slider/react";
 import { useEffect, useRef, useState } from "react";
 import "keen-slider/keen-slider.min.css";
@@ -7,7 +8,11 @@ import styles from "../../styles/imagecarousel.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
+  
+
+
 const ImageCarousel = ({ text, handleScrollToForm }) => {
+  const { t } = useTranslation("common");
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     duration: 800,
@@ -77,7 +82,7 @@ const ImageCarousel = ({ text, handleScrollToForm }) => {
         <h1 className={styles.title}>{text[currentIndex]?.title}</h1>
         <p className={styles.description}>{text[currentIndex]?.text}</p>
         <button className={styles.carouselButton} onClick={handleButtonClick}>
-          PRIDRUŽI SE NAM
+        {t("image.carouselButton", { defaultMessage: "Learn More" })}
         </button>
       </div>
 
@@ -101,3 +106,5 @@ const ImageCarousel = ({ text, handleScrollToForm }) => {
 };
 
 export default ImageCarousel;
+
+

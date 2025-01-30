@@ -66,3 +66,12 @@
   line-height: 1.4;
   transition: color 0.3s ease;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+.overlay {
+
+  display: flex;
+  flex-wrap: wrap;
+}
+}

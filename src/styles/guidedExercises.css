@@ -109,6 +109,7 @@ body {
 
 .logos-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 /* Form Section Styling */
@@ -164,6 +165,7 @@ textarea {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s;
   margin-top: 1rem;
+  max-width: 200px;
 }
 
 .submit-button:hover {

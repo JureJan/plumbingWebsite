@@ -6,6 +6,9 @@
   overflow: hidden; /* Prevent overflow of child elements */
   margin: 0 auto; /* Center horizontally */
   touch-action: pan-y; /* Enable horizontal swipe gestures while allowing vertical scrolling */
+  max-width: 100%;
+  max-height: 400px; /* Optional: Limit max height */
+  overflow: hidden,
 }
 
 .carouselContainer {

@@ -58,11 +58,11 @@ const Home = () => {
         {/* Image Carousel */}
         <ImageCarousel text={titles} />
 
-        {/* Additional Content */}
+        {/* Additional Content
         <div className="carouselOverlay">
           <h1>{t("home.homeCarouselTitle1", { defaultMessage: "Personalized Approach That Works" })}</h1>
           <p>{t("home.CarouselText1", { defaultMessage: "Default Text 1" })}</p>
-        </div>
+        </div> */}
 
         <Schedule />
         <h2>{t("home.CarouselTitle3", { defaultMessage: "Default Title 3" })}</h2>

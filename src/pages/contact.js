@@ -6,7 +6,7 @@ import "../styles/contact.css";
 import ImageCarousel from "../app/components/imageCarousel";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import CommentCarousel from "@/app/components/commentCarousel";
 
@@ -14,23 +14,50 @@ export default function Contact() {
   const { t } = useTranslation("common");
   const formRef = useRef(null);
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
+    // Initialize EmailJS
+    useEffect(() => {
+      if (typeof window !== "undefined") {
+        emailjs.init("4seHCGovjmExB5X_K"); // Replace with your actual EmailJS public key
+      }
+    }, []);
+
+    const handleFormSubmit = async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
 
     const templateParams = {
       name: formData.get("name"),
       email: formData.get("email"),
     };
 
-    emailjs
-      .send("service_oi2poff", "template_0z4khdp", templateParams)
-      .then(() => {
-        alert(t("contact.formSuccessMessage"));
-      })
-      .catch(() => {
-        alert(t("contact.formErrorMessage"));
-      });
+    // Validate required fields
+    if (!templateParams.name || !templateParams.email) {
+      alert(t("form.validationError", "Please fill out all required fields."));
+      return;
+    }
+
+    try {
+      const response = await emailjs.send(
+        "service_h9tgu0l", // Your EmailJS service ID
+        "template_uuzq0uy", // Your EmailJS template ID
+        templateParams,
+        "4seHCGovjmExB5X_K" // Your EmailJS user ID (public key)
+      );
+
+      if (response.status === 200) {
+        alert(t("form.successMessage", "Your message was sent successfully!"));
+        // Manually reset form fields
+        if (formRef.current) {
+          formRef.current.elements.name.value = "";
+          formRef.current.elements.email.value = "";
+        }
+      } else {
+        alert(t("form.errorMessage", "An error occurred while sending your message."));
+      }
+    } catch (error) {
+      console.error("EmailJS Error:", error); // Log the error for debugging
+      alert(t("form.errorMessage", "An error occurred while sending your message."));
+    }
   };
 
   const titles = [

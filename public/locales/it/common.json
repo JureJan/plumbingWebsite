@@ -8,10 +8,10 @@
     "contact": "Contatto",
     "languageLabel": "Lang",
     "language": {
-      "en": "Inglese",
-      "sl": "Sloveno",
-      "de": "Tedesco",
-      "it": "Italiano"
+      "en": "En",
+      "sl": "Sl",
+      "de": "De",
+      "it": "It"
     },
      "workingHours": {
         "weekdays": "LUNEDÌ - VENERDÌ 6.00 - 22.30",
@@ -20,19 +20,46 @@
       "phoneNumber": "0590 41 900"
     },
 
+    "image":{
+      "carouselButton":"Unisciti a noi"
+    },
+  
     "home": {
-      "CarouselTitle1": "Approccio personalizzato che funziona",
-      "CarouselText1": "Trova il miglior allenamento personalizzato per i tuoi obiettivi.",
+      "CarouselTitle1": "Un approccio personalizzato che funziona",
+      "CarouselText1": "Trova l'allenamento personalizzato migliore per i tuoi obiettivi.",
       "CarouselTitle2": "Il tuo percorso verso il successo",
-      "CarouselText2": "Raggiungi i tuoi obiettivi con l'allenamento personale di MaxxGym.",
+      "CarouselText2": "Raggiungi i tuoi obiettivi con l'allenamento personalizzato di MaxxGym.",
       "CarouselTitle3": "Guida professionale",
       "CarouselText3": "Allenamenti su misura per le tue esigenze e capacità.",
       "CarouselTitle4": "Inizia il tuo viaggio oggi",
       "CarouselText4": "Scopri i benefici del fitness con MaxxGym."
-
-
     },
-    
+    "bmi": {
+      "title": "Calcolatore BMI",
+      "name": "Nome",
+      "surname": "Cognome",
+      "gender": "Genere",
+      "selectGender": "Seleziona Genere",
+      "male": "Maschio",
+      "female": "Femmina",
+      "age": "Età (anni)",
+      "weight": "Peso (kg)",
+      "height": "Altezza (cm)",
+      "activityLevel": "Livello di attività",
+      "selectActivityLevel": "Seleziona il livello di attività",
+      "inactive": "Inattivo",
+      "lightlyActive": "Leggermente attivo",
+      "moderatelyActive": "Moderatamente attivo",
+      "veryActive": "Molto attivo",
+      "extremelyActive": "Estremamente attivo",
+      "goal": "Obiettivo",
+      "selectGoal": "Seleziona Obiettivo",
+      "maintain": "Mantenere il peso",
+      "lose": "Perdere peso",
+      "gain": "Aumentare peso",
+      "email": "Email",
+      "submitButton": "Calcola e Invia BMI"
+     },
     "price":{
       "CarouselTitle1": "Approccio personalizzato che funziona",
       "CarouselText1": "Trova il miglior allenamento personalizzato per i tuoi obiettivi.",
@@ -57,37 +84,66 @@
         "CarouselTitle3": "Terzo Titolo",
         "CarouselText3": "Terzo testo che descrive i deal.",
         "CarouselTitle4": "Quarto Titolo",
-        "CarouselText4": "Quarto testo per il carosello."
+        "CarouselText4": "Quarto testo per il carosello.",
+        "line1": "Attrezzature all'avanguardia per tutti i livelli di fitness.",
+        "line2": "Trainer esperti che ti guidano in ogni fase del percorso.",
+        "line3": "Programmi di allenamento flessibili che si adattano alla tua vita.",
+        "line4": "Una comunità di supporto che ti mantiene motivato.",
+        "line5": "Programmi su misura per i tuoi obiettivi specifici.",
+        "line6": "Vivi la differenza con MaxxGym."
       },
       "sections": {
         "section1": {
           "title": "Finalmente una palestra che non è sovraffollata e offre grandi opzioni per allenarsi senza interruzioni",
-          "text": "Sei stanco delle palestre sovraffollate dove non puoi fare un allenamento efficace? Stufo di aspettare le attrezzature perché qualcuno sta mandando messaggi? Cerchi un posto dove allenarti senza interruzioni? MAXXGYM è esattamente quello che stai cercando. Offre un ambiente per un grande allenamento senza fastidiose distrazioni."
+          "text": "Sei stanco delle palestre sovraffollate dove non puoi fare un allenamento efficace? Stufo di aspettare le attrezzature perché qualcuno sta mandando messaggi? Cerchi un posto dove allenarti senza interruzioni? MAXXGYM è esattamente quello che stai cercando. Offre un ambiente per un grande allenamento senza fastidiose distrazioni.",
+          "text2": "Da oltre 20 anni aiutiamo migliaia di clienti a ottenere risultati straordinari con un approccio diverso: creare un ambiente accogliente, offrire attrezzature diversificate e favorire una grande compagnia. Niente sguardi imbarazzanti, niente messaggi sulle macchine, solo allenamenti di alta qualità. Abbiamo costruito questo spazio in due decenni per i nostri clienti e il loro successo."
         },
         "section2": {
           "title": "Superando i limiti delle tue capacità",
-          "text": "Al MaxxGym non c'è attesa per le attrezzature né perdita di tempo. Offriamo allenamenti più efficaci per aiutarti a raggiungere i tuoi obiettivi."
+          "text": "Al MaxxGym non c'è attesa per le attrezzature né perdita di tempo. Offriamo allenamenti più efficaci per aiutarti a raggiungere i tuoi obiettivi.",
+          "text2": "Abbiamo creato l'alternativa perfetta trasferendoci in una nuova sede più grande, dotata di una vasta gamma di macchinari e attrezzi al MAXXGYM. Il nostro approccio unico attrae un tipo diverso di pubblico, assicurando che non ci siano inutili attese per le attrezzature e rendendo i tuoi allenamenti più efficienti. Prenota la tua visita gratuita oggi stesso e scopri la differenza!"
         },
         "section3": {
           "title": "Attrezzatura che ispira",
-          "text": "Attrezzature all'avanguardia, istruttori di alto livello e programmi motivazionali ti aspettano al MaxxGym. Diventa la migliore versione di te stesso!"
+          "text": "Attrezzature all'avanguardia, istruttori di alto livello e programmi motivazionali ti aspettano al MaxxGym. Diventa la migliore versione di te stesso!",
+          "text2": "Il team MAXXGYM è qui per supportarti in un gruppo esclusivo, rispondendo alle tue domande sugli esercizi, sull'utilizzo della palestra e sui fondamenti di una nutrizione salutare. Questo supporto ti fa risparmiare tempo e migliora la tua conoscenza del fitness, offrendoti un modo più efficiente per raggiungere i tuoi obiettivi."
         }
+        
       },
-      "form": {
+         "down": {
+        "heroTitle": "Oltre 30 anni di esperienza nel fitness, riflessi nella nostra professionalità e nel costante supporto per il tuo percorso.",
+        "heroText": "Trova il programma di fitness giusto per te.",
+        "heroImageAlt": "Fitness Hero Image"
+},
+"leftPhoto": {
+        "heroTitle": "Risparmia il fastidio di cercare il tuo programma di allenamento per principianti e prova il programma MAXX Training START-UP.",
+        "heroText": "Perché perdere tempo a cercare il miglior programma di allenamento, imparare le tecniche corrette degli esercizi o imparare a usare correttamente le attrezzature? Risparmia tempo e concentrati su ciò che conta di più per te mentre ci occupiamo del tuo programma di allenamento per principianti.",
+        "heroText2": "I clienti che visitano MAXXGYM per la prima volta ricevono un regalo speciale da parte nostra:",
+        "heroImageAlt": "Immagine fitness allineata a sinistra",
+        "bulletText1": "Una sessione di personal training introduttiva GRATUITA.",
+        "bulletText2": "Un programma di allenamento introduttivo GRATUITO.",
+        "bulletText3": "e un frullato proteico GRATUITO dopo la sessione introduttiva, offerto da noi.",
+        "heroText3": "Tutto per assicurarti che il tuo viaggio fitness inizi al massimo."
+       },
+     "form": {
         "title": "Prenota il tuo biglietto gratuito",
         "description": "Evita gli errori comuni in palestra con il nostro aiuto e provaci al 100% GRATIS. Compila il modulo sottostante per ricevere il tuo biglietto gratuito e vieni a trovarci il prima possibile.",
-        "inputs": {
+     "inputs": {
           "name": "Nome e Cognome*",
           "email": "Indirizzo Email*",
           "phone": "Numero di Telefono*",
-          "address": "Indirizzo Permanente*"
-        },
-        "button": "RICHIEDI IL TUO BIGLIETTO GRATUITO",
-        "privacy": "Rispettiamo la tua privacy e non condivideremo mai le tue informazioni senza il tuo consenso."
-      },
+          "address": "Indirizzo Permanente*",
+            "message": "Raccontaci qualcosa sui tuoi obiettivi",
+          "validationError": "Si prega di compilare tutti i campi obbligatori.",
+          "successMessage": "Il tuo messaggio è stato inviato con successo!",
+          "errorMessage": "Si è verificato un errore durante l'invio del messaggio."
+          },
+          "button": "RICHIEDI IL TUO BIGLIETTO GRATUITO",
+          "privacy": "Rispettiamo la tua privacy e non condivideremo mai le tue informazioni senza il tuo consenso."
+          },
 
       
-        "comments": {
+   "comments": {
           "1": {
             "title": "Non sei ancora convinto?",
             "text": "Il miglior fitness a Lubiana. Personale molto professionale e disponibile. Il proprietario aiuta tutti in palestra indipendentemente da chi sei!",
@@ -121,7 +177,7 @@
         },
 
         
-        "personal": {
+   "personal": {
           "trainingCarouselTitle1": "Approccio personalizzato che funziona",
           "trainingCarouselText1": "Trova il miglior allenamento personalizzato per i tuoi obiettivi.",
           "trainingCarouselTitle2": "Il tuo percorso verso il successo",
@@ -174,7 +230,7 @@
           "trainingFormErrorMessage": "Si è verificato un errore durante l'invio del messaggio. Riprova."
         },
 
-        "guided": {
+  "guided": {
           "exercisesCarouselTitle1": "I migliori prezzi per i tuoi obiettivi",
           "exercisesCarouselText1": "Trova le migliori offerte su misura per le tue esigenze.",
           "exercisesCarouselTitle2": "Inizia oggi",
@@ -190,8 +246,8 @@
           "formSubmitButton": "ISCRIVITI",
           "formButton": "Iscriviti per una consulenza gratuita",
           "cardioTitle": "Les Mills Grit CARDIO",
-          "exercisesFormSuccessMessage": "bravo",
-          "exercisesFormFormErrorMessage": "no bravo",
+          "exercisesFormSuccessMessage": "Il tuo messaggio è stato inviato con successo!",
+          "exercisesFormErrorMessage": "Si è verificato un errore durante l'invio del messaggio. Riprova.",
           "cardioDescription": "Les Mills GRIT Cardio è un allenamento HIIT di 30 minuti ad alta intensità.",
           "cardioBenefits": [
             "Maggiore capacità cardiovascolare.",
@@ -207,57 +263,55 @@
             "Tecniche di sollevamento pesi."
           ],
           "bodyStepTitle": "Les Mills Grit BODYSTEP",
-"bodyStepDescription": "Allenamento aerobico con step per migliorare coordinazione e forma fisica.",
-"bodyStepBenefits": [
-  "Miglior coordinazione.",
-  "Migliore forma aerobica.",
-  "Modo divertente di allenarsi."
-],
-"bodyAttackTitle": "Les Mills Grit BODYATTACK",
-"bodyAttackDescription": "Allenamento cardio intenso con movimenti ed esercizi esplosivi.",
-"bodyAttackBenefits": [
-  "Maggiore esplosività.",
-  "Migliore coordinazione.",
-  "Allenamento cardio intenso."
-],
-"bootCampTitle": "Les Mills Grit BOOTCAMP",
-"bootCampDescription": "Allenamento di gruppo per migliorare forza e forma fisica complessiva.",
-"bootCampBenefits": [
-  "Miglioramento completo della forma fisica.",
-  "Allenamento di gruppo divertente.",
-  "Maggiore resistenza."
-],
-"pilatesTitle": "Pilates",
-"pilatesDescription": "Il Pilates è un esercizio per migliorare postura, flessibilità e forza del core.",
-"pilatesBenefits": [
-  "Postura migliorata.",
-  "Flessibilità aumentata.",
-  "Rinforzo del core."
-]
- },
+          "bodyStepDescription": "Allenamento aerobico con step per migliorare coordinazione e forma fisica.",
+          "bodyStepBenefits": [
+          "Miglior coordinazione.",
+          "Migliore forma aerobica.",
+           "Modo divertente di allenarsi."
+          ],
+           "bodyAttackTitle": "Les Mills Grit BODYATTACK",
+           "bodyAttackDescription": "Allenamento cardio intenso con movimenti ed esercizi esplosivi.",
+          "bodyAttackBenefits": [
+       "Maggiore esplosività.",
+       "Migliore coordinazione.",
+       "Allenamento cardio intenso."
+       ],
+       "bootCampDescription": "Allenamento di gruppo per migliorare la forza e la forma fisica complessiva.",
+       "bootCampBenefits": [
+         "Miglioramento completo della forma fisica.",
+         "Allenamento di gruppo divertente.",
+         "Maggiore resistenza."
+      ],
+      "pilatesTitle": "Pilates",
+      "pilatesDescription": "Il Pilates è un metodo di allenamento che migliora la postura, la flessibilità e la forza del core.",
+      "pilatesBenefits": [
+        "Postura migliorata.",
+        "Flessibilità aumentata.",
+        "Rinforzo del core."
+      ]
+      },
 
  "contact": {
   "carouselTitle1": "I migliori contatti per i tuoi obiettivi",
-    "carouselText1": "Trova le migliori offerte su misura per le tue esigenze.",
-    "carouselTitle2": "Sempre qui per te",
-    "carouselText2": "Contattaci in qualsiasi momento.",
-    "carouselTitle3": "Una posizione che ispira",
-    "carouselText3": "Visita la nostra sede in via Dunajska.",
-    "carouselTitle4": "Raggiungibili via telefono ed email",
-    "carouselText4": "Risposte rapide alle tue domande.",
-    "headerTitle": "Contatti",
-    "address": "MAXXGYM Ljubljana, Dunajska cesta 270, 1000 Ljubljana",
-    "phone": "Telefono",
-    "email": "Email",
-    "newsletterTitle": "Iscriviti alle novità di MAXXGYM",
-    "formNamePlaceholder": "Nome e Cognome*",
-    "formEmailPlaceholder": "Indirizzo Email*",
-    "formSubmitButton": "Iscriviti",
-    "mapTitle": "Dove trovarci?",
-    "formSuccessMessage": "Il tuo messaggio è stato inviato con successo!",
-    "formErrorMessage": "Si è verificato un errore durante l'invio del messaggio. Riprova."
-  
-  }
+  "carouselText1": "Trova le migliori offerte su misura per le tue esigenze.",
+  "carouselTitle2": "Sempre qui per te",
+  "carouselText2": "Contattaci in qualsiasi momento.",
+  "carouselTitle3": "Una posizione che ispira",
+  "carouselText3": "Visita la nostra sede in Via Dunajska.",
+  "carouselTitle4": "Raggiungibili via telefono ed email",
+  "carouselText4": "Risposte rapide alle tue domande.",
+  "headerTitle": "Contatti",
+  "address": "MAXXGYM Ljubljana, Dunajska cesta 270, 1000 Ljubljana",
+  "phone": "Telefono",
+  "email": "Email",
+  "newsletterTitle": "Iscriviti alle novità di MAXXGYM",
+  "formNamePlaceholder": "Nome e Cognome*",
+  "formEmailPlaceholder": "Indirizzo Email*",
+  "formSubmitButton": "Iscriviti",
+  "mapTitle": "Dove trovarci?",
+  "formSuccessMessage": "Il tuo messaggio è stato inviato con successo!",
+  "formErrorMessage": "Si è verificato un errore durante l'invio del messaggio. Riprova."  
+   }
 
         
 }
