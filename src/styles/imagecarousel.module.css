@@ -1,42 +1,40 @@
 .carouselWrapper {
   position: relative;
   width: 100%;
-  max-width: 100%; /* Ensures the carousel fits within the page */
-  height: 70vh; /* Constrain height for the carousel */
-  overflow: hidden; /* Prevent overflow of child elements */
-  margin: 0 auto; /* Center horizontally */
-  touch-action: pan-y; /* Enable horizontal swipe gestures while allowing vertical scrolling */
   max-width: 100%;
-  max-height: 400px; /* Optional: Limit max height */
-  overflow: hidden,
+  height: 70vh;
+  max-height: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+  touch-action: pan-y;
 }
 
 .carouselContainer {
   display: flex;
   width: 100%;
   height: 100%;
-  will-change: transform; /* Optimize performance for sliding */
-  touch-action: pan-y; /* Required for smooth dragging/touch on mobile */
-  cursor: grab; /* Indicate draggable content on desktop */
+  will-change: transform;
+  touch-action: pan-y;
+  cursor: grab;
 }
 
 .carouselContainer:active {
-  cursor: grabbing; /* Change cursor when actively dragging */
+  cursor: grabbing;
 }
 
 .slide {
-  flex: 0 0 100%; /* Ensure each slide takes up the full width */
+  flex: 0 0 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  user-select: none; /* Prevent text/image selection while dragging */
+  user-select: none;
 }
 
 .image {
-  object-fit: cover; /* Ensure the image fits without distorting */
-  width: 100%; /* Take full width of the container */
-  height: 100%; /* Match height of the parent container */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .arrow {
@@ -77,9 +75,9 @@
   align-items: center;
   color: #fff;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 5;
-  pointer-events: none; /* Allow interactions to pass through the overlay */
+  pointer-events: none;
 }
 
 .title {
@@ -95,7 +93,7 @@
 
 .carouselOverlayWrapper {
   width: 100%;
-  margin-bottom: 2rem; /* Add spacing below the carousel */
+  margin-bottom: 2rem;
 }
 
 .carouselButton {
@@ -108,7 +106,7 @@
   cursor: pointer;
   text-transform: uppercase;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  pointer-events: auto; /* Ensure the button is clickable */
+  pointer-events: auto;
 }
 
 .carouselButton:hover {

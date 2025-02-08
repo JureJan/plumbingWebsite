@@ -99,85 +99,193 @@ export default function PersonalTraining() {
         <ImageCarousel text={titles} handleScrollToForm={handleScrollToForm} />
       </div>
       <main>
-        {/* Section 1 */}
-        <section className="hero-section">
-          <Image
-            src="/images/trening2.png"
-            alt={t("personal.trainingHeroImageAlt")}
-            fill
-            style={{ objectFit: "cover" }}
-            className="hero-image"
-          />
-          <div className="hero-overlay">
-            <h1>{t("personal.trainingHeroTitle")}</h1>
-            <p>{t("personal.trainingHeroText")}</p>
-            <button className="cta-button" onClick={handleScrollToForm}>
-              {t("personal.trainingSignUpButton")}
-            </button>
-          </div>
-        </section>
 
-        {/* Section 2 */}
-        <section className="info-section">
-          <div className="info-left">
-            <h2>{t("personal.trainingInfoTitle1")}</h2>
-            <ul>
-              <li>{t("personal.trainingInfoPoint1")}</li>
-              <li>{t("personal.trainingInfoPoint2")}</li>
-              <li>{t("personal.trainingInfoPoint3")}</li>
-            </ul>
-          </div>
-          <div className="info-right">
-            <Image
-              src="/images/trening3.png"
-              alt={t("personal.trainingInfoImageAlt1")}
-              width={500}
-              height={500}
-            />
-          </div>
-        </section>
+                  {/* Down Section */}
+                  <section className="down-section">
+                    <div className="down-text">
+                      <h1>{t("personal.heroTitle", "Over 30 years of fitness expertise, reflected in our professionalism and unwavering support for your journey.")}</h1>
+                      <p>{t("personal.heroText", "Find the right fitness program tailored to you.")}</p>
+                      <p>{t("personal.heroText2", "Find the right fitness program tailored to you.")}</p>
+                      <p>{t("personal.heroText3", "Find the right fitness program tailored to you.")}</p>
 
-        {/* Section 3 */}
-        <section className="reverse-info-section">
-          <div className="info-left">
-            <Image
-              src="/images/trening4.png"
-              alt={t("personal.trainingInfoImageAlt2")}
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="info-right">
-            <h2>{t("personal.trainingInfoTitle2")}</h2>
-            <p>{t("personal.trainingInfoText2")}</p>
-            <button className="cta-button" onClick={handleScrollToForm}>
-              {t("personal.trainingSignUpButton")}
-            </button>
-          </div>
-        </section>
+                    </div>
+                    <div className="down-image">
+                      <Image
+                        src="/images/fitnes3.png"
+                        alt={t("down.heroImageAlt", "Fitness Hero Image")}
+                        width={500}
+                        height={500}
+                        className="heroDown-image"
+                      />
+                    </div>
+                  </section>
+        
+                  {/* Left Photo Section */}
+                  <section className="left-photo-section">
+                    <div className="left-photo-image">
+                      <Image
+                        src="/images/trening5.png"
+                        alt={t("leftPhoto.heroImageAlt", "Left Aligned Fitness Image")}
+                        width={500}
+                        height={500}
+                        className="heroLeft-image"
+                      />
+                    </div>
+                    <div className="left-photo-text">
+                      <h1>{t("personal.leftPhotoHeroTitle", "Empower Your Fitness Journey With Us")}</h1>
+                      <p>{t("personal.leftPhotoHeroText", "Discover personalized plans to achieve your fitness goals.")}</p>
+                      <p>{t("personal.leftPhotoHeroText2", "We provide everything to ensure your fitness journey starts in the MAXXImal way.")}</p>
+                      <p>{t("personal.leftPhotoHeroText3", "We provide everything to ensure your fitness journey starts in the MAXXImal way.")}</p>
+                      <button className="cta-button" onClick={handleScrollToForm}>
+                        {t("form.button", "Join Now")}
+                      </button>
+                    </div>
+                  </section>
+        
+{/* Section 1 */}
+<section className="hero-section">
+  <Image
+    src="/images/trening2.png"
+    alt={t("personal.trainingHeroImageAlt")}
+    fill
+    style={{ objectFit: "cover" }}
+    className="hero-image"
+  />
+  <div className="hero-overlay">
+    <h1>{t("personal.trainingHeroTitle")}</h1>
+    {/* <p>{t("personal.trainingHeroText")}</p> */}
 
-        {/* Section 4 */}
-        <section className="bullet-section">
-          <Image
-            src="/images/fitnes1.png"
-            alt={t("personal.trainingBulletBackgroundAlt")}
-            fill
-            style={{ objectFit: "cover" }}
-            className="background-image"
-          />
-          <div className="bullet-overlay">
-            <h2>{t("personal.trainingBulletTitle")}</h2>
-            <ul>
-              <li>
-                <h3>{t("personal.trainingBulletPoint1Title")}</h3>
-                <p>{t("personal.trainingBulletPoint1Text")}</p>
-              </li>
-            </ul>
-            <button className="cta-button" onClick={handleScrollToForm}>
-              {t("personal.trainingSignUpButton")}
-            </button>
-          </div>
-        </section>
+    {/* Bullet Points */}
+    <ul className="bullet-points">
+      <li><h2>{t("personal.trainingBulletPoint1")}</h2><p>{t("personal.trainingBulletText1")}</p></li>
+      <li><h2>{t("personal.trainingBulletPoint2")}</h2><p>{t("personal.trainingBulletText2")}</p></li>
+      <li><h2>{t("personal.trainingBulletPoint3")}</h2><p>{t("personal.trainingBulletText3")}</p></li>
+      <li><h2>{t("personal.trainingBulletPoint4")}</h2><p>{t("personal.trainingBulletText4")}</p></li>
+      <li><h2>{t("personal.trainingBulletPoint5")}</h2><p>{t("personal.trainingBulletText5")}</p></li>
+    </ul>
+
+    {/* Submit Button */}
+    <div className="cta-button-container">
+      <button className="cta-button" onClick={handleScrollToForm}>
+        {t("personal.trainingSignUpButton")}
+      </button>
+    </div>
+  </div>
+</section>
+
+
+ {/* Down Section */}
+  <section className="down-section">
+  <div className="down-text">
+  <h1>{t("personal.downHeroTitle", "Over 30 years of fitness expertise, reflected in our professionalism and unwavering support for your journey.")}</h1>
+   <p>{t("personal.downHeroText", "Find the right fitness program tailored to you.")}</p>
+      <p>{t("personal.downHeroText2", "Find the right fitness program tailored to you.")}</p>
+    <p>{t("personal.downHeroText3", "Find the right fitness program tailored to you.")}</p>
+      </div>
+     <div className="down-image">
+     <Image
+     src="/images/fitnes3.png"
+     alt={t("down.heroImageAlt", "Fitness Hero Image")}
+     width={500}
+    height={500}
+     className="heroDown-image"
+     />
+      </div>
+    </section>
+        
+   {/* Left Photo Section */}
+    <section className="left-photo-section">
+     <div className="left-photo-image">
+      <Image
+     src="/images/trening5.png"
+     alt={t("leftPhoto.heroImageAlt", "Left Aligned Fitness Image")}
+      width={500}
+       height={500}
+      className="heroLeft-image"
+   />
+    </div>
+      <div className="left-photo-text">
+       <h1>{t("leftPhoto.heroTitle4", "Empower Your Fitness Journey With Us")}</h1>
+        <p>{t("personal.leftHeroText", "Discover personalized plans to achieve your fitness goals.")}</p>
+          <p>{t("personal.leftHeroText2", "We provide everything to ensure your fitness journey starts in the MAXXImal way.")}</p>
+          <p>{t("personal.leftHeroText3", "All to ensure your fitness journey starts at its MAXXimum.")}</p>
+         <button className="cta-button" onClick={handleScrollToForm}>
+       {t("form.button", "Join Now")}
+   </button>
+    </div>
+    </section>
+
+
+                          
+{/* Section 1 */}
+<section className="hero-section">
+  <Image
+    src="/images/trening1.png"
+    alt={t("personal.trainingHeroImageAlt")}
+    fill
+    style={{ objectFit: "cover" }}
+    className="hero-image"
+  />
+  <div className="hero-overlay">
+    <h1>{t("personal.trainingHeroTitle7")}</h1>
+    
+    {/* 5 Squares Section */}
+    <div className="square-container">
+      <div className="square">
+        <h2>{t("personal.trainingSquareTitle1")}</h2>
+        <p>{t("personal.trainingSquareText1")}</p>
+      </div>
+      <div className="square">
+        <h2>{t("personal.trainingSquareTitle2")}</h2>
+        <p>{t("personal.trainingSquareText2")}</p>
+      </div>
+      <div className="square">
+        <h2>{t("personal.trainingSquareTitle3")}</h2>
+        <p>{t("personal.trainingSquareText3")}</p>
+      </div>
+      <div className="square">
+        <h2>{t("personal.trainingSquareTitle4")}</h2>
+        <p>{t("personal.trainingSquareText4")}</p>
+      </div>
+      <div className="square">
+        <h2>{t("personal.trainingSquareTitle5")}</h2>
+        <p>{t("personal.trainingSquareText5")}</p>
+      </div>
+    </div>
+
+    <button className="cta-button" onClick={handleScrollToForm}>
+      {t("personal.trainingSignUpButton")}
+    </button>
+  </div>
+</section>
+
+{/* Section 4 */}
+<section className="bullet-section">
+  {/* Image on Top */}
+  <div className="image-container">
+    <Image
+      src="/images/certificate.png"
+      alt={t("personal.trainingBulletBackgroundAlt")}
+      width={200} // Adjust width as needed
+      height={200} // Adjust height as needed
+      style={{ objectFit: "cover" }}
+    />
+  </div>
+
+  {/* Centered Content */}
+  <div className="centered-content">
+    {/* Title */}
+    <h2>{t("personal.trainingBulletTitle6")}</h2>
+
+    {/* Text */}
+    <p>{t("personal.trainingBulletPoint1Text")}</p>
+    <p>{t("personal.trainingBulletPoint2Text")}</p>
+  </div>
+      {/* Submit Button */}
+      <button className="cta-button" onClick={handleScrollToForm}>
+      {t("personal.trainingSignUpButton")}
+    </button>
+</section>
 
         {/* Section 5 */}
         <CommentCarousel />
@@ -221,7 +329,8 @@ export default function PersonalTraining() {
               {t("personal.trainingFormSubmitButton")}
             </button>
           </form>
-        </section>      </main>
+        </section>     
+         </main>
       <Footer />
     </>
   );

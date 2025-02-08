@@ -19,21 +19,23 @@
 
 .overlay {
   position: absolute;
-  bottom: 5%; /* Push buttons to bottom of the image */
-  width: 90%; /* Adjust to fit within the content */
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px; /* Prevents excessive width on larger screens */
   display: flex;
-  justify-content: space-between; /* Align buttons as in the photo */
+  justify-content: center; /* Centers buttons horizontally */
+  align-items: center; /* Centers vertically */
+  gap: 10px;
 }
-
 .button {
   flex: 1;
-  margin: 0 10px; /* Space between buttons */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
-  color: white; /* Keep text visible */
-  padding: 20px;
- /* border-radius: 100px;*/
+  max-width: 250px; /* Limits button width */
   text-align: center;
-  position: relative;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   cursor: pointer;
   transition: all 0.3s ease;
   border: none;
@@ -67,11 +69,27 @@
   transition: color 0.3s ease;
 }
 
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-.overlay {
-
-  display: flex;
-  flex-wrap: wrap;
+/* Center .hoverImage inside .container */
+.hoverImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
 }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .overlay {
+    flex-direction: column;
+    bottom: 10%; /* Adjust bottom spacing */
+    align-items: center;
+  }
+
+  .button {
+    width: 100%; /* Make buttons full width on small screens */
+    max-width: 300px; /* Prevents excessive stretching */
+  }
 }

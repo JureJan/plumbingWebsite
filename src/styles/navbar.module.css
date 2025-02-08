@@ -1,32 +1,48 @@
 /* Navbar Styling */
 
 .navbar {
-  font-family: 'Roboto Serif', serif; /* Ensure navbar uses the font */
+  font-family: 'Roboto Serif', serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
+  background-color: #000;
+  color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   height: 74px;
   max-height: 76px;
-  
-}
-
-/* Logo and Navigation Links - Center */
-.logoAndNav {
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  flex: 1;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 10001;
+  flex: 1;
+  align-items: center;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.language-switcher {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navLinks {
@@ -34,23 +50,12 @@
   justify-content: center;
   gap: 30px;
   list-style: none;
-}
-.language-select {
-  background-color: white; /* Belo ozadje */
-  color: black; /* Črn tekst */
-  font-size: 16px; /* Velikost pisave */
-  border: 1px solid #ccc; /* Obroba za boljšo vidljivost */
-  padding: 5px; /* Prostor okoli besedila */
-  border-radius: 4px; /* Zaobljeni robovi */
-}
+  margin-right: 298px;
 
-.language-select option {
-  background-color: white; /* Belo ozadje za možnosti */
-  color: black; /* Črn tekst za možnosti */
 }
 
 .navLinks a {
-  font-family: 'Roboto Serif', serif; /* Apply font to links */
+  font-family: 'Roboto Serif', serif;
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -58,42 +63,6 @@
 
 .navLinks a:hover {
   color: red;
-}
-
-.languageSwitcher {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin: 10px 0;
-}
-
-.languageLabel {
-  margin-bottom: 5px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.languageDropdown {
-  padding: 8px 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-  cursor: pointer;
-}
-
-
-/* Right Section: Social Icons, Phone, and Working Hours */
-.rightSection {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.socialIcons {
-  margin-right: 158px;
- /* display: flex;
-  gap: 15px;*/
 }
 
 .socialIcons img {
@@ -107,7 +76,6 @@
   transform: scale(1.2);
 }
 
-/* Phone Section */
 .phoneSection {
   display: flex;
   align-items: center;
@@ -115,7 +83,7 @@
 }
 
 .phoneIcon {
-  background-color: #28a745; /* Green circle for phone icon */
+  background-color: #28a745;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -127,131 +95,101 @@
 }
 
 .phoneNumber {
-  color: white;
+  color: black;
   font-size: 1rem;
   font-weight: bold;
 }
 
-/* Working Hours - Align to the Right Edge */
 .workingHours {
   display: flex;
- /* justify-content: center;*/
   align-items: center;
   text-align: center;
   flex-direction: column;
   font-size: 0.9rem;
-  margin-right: 47px;
-}
-
-.workingHours p {
-  margin: 0;
-  color: white;
-}
-
-
-/* Hamburger menu styling - initially hidden on larger screens */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-  z-index: 10000; /* Ensure it stays above other elements */
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  border-radius: 2px;
-;
-}
-
-/* Overlay for background click to close modal */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
-  z-index: 1999; /* Put overlay below the navbar and hamburger menu */
+  color: black;
 }
 
 /* Mobile Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .hamburger {
-      display: flex; /* Show hamburger on smaller screens */
-      z-index: 100000;
+      display: flex;
+  }
+
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .logo {
+      flex: 1;
+      justify-content: flex-start;
+  }
+
+  .hamburger {
+      flex: 1;
+      justify-content: center;
+  }
+
+  .language-switcher {
+      flex: 1;
+      justify-content: flex-end;
   }
 
   .navLinks {
-      display: none; /* Hide links by default on smaller screens */
+      display: flex;
+      flex-direction: column;
       position: fixed;
       top: 0;
-      right: 0;
+      left: 0;
       width: 100%;
-      height: 100vh; /* Fullscreen modal for mobile navigation */
-      background-color: #ffffff; /* Solid background for the modal */
-      flex-direction: column;
-      align-items: left;
+      height: 100vh;
+      background-color: #000;
+      align-items: center;
+      justify-content: center;
       gap: 2rem;
-      padding-top: 5rem;
+      padding: 2rem;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Start off-screen */
-      z-index: 2101; /* Above overlay */
+      transform: translateY(-100%);
+      z-index: 1000;
   }
 
   .navLinks.open {
-      display: flex; /* Show links when the menu is open */
-      transform: translateX(0); /* Slide in from the right */
+      transform: translateY(0);
   }
 
   .navLinks a {
       font-size: 1.5rem;
-      color: #003366;
+      color: #ffffff;
       font-weight: bold;
       text-transform: uppercase;
       transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
   }
 
   .navLinks a:hover {
-      color: #ffffff;
-      background-color: #ff6600; /* Highlight link background on hover */
-      transform: scale(1.1); /* Enlarge on hover for visual feedback */
+      color: #ff6600;
+      transform: scale(1.1);
   }
 
+  .socialIcons, .workingHours, .phoneSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+  }
 
-.socialIcons {
-  display: none;
+  .navbar > .socialIcons, 
+  .navbar > .workingHours, 
+  .navbar > .phoneSection {
+      display: none;
+  }
 
-}
-
-.socialIcons img {
-  display: none;
-
-}
-
-.socialIcons img:hover {
-display: none;
-}
-.navbar {
-  font-family: 'Roboto Serif', serif; /* Ensure navbar uses the font */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  height: 74px;
-  max-height: 76px;
-  
-}
-.workingHours {
-display: none;
-}
+  .navLinks.open .socialIcons, 
+  .navLinks.open .workingHours, 
+  .navLinks.open .phoneSection {
+      display: flex;
+  }
 }

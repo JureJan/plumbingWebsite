@@ -45,6 +45,7 @@ html {
 .contact-form-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: white;
 }
 
 .contact-form {
@@ -137,4 +138,9 @@ html {
   .carouselOverlay p {
     font-size: 1rem;
   }
+
+  .map {
+    width: 395px;
+  }
+  
 }

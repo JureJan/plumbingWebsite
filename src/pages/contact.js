@@ -45,7 +45,7 @@ export default function Contact() {
       );
 
       if (response.status === 200) {
-        alert(t("form.successMessage", "Your message was sent successfully!"));
+        alert(t("contact.formSuccessMessage", "Your message was sent successfully!"));
         // Manually reset form fields
         if (formRef.current) {
           formRef.current.elements.name.value = "";
@@ -132,7 +132,7 @@ export default function Contact() {
         {/* Map Section */}
         <section className="map-section">
           <h2>{t("contact.mapTitle", "Kje nas najdete?")}</h2>
-          <iframe
+          <iframe className="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.7056391447286!2d14.516582176026992!3d46.09684459100629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476532de74794911%3A0xefec253f7062f643!2sMAXXGYM%20Ljubljana!5e0!3m2!1sen!2ssi!4v1734949388134!5m2!1sen!2ssi"
             width="600"
             height="450"

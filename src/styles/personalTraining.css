@@ -9,222 +9,216 @@ body, h1, h2, h3, p, ul, li, button {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f3f3f3;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
 /* Hero Section */
 .hero-section {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
   text-align: center;
-}
-
-.hero-section .hero-image {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4rem 2rem;
 }
 
 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 90%;
+  padding: 2rem;
 }
 
 .hero-overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-overlay p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-bottom: 2rem;
 }
 
 .hero-overlay .cta-button {
-  padding: 10px 20px;
-  background-color: #d71920;
-  color: #fff;
+  padding: 12px 24px;
+  background-color: #d62c1a;
+  color: white;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.hero-overlay .cta-button:hover {
-  background-color: #b6161b;
-  transform: scale(1.05);
-}
-
-/* Info Section */
-.info-section, .reverse-info-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.info-section {
-  flex-direction: row;
-}
-
-.reverse-info-section {
-  flex-direction: row-reverse;
-}
-
-.info-left, .info-right {
-  flex: 1;
-  padding: 1rem;
-}
-
-.info-left h2, .info-right h2 {
-  font-size: 2rem;
-  color: #d71920;
-  margin-bottom: 1rem;
-}
-
-.info-left ul {
-  list-style: none;
-  padding: 0;
-}
-
-.info-left ul li {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-/* Bullet Section */
-.bullet-section {
-  position: relative;
-  height: 100vh;
-  color: #fff;
-  text-align: center;
-  padding: 2rem;
-}
-
-.bullet-section .background-image {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.bullet-overlay {
-  position: relative;
-  z-index: 1;
-  padding: 2rem;
-}
-
-.bullet-overlay h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-
-.bullet-overlay ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.bullet-overlay ul li {
-  margin-bottom: 1.5rem;
-}
-
-.bullet-overlay ul li h3 {
+  border-radius: 8px;
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.bullet-overlay ul li p {
-  font-size: 1rem;
-}
-
-/* Form Section */
-.form-section {
-  padding: 4rem 1rem;
-  background-color: #fff;
-  text-align: center;
-}
-
-.form-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #d71920;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  max-width: 600px;
-  padding: 10px;
-  margin: 0 auto;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.form-group textarea {
-  resize: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button {
   padding: 12px 24px;
-  background-color: #d71920;
-  color: #fff;
+  background-color: #d62c1a;
+  color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
-  background-color: #b6161b;
-  transform: scale(1.05);
+  background-color: #b22413;
+  transform: translateY(-5px);
 }
 
-/* Comment Carousel */
-.comment-carousel {
-  height: 100vh;
+.hero-overlay .cta-button:hover {
+  background-color: #b22413;
+  transform: translateY(-5px);
+}
+
+/* Fitness Section */
+.fitness-section, .down-section, .left-photo-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f9f9f9;
+  text-align: center;
+  padding: 4rem 3rem;
+  margin-bottom: 4rem;
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  min-height: 60vh;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.fitness-text, .down-text, .left-photo-text {
+  flex: 1 1 45%;
   padding: 2rem;
+  color: white;
+  text-align: left;
+}
+
+.fitness-text h2, .down-text h2, .left-photo-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.fitness-text p, .down-text p, .left-photo-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: #f8f8f8;
+}
+
+.fitness-image, .down-image, .left-photo-image {
+  flex: 1 1 45%;
   text-align: center;
 }
 
-.comment-carousel h2 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 2rem;
+.fitness-image img, .down-image img, .left-photo-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
 
-.comment-carousel p {
+/* Certificate Section */
+.certificate-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 3rem;
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 6rem auto;
+  max-width: 900px;
+}
+
+/* Form Section */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 3rem;
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 3rem auto;
+  max-width: 800px;
+}
+
+.form-section input, .form-section textarea {
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
   font-size: 1.2rem;
-  color: #555;
+}
+
+.form-submit {
+  background-color: #d62c1a;
+  color: white;
+  padding: 18px 36px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 30px;
+  width: 90%;
+  text-transform: uppercase;
+}
+
+.form-submit:hover {
+  background-color: #b22413;
+  transform: translateY(-5px);
+}
+
+.bullet-section {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.centered-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .fitness-section, .down-section, .left-photo-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .fitness-text, .fitness-image, .down-text, .down-image, .left-photo-text, .left-photo-image {
+    flex: 1 1 100%;
+    padding: 1rem;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .certificate-section {
+    padding: 6rem 2rem;
+    max-width: 90%;
+  }
 }
