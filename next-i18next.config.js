@@ -1,8 +1,8 @@
 module.exports = {
   i18n: {
-    locales: ['en', 'sl', 'de', 'it'],
-    defaultLocale: 'en',
-    localePath: "./public/locales",
+    defaultLocale: "sl",
+    locales: ["sl", "en", "de"],
+    localeDetection: false // ✅ Prevents automatic language switching
   },
-  debug: true,
+  reloadOnPrerender: process.env.NODE_ENV === "development", // ✅ Helps during development
 };

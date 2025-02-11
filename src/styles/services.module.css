@@ -1,0 +1,129 @@
+/* Services Page */
+.servicesPage {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+.servicesTitle {
+  color: #0056b3;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.servicesSubtitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Services List */
+.servicesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Service Card */
+.serviceItem {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceItem:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Image */
+.serviceImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Service Title */
+.serviceTitle {
+  color: #0056b3;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Service Description */
+.serviceDescription {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* CTA Section */
+.ctaSection {
+  background: #0056b3;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.ctaSection h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.ctaSection p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* CTA Button */
+.ctaButton {
+  display: inline-block;
+  background: white;
+  color: #0056b3;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s ease-in-out;
+}
+
+.ctaButton:hover {
+  background: #ffcc00;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .servicesList {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .serviceItem {
+    max-width: 100%;
+  }
+
+  .serviceImage {
+    height: 150px;
+  }
+
+  .ctaSection h2 {
+    font-size: 1.8rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

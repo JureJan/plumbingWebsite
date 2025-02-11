@@ -1,0 +1,141 @@
+/* Contact Page */
+.contactPage {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+.contactTitle {
+  color: #0056b3;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contactSubtitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contactForm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Inputs */
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm select:focus,
+.contactForm textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+/* Error Messages */
+.errorMessage {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.errorMessage.visible {
+  display: block;
+}
+
+/* Submit Button */
+.contactForm button {
+  width: 100%;
+  padding: 12px;
+  background: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contactForm button:hover {
+  background: #ffcc00;
+  color: #0056b3;
+  transform: scale(1.03);
+}
+
+.contactForm button:active {
+  background: #e6b800;
+  transform: scale(1);
+}
+
+/* Success Message */
+.statusMessage {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+/* Contact Details */
+.contactDetails {
+  margin-bottom: 40px;
+}
+
+.contactDetails p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contactDetails a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contactDetails a:hover {
+  text-decoration: underline;
+}
+
+/* Map Section */
+.mapContainer {
+  margin-top: 40px;
+}
+
+.mapContainer iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactForm {
+    padding: 20px;
+  }
+
+  .contactTitle {
+    font-size: 2rem;
+  }
+
+  .contactSubtitle {
+    font-size: 1.1rem;
+  }
+}

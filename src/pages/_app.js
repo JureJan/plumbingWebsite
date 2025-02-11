@@ -1,9 +1,8 @@
-import { appWithTranslation } from 'next-i18next';
-// import nextI18NextConfig from '../next-i18next.config.js';
+import { appWithTranslation } from "next-i18next";
+import "../styles/global.css";
 
-const MyApp = ({ Component, pageProps }) => {
+function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
-};
+}
 
-// https://github.com/i18next/next-i18next#unserializable-configs
-export default appWithTranslation(MyApp /*, nextI18NextConfig */);
+export default appWithTranslation(MyApp);

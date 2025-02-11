@@ -1,52 +1,82 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
-import { useTranslation } from 'next-i18next';
-import Image from 'next/image';
-import styles from '../../styles/navbar.module.css';
+import React, { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import Image from "next/image";
+import styles from "../../styles/navbar.module.css";
 
-export default function Navbar({ onLanguageChange }) {
-  const { t } = useTranslation('common'); // Use translations from 'common.json'
+export default function Navbar() {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // Toggle the menu open or closed
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Close the menu
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   const changeLanguage = (lang) => {
     if (router.locale !== lang) {
       const { pathname, query, asPath } = router;
       router.push({ pathname, query }, asPath, { locale: lang });
+      closeMenu();
     }
   };
 
   return (
     <>
+      {/* Mobile Overlay */}
       {isOpen && <div className={styles.overlay} onClick={closeMenu}></div>}
 
-      <nav className={`${styles.navbar} ${isOpen ? styles.navbarOpen : ''}`}>
+      <nav className={styles.navbar}>
         {/* Logo */}
         <div className={styles.logo}>
           <Link href="/" onClick={closeMenu}>
             <Image
-              src="/images/maxxgymlogo.png"
-              alt='maxxGym logo'
-              width={140}
-              height={28.7}
+              src="/images/plumbingLogo.jpg"
+              alt="Plumbing Services Logo"
+              width={120}
+              height={40}
+              className={styles.logoImage}
             />
           </Link>
         </div>
 
-        {/* Hamburger Menu */}
+        {/* Desktop Navigation */}
+        <ul className={styles.navLinks}>
+          <li><Link href="/" onClick={closeMenu}>{t("nav.home")}</Link></li>
+          <li className={`${styles.dropdown} ${isDropdownOpen ? styles.open : ""}`} onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+            <span className={styles.dropdownToggle}>{t("nav.services")} ▼</span>
+            <ul className={styles.dropdownMenu}>
+              <li><Link href="/services/vodovodniServis" onClick={closeMenu}>{t("services.plumbing")}</Link></li>
+              <li><Link href="/services/ciscenjeOdtokov" onClick={closeMenu}>{t("services.cleaning")}</Link></li>
+              <li><Link href="/services/nujniVodovodar" onClick={closeMenu}>{t("services.emergency")}</Link></li>
+              <li><Link href="/services/menjavaCevi" onClick={closeMenu}>{t("services.pipeReplacement")}</Link></li>
+              <li><Link href="/services/popraviloVodovodnihCevi" onClick={closeMenu}>{t("services.pipeRepair")}</Link></li>
+            </ul>
+          </li>
+          <li><Link href="/about" onClick={closeMenu}>{t("nav.about")}</Link></li>
+          <li><Link href="/contact" onClick={closeMenu}>{t("nav.contact")}</Link></li>
+
+          {/* Desktop Language Switcher */}
+          <select className={styles.languageSwitcher} value={router.locale} onChange={(e) => changeLanguage(e.target.value)}>
+            <option value="sl">Slovenščina</option>
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </ul>
+
+        {/* Hamburger Button (Mobile) */}
         <div className={styles.hamburger} onClick={toggleMenu}>
           {isOpen ? (
             <div className={styles.closeButton}>&#10005;</div>
@@ -59,83 +89,31 @@ export default function Navbar({ onLanguageChange }) {
           )}
         </div>
 
-        {/* Navigation Links */}
-        <ul className={`${styles.navLinks} ${isOpen ? styles.open : ''}`}>
-          <li onClick={closeMenu}>
-            <Link href="/">{t('nav.home')}</Link>
+        {/* Mobile Menu */}
+        <ul className={`${styles.navLinksMobile} ${isOpen ? styles.open : ""}`}>
+          <li onClick={closeMenu}><Link href="/">{t("nav.home")}</Link></li>
+          <li className={styles.dropdownMobile}>
+            <span className={styles.dropdownToggleMobile} onClick={toggleDropdown}>{t("nav.services")} ▼</span>
+            {isDropdownOpen && (
+              <ul className={styles.dropdownMenuMobile}>
+                <li onClick={closeMenu}><Link href="/services/vodovodniServis">{t("services.plumbing")}</Link></li>
+                <li onClick={closeMenu}><Link href="/services/ciscenjeOdtokov">{t("services.cleaning")}</Link></li>
+                <li onClick={closeMenu}><Link href="/services/nujniVodovodar">{t("services.emergency")}</Link></li>
+                <li onClick={closeMenu}><Link href="/services/menjavaCevi">{t("services.pipeReplacement")}</Link></li>
+                <li onClick={closeMenu}><Link href="/services/popraviloVodovodnihCevi">{t("services.pipeRepair")}</Link></li>
+              </ul>
+            )}
           </li>
-          <li onClick={closeMenu}>
-            <Link href="/price">{t('nav.price')}</Link>
-          </li>
-          <li onClick={closeMenu}>
-            <Link href="/fitness">{t('nav.fitness')}</Link>
-          </li>
-          <li onClick={closeMenu}>
-            <Link href="/guidedExercises">{t('nav.guidedWorkouts')}</Link>
-          </li>
-          <li onClick={closeMenu}>
-            <Link href="/personalTraining">{t('nav.personalTraining')}</Link>
-          </li>
-          <li onClick={closeMenu}>
-            <Link href="/contact">{t('nav.contact')}</Link>
-          </li>
+          <li onClick={closeMenu}><Link href="/about">{t("nav.about")}</Link></li>
+          <li onClick={closeMenu}><Link href="/contact">{t("nav.contact")}</Link></li>
+
+          {/* Mobile Language Switcher */}
+          <select className={styles.mobileLanguageSwitcher} value={router.locale} onChange={(e) => changeLanguage(e.target.value)}>
+            <option value="sl">Slovenščina</option>
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+          </select>
         </ul>
-
-     <div className="language-switcher">
-      {/* <label htmlFor="language-select">{t("nav.languageLabel")}</label> */}
-      <select
-        id="language-select"
-        value={router.locale} // Automatically show the current locale
-        onChange={(e) => changeLanguage(e.target.value)}
-      >
-        <option value="en">{t("nav.language.en")}</option>
-        <option value="sl">{t("nav.language.sl")}</option>
-        <option value="de">{t("nav.language.de")}</option>
-        <option value="it">{t("nav.language.it")}</option>
-      </select>
-    </div>
-
-        {/* Social Icons */}
-        <div className={styles.socialIcons}>
-          <a
-            href="https://www.facebook.com/maxxgym"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/images/facebookLogo.png"
-              alt="Facebook"
-              width={32}
-              height={32}
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/maxxgym.ljubljana/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src="/images/instagramLogo.png"
-              alt="Instagram"
-              width={32}
-              height={32}
-            />
-          </a>
-        </div>
-
-        {/* Working Hours */}
-        <div className={styles.workingHours}>
-          <b>{t('nav.workingHours.weekdays')}</b>
-          <b>{t('nav.workingHours.weekends')}</b>
-        </div>
-
-        {/* Phone Section */}
-        <div className={styles.phoneSection}>
-          <div className={styles.phoneIcon}>
-            <Image src="/images/greenPhone.png" alt="Phone" width={36} height={36} />
-          </div>
-          <span className={styles.phoneNumber}>{t('nav.phoneNumber')}</span>
-        </div>
       </nav>
     </>
   );

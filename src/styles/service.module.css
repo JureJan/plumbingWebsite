@@ -1,0 +1,123 @@
+/* Service Page Container */
+.servicePage {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  /* Page Title */
+  .servicePage h1 {
+    font-size: 32px;
+    color: #0077cc;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Service Description */
+  .servicePage p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  /* Why Choose Us Section */
+  .servicePage h2 {
+    font-size: 26px;
+    color: #0077cc;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .servicePage ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .servicePage ul li {
+    background: white;
+    margin: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .servicePage ul li:hover {
+    transform: translateY(-3px);
+    background: #0077cc;
+    color: white;
+  }
+  
+  /* Contact Section */
+  .servicePage .contactUs {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .servicePage .contactUs p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .servicePage .contactUs a {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .servicePage .contactUs a:hover {
+    background: #0077cc;
+    color: white;
+  }
+  
+  /* FAQ Section */
+  .servicePage details {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .servicePage details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #0077cc;
+    font-size: 18px;
+  }
+  
+  .servicePage details[open] {
+    background: #0077cc;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .servicePage ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .servicePage ul li {
+      width: 90%;
+      text-align: center;
+    }
+  }
+  

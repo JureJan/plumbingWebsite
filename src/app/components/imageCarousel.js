@@ -48,13 +48,13 @@ const ImageCarousel = ({ text, handleScrollToForm }) => {
         window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
       }
     } else {
-      router.push("/fitness");
+      router.push("/contact");
     }
   };
 
   const images = [
-    "/images/hero2.png",
-    "/images/hero6.jpg",
+    "/images/hero2.jpg",
+    "/images/hero1.jpg",
     "/images/hero4.jpg",
     "/images/hero5.jpg",
   ];

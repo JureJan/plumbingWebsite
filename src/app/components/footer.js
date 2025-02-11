@@ -1,29 +1,29 @@
-import "../../styles/footer.css";
+import styles from "../../styles/footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className="footer"> {/* Add the class here */}
-      <div className="footer-social">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-            alt="Facebook"
-            width="32"
-            height="32"
-          />
-        </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-            alt="Instagram"
-            width="32"
-            height="32"
-          />
-        </a>
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        {/* Contact Information */}
+        <div className={styles.contactSection}>
+          <h2>Kontakt</h2>
+          <p className={styles.name}>Grega Uhan Mujič</p>
+          <p className={styles.phone}>T: <a href="tel:+38668604553">+386 68 604 553</a></p>
+          <p className={styles.email}>
+            <a href="mailto:grega.uhan@gmail.com">grega.uhan@gmail.com</a>
+          </p>
+        </div>
+
+        {/* Company Logo / Brand */}
+        <div className={styles.companySection}>
+          <h1 className={styles.companyName}>PLUMBING SERVICES</h1>
+          <p className={styles.tagline}>Professional & Reliable Solutions</p>
+        </div>
       </div>
-      <div className="footer-contact">
-        <p>MAXXGYM Ljubljana, Dunajska cesta 270, 1000 Ljubljana</p>
-        <p>Telefon: 0590 41 900 | Email: info@maxxgym.si</p>
+
+      {/* Copyright */}
+      <div className={styles.bottomText}>
+        © {new Date().getFullYear()} Plumbing Services. All rights reserved.
       </div>
     </footer>
   );

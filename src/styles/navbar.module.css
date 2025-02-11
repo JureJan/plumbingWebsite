@@ -1,195 +1,221 @@
-/* Navbar Styling */
-
-.navbar {
-  font-family: 'Roboto Serif', serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  height: 74px;
-  max-height: 76px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  flex: 1;
-}
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-  z-index: 10001;
-  flex: 1;
-  align-items: center;
-}
-
-.hamburger div {
-  width: 30px;
-  height: 4px;
-  background-color: white;
-  border-radius: 2px;
-}
-
-.language-switcher {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.navLinks {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  list-style: none;
-  margin-right: 298px;
-
-}
-
-.navLinks a {
-  font-family: 'Roboto Serif', serif;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navLinks a:hover {
-  color: red;
-}
-
-.socialIcons img {
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.socialIcons img:hover {
-  transform: scale(1.2);
-}
-
-.phoneSection {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.phoneIcon {
-  background-color: #28a745;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  font-size: 18px;
-}
-
-.phoneNumber {
-  color: black;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.workingHours {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  font-size: 0.9rem;
-  color: black;
-}
-
-/* Mobile Responsive Styles */
-@media (max-width: 1024px) {
-  .hamburger {
-      display: flex;
-  }
-
+  /* General Navbar Styling */
+  /* Navbar Container */
   .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* ✅ Ensures everything stays aligned */
+    background: #0077cc;
+    padding: 15px 30px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 
-  .logo {
-      flex: 1;
-      justify-content: flex-start;
+  .logo img {
+    height: 50px;
+    width: auto;
   }
 
-  .hamburger {
-      flex: 1;
-      justify-content: center;
-  }
-
-  .language-switcher {
-      flex: 1;
-      justify-content: flex-end;
-  }
-
+  /* Nav Links (Desktop) */
   .navLinks {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background-color: #000;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out;
-      transform: translateY(-100%);
-      z-index: 1000;
+    display: flex;
+    list-style: none;
+    gap: 20px;
   }
 
-  .navLinks.open {
-      transform: translateY(0);
+  .navLinks li {
+    display: inline-block;
+    position: relative;
   }
 
   .navLinks a {
-      font-size: 1.5rem;
-      color: #ffffff;
-      font-weight: bold;
-      text-transform: uppercase;
-      transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
   }
 
   .navLinks a:hover {
-      color: #ff6600;
-      transform: scale(1.1);
+    color: #ffcc00; /* Highlight color */
   }
 
-  .socialIcons, .workingHours, .phoneSection {
-      display: flex;
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+    display: flex; /* ✅ Ensures it stays in line */
+    align-items: center;
+  }
+
+  .dropdownToggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 15px;
+  }
+
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .dropdown:hover .dropdownMenu {
+    display: flex;
+  }
+
+  .dropdownMenu li {
+    padding: 12px 20px;
+  }
+
+  .dropdownMenu li a {
+    color: #333;
+    display: block;
+    font-weight: 500;
+  }
+
+  .dropdownMenu li a:hover {
+    background: #0077cc;
+    color: white;
+    border-radius: 5px;
+  }
+
+  /* Contact Links */
+  .navRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contactLinks span {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .contactLinks a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+
+  .contactLinks a:hover {
+    color: white;
+  }
+
+  /* Language Switcher */
+  .languageSwitcher {
+    background: white;
+    color: #333;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .languageSwitcher:hover {
+    background: #ffcc00;
+  }
+
+  /* Mobile Menu */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: white;
+    transition: 0.3s;
+  }
+
+  .navLinksMobile {
+    display: none;
+  }
+
+  .navLinksMobile.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+  }
+
+  .navLinksMobile li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navLinksMobile li a {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .navLinksMobile li a:hover {
+    color: #0077cc;
+  }
+
+  /* Mobile Contact */
+  .mobileContact {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .mobileContact a {
+    color: #0077cc;
+    font-weight: 600;
+  }
+
+  .mobileContact a:hover {
+    color: #ffcc00;
+  }
+
+  /* Overlay for Mobile Menu */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 900px) {
+    .navLinks {
+      display: none;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 20px;
-  }
+    }
 
-  .navbar > .socialIcons, 
-  .navbar > .workingHours, 
-  .navbar > .phoneSection {
+    .navRight {
       display: none;
-  }
+    }
 
-  .navLinks.open .socialIcons, 
-  .navLinks.open .workingHours, 
-  .navLinks.open .phoneSection {
-      display: flex;
+    .hamburger {
+      display: block;
+    }
   }
-}

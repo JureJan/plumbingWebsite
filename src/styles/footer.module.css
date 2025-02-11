@@ -1,0 +1,62 @@
+.footer {
+  background-color: #0056b3;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contactSection {
+  text-align: left;
+}
+
+.contactSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.contactSection p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.contactSection a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contactSection a:hover {
+  text-decoration: underline;
+}
+
+.companySection {
+  text-align: right;
+}
+
+.companyName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.bottomText {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  opacity: 0.7;
+}
