@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className={styles.logo}>
           <Link href="/" onClick={closeMenu}>
             <Image
-              src="/images/plumbingLogo.jpg"
+              src="/images/ellasLogo.png"
               alt="Plumbing Services Logo"
               width={120}
               height={40}

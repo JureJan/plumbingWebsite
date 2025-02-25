@@ -17,6 +17,7 @@
 .ctaDescription {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: whitesmoke !important; /* Ensures text color is white */
 }
 
 .ctaButtons {

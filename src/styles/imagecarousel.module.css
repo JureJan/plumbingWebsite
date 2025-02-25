@@ -65,7 +65,6 @@
 .arrow:hover {
   background-color: rgba(255, 255, 255, 0.7);
   color: #0056b3;
-  transform: scale(1.1);
 }
 
 .arrow:active {
@@ -116,7 +115,7 @@
 
 
 .carouselButton {
-  background-color: #d71920;
+  background: #07c;
   color: white;
   padding: 14px 28px;
   font-size: 1.2rem;
@@ -130,12 +129,12 @@
 }
 
 .carouselButton:hover {
-  background-color: #b6161b;
+  background-color: #ffcc00;
   transform: translateY(-2px);
 }
 
 .carouselButton:active {
-  background-color: #a51418;
+  background-color: #ffcc00;
   transform: translateY(0);
 }
 

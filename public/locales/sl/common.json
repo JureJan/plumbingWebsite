@@ -13,11 +13,11 @@
     }
   },
   "footer": {
-    "address": "Vodovodne storitve, Glavna ulica 123, Mesto, Država",
+    "contact": "Kontakt",
     "phone": "Telefon:",
-    "email": "E-pošta:",
-    "companyName": "Vodovodne storitve",
-    "rights": "Vse pravice pridržane."
+    "title": "VODOVODNE STORITVE",
+    "text": "Strokovne in zanesljive rešitve",
+    "copyright": "Vodovodne storitve. Vse pravice pridržane."
   },
   "home": {
     "CarouselTitle1": "Profesionalne vodovodne storitve",
@@ -71,18 +71,19 @@
   },
   "about": {
     "title": "O nas",
-    "subtitle": "Nudimo visokokakovostne vodovodne in hišniške storitve že vrsto let.",
+    "subtitle": "Ponuju visokokakovostne vodovodne in hišniške storitve že vrsto let.",
     "story_title": "Naša zgodba",
-    "story_text": "Začeli smo kot majhna ekipa izkušenih vodovodarjev in hišnikov ter prerasli v zaupanja vredno podjetje, ki služi stotinam strank.",
+    "story_text": "Začeli smo kot majhna ekipa izkušenih vodovodarjev in hišnikov, ki je rasla v podjetje, prepoznavno po zanesljivosti, cenovni dostopnosti in zadovoljstvu strank. Ponosni smo na to, da smo zanesljivi, cenovno dostopni in da zagotavljamo kakovostno opravljeno delo.",
     "values_title": "Naše vrednote",
-    "value1": "✅ Zadovoljstvo strank na prvem mestu",
-    "value2": "🔧 Visokokakovostna izvedba",
-    "value3": "🚀 Hitra in zanesljiva storitev",
-    "value4": "🌿 Okolju prijazne prakse",
-    "cta_title": "Potrebujete profesionalne vodovodne storitve?",
-    "cta_text": "Kontaktirajte nas še danes za brezplačno ponudbo in strokovno pomoč.",
-    "cta_button": "Kontaktirajte nas"
-  },
+    "value1": "Zadovoljstvo strank na prvem mestu",
+    "value2": "Visokokakovostna izvedba",
+    "value3": "Hitra in zanesljiva storitev",
+    "value4": "Ekološke prakse",
+    "cta_title": "Potrebujete strokovne vodovodne storitve?",
+    "cta_text": "Kontaktirajte nas danes in pridobite brezplačno ponudbo ter strokovno pomoč. Nudimo zanesljive, cenovno dostopne in strokovne vodovodne ter hišniške storitve.",
+    "cta_button": "Kontaktirajte nas",
+    "page_title": "O nas - Vodovodne in Hišniške Storitve",
+    "page_description": "Ponuju visokokakovostne, zanesljive in cenovno dostopne vodovodne ter hišniške storitve že vrsto let. Naša strokovna ekipa zagotavlja zadovoljstvo strank."  },
   "cta": {
     "title": "Pridobite strokovne vodovodne storitve še danes!",
     "subtitle": "Hitra, zanesljiva in profesionalna storitev po ugodni ceni.",
@@ -110,7 +111,7 @@
   "quality_desc": "Uporabljamo samo vrhunske materiale in zagotavljamo dolgotrajne rezultate."
 },
 "image": {
-  "carouselButton": "Preberi več"
+  "carouselButton": "Kontaktiraje nas"
 },
 
   "seo": {
@@ -172,8 +173,9 @@
     "bestPrice": "Najboljša cena",
     "guarantee": "Garancija na vse storitve",
     "contactUsNow": "Kontaktirajte nas zdaj!",
-    "contactText": "Pokličite nas na +386 40 123 456 ali pošljite povpraševanje prek obrazca spodaj.",
-    "faq": "Pogosta vprašanja"
+    "contactText": "Pokličite nas na 068604553 ali pošljite povpraševanje prek obrazca spodaj.",
+    "faq": "Pogosta vprašanja",
+    "24hSupport": "Dosegljivi 24/7"
   },
   "faq": {
     "howLongRepair": "Koliko časa traja popravilo vodovodnih cevi?",
@@ -189,6 +191,7 @@
     "howLongPipeRepair": "Kako dolgo traja popravilo cevi?",
     "howLongPipeRepairAnswer": "Popravilo manjših poškodb lahko traja le 1 uro."
   }
+
 
 
 

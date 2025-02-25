@@ -13,11 +13,11 @@
     }
   },
   "footer": {
-    "address": "Sanitärdienstleistungen, Hauptstraße 123, Stadt, Land",
+    "contact": "Kontakt",
     "phone": "Telefon:",
-    "email": "E-Mail:",
-    "companyName": "Sanitärdienstleistungen",
-    "rights": "Alle Rechte vorbehalten."
+    "title": "INSTALLATIONSDIENSTE",
+    "text": "Professionelle & zuverlässige Lösungen",
+    "copyright": "Installationsdienste. Alle Rechte vorbehalten."
   },
   "home": {
     "CarouselTitle1": "Professionelle Sanitärdienstleistungen",
@@ -71,18 +71,20 @@
   },
   "about": {
     "title": "Über uns",
-    "subtitle": "Wir bieten seit vielen Jahren qualitativ hochwertige Sanitär- und Hausmeisterdienste an.",
+    "subtitle": "Wir bieten seit Jahren hochwertige Sanitär- und Handwerkerleistungen an.",
     "story_title": "Unsere Geschichte",
-    "story_text": "Wir begannen als kleines Team erfahrener Klempner und Hausmeister und entwickelten uns zu einem vertrauenswürdigen Unternehmen, das Hunderte von Kunden betreut.",
+    "story_text": "Wir begannen als kleines Team von erfahrenen Klempnern und Handwerkern und wuchsen zu einem vertrauenswürdigen Unternehmen, das hunderte von Kunden bedient. Unser Fokus lag immer auf Zuverlässigkeit, Erschwinglichkeit und Kundenzufriedenheit. Wir sind stolz darauf, zuverlässig, erschwinglich und qualitativ hochwertig zu arbeiten.",
     "values_title": "Unsere Werte",
-    "value1": "✅ Kundenzufriedenheit an erster Stelle",
-    "value2": "🔧 Hochwertige Handwerkskunst",
-    "value3": "🚀 Schneller & zuverlässiger Service",
-    "value4": "🌿 Umweltfreundliche Praktiken",
-    "cta_title": "Benötigen Sie professionelle Sanitärdienstleistungen?",
-    "cta_text": "Kontaktieren Sie uns noch heute für ein kostenloses Angebot und fachkundige Unterstützung.",
-    "cta_button": "Kontakt aufnehmen"
-  },
+    "value1": "Kundenzufriedenheit an erster Stelle",
+    "value2": "Hochwertige Handwerkskunst",
+    "value3": "Schneller & Zuverlässiger Service",
+    "value4": "Umweltfreundliche Praktiken",
+    "cta_title": "Brauchen Sie professionelle Sanitärdienste?",
+    "cta_text": "Kontaktieren Sie uns noch heute, um ein kostenloses Angebot und professionelle Unterstützung zu erhalten. Wir bieten zuverlässige, erschwingliche und professionelle Sanitär- und Handwerkerdienste.",
+    "cta_button": "Kontaktieren Sie uns",
+    "page_title": "Über uns - Sanitär- und Handwerkerdienste",
+    "page_description": "Wir bieten seit Jahren hochwertige, zuverlässige und erschwingliche Sanitär- und Handwerkerleistungen an. Unser Expertenteam sorgt für die Zufriedenheit der Kunden."
+    },
   "cta": {
     "title": "Erhalten Sie noch heute professionelle Sanitärdienstleistungen!",
     "subtitle": "Schneller, zuverlässiger und professioneller Service zu einem erschwinglichen Preis.",
@@ -110,7 +112,7 @@
   "quality_desc": "Wir verwenden nur hochwertige Materialien und sorgen für dauerhafte Ergebnisse."
 },
 "image": {
-  "carouselButton": "Mehr erfahren"
+  "carouselButton": "Kontaktiere uns"
 },
 
 
@@ -141,8 +143,9 @@
     "bestPrice": "Beste Preise",
     "guarantee": "Garantierte Servicequalität",
     "contactUsNow": "Kontaktieren Sie uns jetzt!",
-    "contactText": "Rufen Sie uns unter +386 40 123 456 an oder senden Sie eine Anfrage über das untenstehende Formular.",
-    "faq": "Häufig gestellte Fragen"
+    "contactText": "Rufen Sie uns unter 068604553 an oder senden Sie eine Anfrage über das untenstehende Formular.",
+    "faq": "Häufig gestellte Fragen",
+    "24hSupport": "Rund um die Uhr erreichbar"
   },
   "faq": {
     "howLongRepair": "Wie lange dauert die Reparatur von Rohren?",
@@ -154,6 +157,5 @@
     "howFastEmergency": "Wie schnell kann ein Notfall-Klempner ankommen?",
     "howFastEmergencyAnswer": "Unser Notfall-Klempner ist innerhalb von 60 Minuten vor Ort."
   }
-
 
 }

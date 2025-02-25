@@ -13,11 +13,11 @@
     }
   },
   "footer": {
-    "address": "Plumbing Services, Main Street 123, City, Country",
+    "contact": "Contact",
     "phone": "Phone:",
-    "email": "Email:",
-    "companyName": "Plumbing Services",
-    "rights": "All rights reserved."
+    "title": "PLUMBING SERVICES",
+    "text": "Professional & Reliable Solutions",
+    "copyright": "Plumbing Services. All rights reserved."
   },
   "home": {
     "CarouselTitle1": "Professional Plumbing Services",
@@ -73,15 +73,17 @@
     "title": "About Us",
     "subtitle": "Providing high-quality plumbing and handyman services for years.",
     "story_title": "Our Story",
-    "story_text": "We started as a small team of skilled plumbers and handymen, growing into a trusted company serving hundreds of clients.",
+    "story_text": "We started as a small team of skilled plumbers and handymen, growing into a trusted company serving hundreds of clients. Our focus has always been on reliability, affordability, and customer satisfaction. We pride ourselves on being reliable, affordable, and delivering high-quality work.",
     "values_title": "Our Values",
-    "value1": "✅ Customer Satisfaction First",
-    "value2": "🔧 High-Quality Workmanship",
-    "value3": "🚀 Fast & Reliable Service",
-    "value4": "🌿 Environmentally Friendly Practices",
+    "value1": "Customer Satisfaction First",
+    "value2": "High-Quality Workmanship",
+    "value3": "Fast & Reliable Service",
+    "value4": "Environmentally Friendly Practices",
     "cta_title": "Need Professional Plumbing Services?",
-    "cta_text": "Contact us today to get a free quote and expert assistance.",
-    "cta_button": "Contact Us"
+    "cta_text": "Contact us today to get a free quote and expert assistance. We offer reliable, affordable, and professional plumbing and handyman services.",
+    "cta_button": "Contact Us",
+    "page_title": "About Us - Plumbing and Handyman Services",
+    "page_description": "Providing high-quality, reliable, and affordable plumbing and handyman services for years. Our expert team ensures customer satisfaction." 
   },
   "cta": {
     "title": "Get Expert Plumbing Services Today!",
@@ -110,7 +112,7 @@
   "quality_desc": "We use only top-quality materials and ensure a lasting result."
 },
 "image": {
-  "carouselButton": "Learn more"
+  "carouselButton": "Contact us"
 },
 
   "seo": {
@@ -172,8 +174,9 @@
     "bestPrice": "Best prices",
     "guarantee": "Guaranteed service quality",
     "contactUsNow": "Contact Us Now!",
-    "contactText": "Call us at +386 40 123 456 or send an inquiry using the form below.",
-    "faq": "Frequently Asked Questions"
+    "contactText": "Call us at 068604553 or send an inquiry using the form below.",
+    "faq": "Frequently Asked Questions",
+     "24hSupport": "Available 24/7"
   },
   "faq": {
     "howLongRepair": "How long does pipe repair take?",
@@ -189,6 +192,8 @@
     "howLongPipeRepair": "How long does pipe repair take?",
     "howLongPipeRepairAnswer": "Minor repairs can be completed in as little as 1 hour."
   }
+
+
 
 
 
