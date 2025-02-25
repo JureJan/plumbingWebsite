@@ -5,6 +5,7 @@ import Navbar from "../app/components/navbar";
 import Footer from "../app/components/footer";
 import Head from "next/head"; // Importing the Head component for meta tags
 import styles from "../styles/about.module.css";
+import Link from "next/link";
 
 const About = () => {
   const { t } = useTranslation("common");
@@ -55,9 +56,9 @@ const About = () => {
               defaultMessage: "Contact us today to get a free quote and expert assistance. We offer reliable, affordable, and professional plumbing and handyman services.",
             })}
           </p>
-          <a href="/contact" className={styles.ctaButton}>
-            {t("about.cta_button", { defaultMessage: "Contact Us" })}
-          </a>
+          <Link href="/contact">
+            <a className={styles.ctaButton}>{t("about.cta_button", { defaultMessage: "Contact Us" })}</a>
+          </Link>
         </div>
       </main>
       <Footer />

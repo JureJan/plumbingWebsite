@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import styles from "../../styles/whychooseus.module.css";
+import Image from "next/image";
 
 const WhyChooseUs = () => {
   const { t } = useTranslation("common");
@@ -42,7 +43,7 @@ const WhyChooseUs = () => {
       <div className={styles.reasonsList}>
         {reasons.map((reason, index) => (
           <div key={index} className={styles.reasonItem}>
-            <img src={reason.icon} alt={reason.title} className={styles.icon} />
+            <Image src={reason.icon} alt={reason.title} className={styles.icon} />
             <h3>{reason.title}</h3>
             <p>{reason.description}</p>
           </div>

@@ -35,7 +35,7 @@ const Testimonials = () => {
       <div className={styles.testimonialsList}>
         {reviews.map((review, index) => (
           <div key={index} className={styles.testimonialItem}>
-            <p className={styles.testimonialText}>"{review.feedback}"</p>
+            <p className={styles.testimonialText}>&quot;{review.feedback}&quot;</p>
             <h4 className={styles.testimonialName}>- {review.name}</h4>
             <div className={styles.testimonialRating}>⭐ {review.rating} / 5</div>
           </div>

@@ -4,6 +4,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Navbar from "@/app/components/navbar";
 import Footer from "@/app/components/footer";
 import styles from "../styles/services.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 const Services = () => {
   const { t } = useTranslation("common");
@@ -41,7 +43,7 @@ const Services = () => {
         <div className={styles.servicesList}>
           {services.map((service, index) => (
             <div key={index} className={styles.serviceItem}>
-              <img src={service.image} alt={service.title} className={styles.serviceImage} />
+              <Image src={service.image} alt={service.title} className={styles.serviceImage} />
               <h2>{service.title}</h2>
               <p>{service.description}</p>
             </div>
@@ -52,7 +54,7 @@ const Services = () => {
         <div className={styles.ctaSection}>
           <h2>{t("services.cta_title", { defaultMessage: "Need a Service?" })}</h2>
           <p>{t("services.cta_text", { defaultMessage: "Get in touch with our experts today!" })}</p>
-          <a href="/contact" className={styles.ctaButton}>{t("services.cta_button", { defaultMessage: "Contact Us" })}</a>
+          <Link href="/contact" className={styles.ctaButton}>{t("services.cta_button", { defaultMessage: "Contact Us" })}</Link>
         </div>
       </main>
       <Footer />

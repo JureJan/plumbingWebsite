@@ -3,6 +3,7 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import styles from "../../styles/services.module.css";
+import Image from "next/image";
 
 const ServicesOverview = () => {
   const { t } = useTranslation("common");
@@ -58,7 +59,7 @@ const ServicesOverview = () => {
       <div className={styles.servicesList}>
         {services.map((service, index) => (
           <div key={index} className={styles.serviceItem}>
-            <img
+            <Image
               src={service.image}
               alt={service.title}
               className={styles.serviceImage}

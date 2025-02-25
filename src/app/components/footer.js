@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Contact Information */}
           <div className={styles.contactSection}>
             <h2>{t("footer.contact")}</h2>
-            <p className={styles.name}>ELLA'S</p>
+            <p className={styles.name}>ELLA&apos;S</p>
             <p className={styles.phone}>
               {t("footer.phone")}{" "}
               <a href="tel:+38668604553">+386 68 604 553</a>
