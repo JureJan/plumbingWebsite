@@ -1,4 +1,3 @@
-"use client";
 "use client"; // Marking this as a client component
 import { useTranslation } from "next-i18next";
 import { useKeenSlider } from "keen-slider/react";
