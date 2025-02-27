@@ -11,10 +11,12 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true, // Enables clean URLs
   images: {
+domains: ['sanirajmo.si'],
+unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "upload.wikimedia.org",
+        hostname: "sanirajmo.si",
       },
     ],
     formats: ['image/avif', 'image/webp'], // WebP for better performance

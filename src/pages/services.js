@@ -43,7 +43,7 @@ const Services = () => {
         <div className={styles.servicesList}>
           {services.map((service, index) => (
             <div key={index} className={styles.serviceItem}>
-              <Image src={service.image} alt={service.title} className={styles.serviceImage} />
+              <Image src={service.image} alt={service.title} width={260} height={180} className={styles.serviceImage} />
               <h2>{service.title}</h2>
               <p>{service.description}</p>
             </div>

@@ -62,7 +62,8 @@ const ServicesOverview = () => {
             <Image
               src={service.image}
               alt={service.title}
-              className={styles.serviceImage}
+              width={350}
+              height={150}
             />
             <h3 className={styles.serviceTitle}>{service.title}</h3>
             <p className={styles.serviceDescription}>{service.description}</p>
