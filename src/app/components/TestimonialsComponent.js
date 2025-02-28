@@ -7,21 +7,21 @@ const Testimonials = () => {
 
   const reviews = [
     {
-      name: "John D.",
+      name: "Kaja J.",
       feedback: t("testimonials.john", {
         defaultMessage: "Fantastic service! Quick response and excellent workmanship. Highly recommended!",
       }),
       rating: 5,
     },
     {
-      name: "Anna M.",
+      name: "Mojca K.",
       feedback: t("testimonials.anna", {
         defaultMessage: "Professional and affordable. Fixed my plumbing issue in no time!",
       }),
       rating: 5,
     },
     {
-      name: "Michael K.",
+      name: "Matej M.",
       feedback: t("testimonials.michael", {
         defaultMessage: "Reliable team, arrived on time and did an outstanding job. Will use again!",
       }),

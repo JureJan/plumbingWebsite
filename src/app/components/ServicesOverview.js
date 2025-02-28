@@ -62,7 +62,7 @@ const ServicesOverview = () => {
             <Image
               src={service.image}
               alt={service.title}
-              width={350}
+              width={260}
               height={150}
             />
             <h3 className={styles.serviceTitle}>{service.title}</h3>
