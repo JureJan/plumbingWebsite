@@ -47,7 +47,7 @@ const ServicesOverview = () => {
         defaultMessage:
           "General repairs, installations, and small-scale construction work.",
       }),
-      image: "/images/handyman.jpg",
+      image: "/images/handyman.avif",
     },
   ];
 
