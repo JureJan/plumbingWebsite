@@ -17,7 +17,7 @@ const ServicesOverview = () => {
         defaultMessage:
           "Professional plumbing solutions, from leak repairs to full pipe installations.",
       }),
-      image: "/images/plumbing.jpg",
+      image: "/images/plumbing1.avif",
     },
     {
       title: t("services.heating", {
@@ -27,7 +27,7 @@ const ServicesOverview = () => {
         defaultMessage:
           "Efficient heating system installation, repair, and maintenance.",
       }),
-      image: "/images/heating.jpg",
+      image: "/images/heating.avif",
     },
     {
       title: t("services.cleaning", {
@@ -37,7 +37,7 @@ const ServicesOverview = () => {
         defaultMessage:
           "Prevent blockages and ensure smooth water flow with professional cleaning.",
       }),
-      image: "/images/cleaning.jpg",
+      image: "/images/cleaning.avif",
     },
     {
       title: t("services.handyman", {

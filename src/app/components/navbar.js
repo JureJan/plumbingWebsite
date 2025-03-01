@@ -65,7 +65,7 @@ export default function Navbar() {
               <li><Link href="/services/popraviloVodovodnihCevi" onClick={closeMenu}>{t("services.pipeRepair")}</Link></li>
             </ul>
           </li>
-          <li><Link href="/about" onClick={closeMenu}>{t("nav.about")}</Link></li>
+          <li><Link href="/about" onClick={closeMenu}>{t("nav.about")}</Link></li>  
           <li><Link href="/contact" onClick={closeMenu}>{t("nav.contact")}</Link></li>
 
           {/* Desktop Language Switcher */}

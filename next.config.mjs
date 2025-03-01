@@ -11,8 +11,8 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true, // Enables clean URLs
   images: {
-domains: ['sanirajmo.si'],
-unoptimized: true,
+  domains: ['sanirajmo.si'],
+  unoptimized: false,
     remotePatterns: [
       {
         protocol: "https",

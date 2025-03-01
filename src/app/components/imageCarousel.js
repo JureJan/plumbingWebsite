@@ -54,8 +54,8 @@ const ImageCarousel = ({ text, handleScrollToForm }) => {
   const images = [
     "/images/hero2.jpg",
     "/images/hero1.jpg",
-    "/images/hero4.jpg",
-    "/images/hero5.jpg",
+    "/images/hero4.avif",
+    "/images/hero5.avif",
   ];
 
   return (
