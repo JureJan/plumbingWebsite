@@ -1,11 +1,13 @@
+// pages/_document.js
 import { Html, Head, Main, NextScript } from 'next/document';
-import { i18n } from '../../next-i18next.config.js';
+import { i18n } from '../../next-i18next.config';
 
 export default function Document() {
   return (
     <Html lang={i18n.defaultLocale}>
       <Head>
         <meta charSet="UTF-8" />
+        {/* Add other global head elements here */}
       </Head>
       <body>
         <Main />
