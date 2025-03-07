@@ -15,7 +15,7 @@
   "footer": {
     "contact": "Kontakt",
     "phone": "Telefon:",
-    "title": "INSTALLATIONSDIENSTE",
+    "title": "Montagedienste",
     "text": "Professionelle & zuverlässige Lösungen",
     "copyright": "Installationsdienste. Alle Rechte vorbehalten."
   },
@@ -136,6 +136,38 @@
     "service2": "Abflussverstopfungen entfernen",
     "service3": "Rohrwechsel und Installation"
   },
+  "ciscenjeOdtokov": {
+    "title": "Abflussreinigung in Ljubljana",
+    "description": "Professionelle Abflussreinigung und Rohrverstopfungsbeseitigung. Schneller und effektiver Service zu wettbewerbsfähigen Preisen.",
+    "services": "Was umfasst die Abflussreinigung?",
+    "service1": "Mechanische Rohrreinigung",
+    "service2": "Hydrodynamische Reinigung",
+    "service3": "Vorbeugende Rohrwartung"
+  },
+  "nujniVodovodar": {
+    "title": "Notfallklempner - 24/7 Service",
+    "description": "Wir bieten 24/7 Notfall-Sanitärdienste in Ljubljana. Sofortige Reaktion und professionelle Unterstützung!",
+    "services": "Notfalldienste umfassen:",
+    "service1": "Schnelle Leckreparatur",
+    "service2": "Beseitigung von Abflussverstopfungen",
+    "service3": "Austausch geplatzter Rohre"
+  },
+  "menjavaCevi": {
+    "title": "Rohrwechsel",
+    "description": "Schneller und professioneller Rohrwechsel für Haushalte und Unternehmen in Ljubljana.",
+    "services": "Was beinhaltet der Rohrwechsel?",
+    "service1": "Entfernung alter Rohre",
+    "service2": "Installation neuer Rohre",
+    "service3": "Leckprüfung und Inspektion"
+  },
+  "popraviloVodovodnihCevi": {
+    "title": "Rohrreparatur",
+    "description": "Rohrreparaturen mit minimaler Beeinträchtigung. Erfahrene Fachkräfte mit jahrelanger Expertise.",
+    "services": "Unsere Dienstleistungen umfassen:",
+    "service1": "Erkennung von Rohrschäden",
+    "service2": "Nicht-invasive Rohrreparatur",
+    "service3": "Austausch beschädigter Rohrabschnitte"
+  },
   "common": {
     "whyChooseUs": "Warum uns wählen?",
     "fastService": "Schneller und effizienter Service",
@@ -155,7 +187,11 @@
     "howLongCleaning": "Wie lange dauert die Abflussreinigung?",
     "howLongCleaningAnswer": "Die Abflussreinigung dauert normalerweise zwischen 30 Minuten und 1 Stunde.",
     "howFastEmergency": "Wie schnell kann ein Notfall-Klempner ankommen?",
-    "howFastEmergencyAnswer": "Unser Notfall-Klempner ist innerhalb von 60 Minuten vor Ort."
+    "howFastEmergencyAnswer": "Unser Notfall-Klempner ist innerhalb von 60 Minuten vor Ort.",
+    "howLongPipeReplacement": "Wie lange dauert der Rohrwechsel?",
+    "howLongPipeReplacementAnswer": "Der Rohrwechsel ist normalerweise an einem Tag abgeschlossen.",
+    "howLongPipeRepair": "Wie lange dauert eine Rohrreparatur?",
+    "howLongPipeRepairAnswer": "Kleinere Reparaturen können innerhalb von 1 Stunde abgeschlossen werden."
   }
 
 }
